@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <imports>
+    <localimport file="magenta"/>
+    <localimport file="minimal"/>
+    <localimport file="toolchain"/>
+  </imports>
+  <projects>
+    <project name="escher"
+             remote="https://github.com/domokit/waterfall.git"
+             path="escher"/>
+    <project name="external/github.com/g-truc/glm"
+             remote="https://chromium.googlesource.com/external/github.com/g-truc/glm"
+             path="third_party/glm"
+             revision="3b1af3fe0b6c9b071dcb5a557b493980bd23c6e4"/>
+  </projects>
+</manifest>
