@@ -3,7 +3,6 @@
   <imports>
     <localimport file="magenta"/>
     <localimport file="minimal"/>
-    <localimport file="toolchain"/>
   </imports>
   <projects>
     <project name="escher"
