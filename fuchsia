@@ -6,8 +6,15 @@
   </imports>
   <projects>
     <project name="escher"
-             remote="https://github.com/domokit/waterfall.git"
+             remote="https://fuchsia.googlesource.com/escher"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"
              path="escher"/>
+    <project name="fortune"
+             remote="https://fuchsia.googlesource.com/fortune"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"
+             path="fortune"/>
     <project name="external/github.com/g-truc/glm"
              remote="https://chromium.googlesource.com/external/github.com/g-truc/glm"
              path="third_party/glm"
