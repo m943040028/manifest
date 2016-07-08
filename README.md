@@ -22,7 +22,14 @@ jiri update
 
 ## Submitting changes
 
-To submit a patch to Fuchsia:
+To submit a patch to Fuchsia, you may first need to generate a cookie to
+authenticate you to GoogleSource (you know this is necessary if ```jiri cl mail```
+prompts you for a username/password).  To generate a cookie, log into
+GoogleSource and click the "Generate Password" link at the top of
+https://fuchsia.googlesource.com. Then, copy the generated text and execute it
+in a terminal.
+
+Once authenticated, follow these steps to submit a patch to Fuchsia:
 
 ```
 # create a new change (makes a new local branch, checks it out)
