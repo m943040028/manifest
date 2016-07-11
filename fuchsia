@@ -5,6 +5,12 @@
     <localimport file="minimal"/>
   </imports>
   <projects>
+    <project name="buildtools"
+             remote="https://fuchsia.googlesource.com/buildtools"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"
+             runhook="buildtools/update.sh"
+             path="buildtools"/>
     <project name="escher"
              remote="https://fuchsia.googlesource.com/escher"
              gerrithost="https://fuchsia-review.googlesource.com"
