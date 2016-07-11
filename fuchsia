@@ -15,6 +15,11 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              path="fortune"/>
+    <project name="mojo"
+             remote="https://fuchsia.googlesource.com/mojo"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"
+             path="mojo"/>
     <project name="external/github.com/g-truc/glm"
              remote="https://chromium.googlesource.com/external/github.com/g-truc/glm"
              path="third_party/glm"
