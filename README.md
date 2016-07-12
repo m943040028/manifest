@@ -2,6 +2,16 @@
 
 Contains the jiri manifests for Fuchsia.
 
+## Prerequisites
+
+On Ubuntu:
+
+ * `sudo apt-get install golang git-all build-essential lzip curl`
+
+On Mac:
+
+ * `TODO(abarth): Figure out what needs to be installed.`
+
 ## Creating a new checkout
 
 Fuchsia uses the `jiri` tool to manage repositories
