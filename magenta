@@ -12,5 +12,9 @@
     <project name="toolchains"
              path="toolchains"
              remote="https://github.com/travisg/toolchains.git"/>
+    <project name="third_party/qemu"
+             path="third_party/qemu"
+             remote="https://fuchsia.googlesource.com/third_party/qemu"
+             remotebranch="fuchsia"/>
   </projects>
 </manifest>
