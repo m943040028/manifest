@@ -30,6 +30,30 @@ jiri import fuchsia https://fuchsia.googlesource.com/manifest
 jiri update
 ```
 
+### Building Fuchsia
+
+Currently you can build Fuchsia using these commands:
+
+```
+./packages/gen.py
+./buildtools/ninja -C out/Debug
+```
+
+Currently `gen.py` uses a hardcoded set of packages, but eventually you'll be
+able to configure which packages you want to build. After running `gen.py`
+once, you can do incremental builds using `ninja`.
+
+These commands will create an `out/Debug/user.bootfs` file.  After you've got
+Magenta building (see [Magenta's getting started
+guide](https://fuchsia.googlesource.com/magenta/+/HEAD/docs/getting_started.md)),
+you can boot using `user.bootfs` with the following command:
+
+```
+cd magenta
+./scripts/run-magenta-x86-64 -x ../out/Debug/user.bootfs
+
+```
+
 ### Working without altering your PATH
 
 If you don't like having to mangle your environment variables, and you want `jiri`
