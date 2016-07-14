@@ -30,6 +30,19 @@ jiri import fuchsia https://fuchsia.googlesource.com/manifest
 jiri update
 ```
 
+### Working without altering your PATH
+
+If you don't like having to mangle your environment variables, and you want `jiri`
+to "just work" depending on your current working directory, there's a shim for that.
+
+```
+sudo cp .jiri_root/scripts/jiri /usr/local/bin
+sudo chmod 755 /usr/local/bin/jiri
+```
+
+That script is just a wrapper around the real `jiri`.  It crawls your parent directory
+structure until it finds a `.jiri_root` directory, then executes the `jiri` it finds there.
+
 ## Submitting changes
 
 To submit a patch to Fuchsia, you may first need to generate a cookie to
