@@ -11,6 +11,7 @@
              githooks="manifest/git-hooks"/>
     <project name="external/github.com/travisg/toolchains"
              path="third_party/gcc_none_toolchains"
+             runhook="magenta/scripts/download-toolchain"
              remote="https://github.com/travisg/toolchains.git"
              revision="d1b546ffcd826482cea63ae67a13d3c98a92bf1e"/>
     <project name="third_party/qemu"
