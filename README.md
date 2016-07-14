@@ -54,6 +54,14 @@ cd magenta
 
 ```
 
+Then, when Fuchsia has booted and started an MXCONSOLE, you can run programs!
+
+For example, to receive deep wisdom, run:
+
+```
+fortune
+```
+
 ### Working without altering your PATH
 
 If you don't like having to mangle your environment variables, and you want `jiri`
