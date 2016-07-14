@@ -55,3 +55,31 @@ jiri cl mail
 # once the change is landed, clean up the branch
 jiri cl cleanup branch_name
 ```
+
+## Cross-repo changes
+
+Changes in two separate repos will be automatically tracked for you by `jiri`
+if you use the same branch name.
+
+```
+# make and commit the first change
+cd fuchsia/bin/fortune
+jiri cl new add_feature_foo
+vim foo_related_files ...
+git commit ...
+
+# make and commit the second change, with the same branch name ('add_feature_foo')
+cd fuchsia/build
+jiri cl new add_feature_foo
+vim more_foo_related_files ...
+git commit ...
+
+# upload both changes to gerrit
+jiri cl mail
+
+# after the changes are reviewed, approved and submitted, cleanup the local branch
+jiri cl cleanup add_feature_foo
+```
+
+Multipart changes are tracked in gerrit via topics, are tested together, and
+can be landed in Gerrit at the same time with `submit whole topic`.
