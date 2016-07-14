@@ -10,6 +10,9 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              path="build"/>
+    <project name="external/github.com/dart-lang/sdk"
+             remote="https://chromium.googlesource.com/external/github.com/dart-lang/sdk/"
+             path="dart"/>
     <project name="buildtools"
              remote="https://fuchsia.googlesource.com/buildtools"
              gerrithost="https://fuchsia-review.googlesource.com"
