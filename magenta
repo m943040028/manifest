@@ -9,9 +9,10 @@
              remote="https://fuchsia.googlesource.com/magenta"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="toolchains"
-             path="toolchains"
-             remote="https://github.com/travisg/toolchains.git"/>
+    <project name="external/github.com/travisg/toolchains"
+             path="third_party/gcc_none_toolchains"
+             remote="https://github.com/travisg/toolchains.git"
+             revision="d1b546ffcd826482cea63ae67a13d3c98a92bf1e"/>
     <project name="third_party/qemu"
              path="third_party/qemu"
              remote="https://fuchsia.googlesource.com/third_party/qemu"
