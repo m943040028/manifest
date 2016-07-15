@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <imports>
+    <localimport file="minimal"/>
+    <localimport file="magenta"/>
+  </imports>
+  <projects>
+    <project name="third_party/gcc_none_toolchains"
+             path="third_party/gcc_none_toolchains"
+             remote="https://fuchsia.googlesource.com/third_party/gcc_none_toolchains"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+  </projects>
+</manifest>
