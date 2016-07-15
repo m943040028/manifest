@@ -5,20 +5,37 @@
     <localimport file="minimal"/>
   </imports>
   <projects>
+    <project name="external/github.com/dart-lang/sdk"
+             remote="https://chromium.googlesource.com/external/github.com/dart-lang/sdk/"
+             path="dart"/>
+    <project name="mojo"
+             remote="https://fuchsia.googlesource.com/mojo"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"
+             runhook="mojo/update.sh"
+             path="mojo"/>
+    <project name="packages"
+             remote="https://fuchsia.googlesource.com/packages"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"
+             path="packages"/>
+
+    <!-- Build System -->
+
     <project name="build"
              remote="https://fuchsia.googlesource.com/build"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              path="build"/>
-    <project name="external/github.com/dart-lang/sdk"
-             remote="https://chromium.googlesource.com/external/github.com/dart-lang/sdk/"
-             path="dart"/>
     <project name="buildtools"
              remote="https://fuchsia.googlesource.com/buildtools"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              runhook="buildtools/update.sh"
              path="buildtools"/>
+
+    <!-- Libraries -->
+
     <project name="lib/escher"
              remote="https://fuchsia.googlesource.com/escher"
              gerrithost="https://fuchsia-review.googlesource.com"
@@ -34,22 +51,17 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              path="lib/mtl"/>
+
+    <!-- Command Line Binaries -->
+
     <project name="/bin/fortune"
              remote="https://fuchsia.googlesource.com/fortune"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              path="bin/fortune"/>
-    <project name="mojo"
-             remote="https://fuchsia.googlesource.com/mojo"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             runhook="mojo/update.sh"
-             path="mojo"/>
-    <project name="packages"
-             remote="https://fuchsia.googlesource.com/packages"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             path="packages"/>
+
+    <!-- Third Party -->
+
     <project name="external/github.com/g-truc/glm"
              remote="https://chromium.googlesource.com/external/github.com/g-truc/glm"
              path="third_party/glm"
@@ -60,5 +72,11 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              path="third_party/gtest"/>
+    <project name="third_party/skia"
+             remote="https://fuchsia.googlesource.com/third_party/skia"
+             remotebranch="fuchsia"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"
+             path="third_party/skia"/>
   </projects>
 </manifest>
