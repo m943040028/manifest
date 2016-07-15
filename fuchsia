@@ -6,77 +6,105 @@
   </imports>
   <projects>
     <project name="external/github.com/dart-lang/sdk"
-             remote="https://chromium.googlesource.com/external/github.com/dart-lang/sdk/"
-             path="dart"/>
+             path="dart"
+             remote="https://chromium.googlesource.com/external/github.com/dart-lang/sdk/"/>
     <project name="mojo"
+             path="mojo"
              remote="https://fuchsia.googlesource.com/mojo"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
-             runhook="mojo/update.sh"
-             path="mojo"/>
-    <project name="packages"
-             remote="https://fuchsia.googlesource.com/packages"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             path="packages"/>
+             runhook="mojo/update.sh"/>
 
     <!-- Build System -->
 
     <project name="build"
+             path="build"
              remote="https://fuchsia.googlesource.com/build"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             path="build"/>
+             githooks="manifest/git-hooks"/>
     <project name="buildtools"
+             path="buildtools"
              remote="https://fuchsia.googlesource.com/buildtools"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
-             runhook="buildtools/update.sh"
-             path="buildtools"/>
+             runhook="buildtools/update.sh"/>
+    <project name="packages"
+             path="packages"
+             remote="https://fuchsia.googlesource.com/packages"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
 
     <!-- Libraries -->
 
     <project name="lib/escher"
+             path="lib/escher"
              remote="https://fuchsia.googlesource.com/escher"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             path="lib/escher"/>
+             githooks="manifest/git-hooks"/>
     <project name="lib/ftl"
+             path="lib/ftl"
              remote="https://fuchsia.googlesource.com/ftl"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             path="lib/ftl"/>
+             githooks="manifest/git-hooks"/>
+    <project name="lib/json"
+             path="lib/json"
+             remote="https://fuchsia.googlesource.com/json"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="lib/mtl"
+             path="lib/mtl"
              remote="https://fuchsia.googlesource.com/mtl"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             path="lib/mtl"/>
+             githooks="manifest/git-hooks"/>
 
     <!-- Command Line Binaries -->
 
-    <project name="/bin/fortune"
+    <project name="bin/fortune"
+             path="bin/fortune"
              remote="https://fuchsia.googlesource.com/fortune"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             path="bin/fortune"/>
+             githooks="manifest/git-hooks"/>
+
+    <!-- Applications -->
+
+    <project name="apps/logging"
+             path="apps/logging"
+             remote="https://fuchsia.googlesource.com/logging"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="apps/moterm"
+             path="apps/moterm"
+             remote="https://fuchsia.googlesource.com/moterm"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="apps/native_viewport"
+             path="apps/native_viewport"
+             remote="https://fuchsia.googlesource.com/native_viewport"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="apps/tracing"
+             path="apps/tracing"
+             remote="https://fuchsia.googlesource.com/tracing"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
 
     <!-- Third Party -->
 
     <project name="external/github.com/g-truc/glm"
-             remote="https://chromium.googlesource.com/external/github.com/g-truc/glm"
              path="third_party/glm"
+             remote="https://chromium.googlesource.com/external/github.com/g-truc/glm"
              revision="3b1af3fe0b6c9b071dcb5a557b493980bd23c6e4"/>
     <project name="third_party/gtest"
+             path="third_party/gtest"
              remote="https://fuchsia.googlesource.com/third_party/gtest"
              remotebranch="fuchsia"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             path="third_party/gtest"/>
+             githooks="manifest/git-hooks"/>
     <project name="third_party/skia"
+             path="third_party/skia"
              remote="https://fuchsia.googlesource.com/third_party/skia"
              remotebranch="fuchsia"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             path="third_party/skia"/>
+             githooks="manifest/git-hooks"/>
   </projects>
 </manifest>
