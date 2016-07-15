@@ -90,6 +90,18 @@
 
     <!-- Third Party -->
 
+    <project name="third_party/expat"
+             path="third_party/expat"
+             remote="https://fuchsia.googlesource.com/third_party/expat"
+             remotebranch="fuchsia"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="third_party/freetype2"
+             path="third_party/freetype2"
+             remote="https://fuchsia.googlesource.com/third_party/freetype2"
+             remotebranch="fuchsia"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="external/github.com/g-truc/glm"
              path="third_party/glm"
              remote="https://chromium.googlesource.com/external/github.com/g-truc/glm"
@@ -103,6 +115,12 @@
     <project name="third_party/skia"
              path="third_party/skia"
              remote="https://fuchsia.googlesource.com/third_party/skia"
+             remotebranch="fuchsia"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="third_party/zlib"
+             path="third_party/zlib"
+             remote="https://fuchsia.googlesource.com/third_party/zlib"
              remotebranch="fuchsia"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
