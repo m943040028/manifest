@@ -6,7 +6,7 @@ Contains the jiri manifests for Fuchsia.
 
 On Ubuntu:
 
- * `sudo apt-get install golang git-all build-essential lzip curl`
+ * `sudo apt-get install golang git-all build-essential curl`
 
 On Mac:
 
