@@ -35,13 +35,13 @@ jiri update
 Currently you can build Fuchsia using these commands:
 
 ```
-./packages/gen.py
+./packages/gn/gen.py
 ./buildtools/ninja -C out/Debug
 ```
 
-Currently `gen.py` uses a hardcoded set of packages, but eventually you'll be
-able to configure which packages you want to build. After running `gen.py`
-once, you can do incremental builds using `ninja`.
+You can configure the set of modules that `gen.py` uses with the `--modules`
+argument. After running `gen.py` once, you can do incremental builds using
+`ninja`.
 
 These commands will create an `out/Debug/user.bootfs` file.  After you've got
 Magenta building (see [Magenta's getting started
