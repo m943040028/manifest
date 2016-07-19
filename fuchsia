@@ -67,6 +67,11 @@
 
     <!-- Applications -->
 
+    <project name="apps/dart_content_handler"
+             path="apps/dart_content_handler"
+             remote="https://fuchsia.googlesource.com/dart_content_handler"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="apps/logging"
              path="apps/logging"
              remote="https://fuchsia.googlesource.com/logging"
