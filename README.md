@@ -30,7 +30,7 @@ jiri import fuchsia https://fuchsia.googlesource.com/manifest
 jiri update
 ```
 
-### Building Fuchsia
+## Building Fuchsia
 
 Currently you can build Fuchsia using these commands:
 
@@ -128,3 +128,62 @@ jiri cl cleanup add_feature_foo
 
 Multipart changes are tracked in gerrit via topics, are tested together, and
 can be landed in Gerrit at the same time with `submit whole topic`.
+
+## Building Fuchsia SDK
+
+Create a new checkout for the toolchain, while this is similar to the Fuchsia
+checkout, there are some notable differences in particular around environment
+setup.
+
+```sh
+curl -s https://raw.githubusercontent.com/vanadium/go.jiri/master/scripts/bootstrap_jiri | bash -s sdk
+cd sdk
+export PATH=`pwd`/.jiri_root/scripts:$PATH
+jiri import sdk https://fuchsia.googlesource.com/manifest
+jiri update
+```
+
+Setup your environment:
+
+```sh
+export PATH=`pwd`/buildtools:`pwd`/buildtools/cmake/bin:`pwd`/.jiri_root/bin:$PATH
+```
+
+Currently you can build Fuchsia SDK using these commands:
+
+```sh
+# create an output directory
+mkdir out
+
+# generate the ninja build file
+toyen -src . -out out packages/root.bp
+
+# build the sdk using ninja
+ninja -C out sdk
+```
+
+After the build finishes, you can find the toolchain in `out/toolchains` and the
+platform files in `out/platforms`. These two directories are normally packaged
+as Fuchsia SDK.
+
+Please note that build can take significant amount of time, especially on slower
+machines.
+
+### Building Clang for Magenta
+
+The Clang toolchain which is part of Fuchsia SDK cannot build Magenta at the
+moment as the kernel build uses a linker script which relies on a behavior not
+(yet) supported by LLD linker, which is the default linker used by the Clang
+toolchain.
+
+To work around this limitation, in case you want to build Magenta using Clang,
+e.g. for development or testing purposes, you can build a Clang toolchain with
+Binutils. To build such toolchain, you can use the following targets:
+
+```sh
+# build the binutils-infused clang toolchain
+ninja -C out toolchain/binutils toolchain/clang toolchain/compiler-rt
+```
+
+Following this, you can use the toolchain in `out/toolchains` for building the
+Magenta (you do not need the rest of the SDK for building the kernel).
