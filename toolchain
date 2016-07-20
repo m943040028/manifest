@@ -6,6 +6,12 @@
     <localimport file="magenta"/>
   </imports>
   <projects>
+    <project name="buildtools"
+             remote="https://fuchsia.googlesource.com/buildtools"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"
+             runhook="buildtools/update.sh"
+             path="buildtools"/>
     <project name="packages"
              remote="https://fuchsia.googlesource.com/packages"
              remotebranch="blueprint"
@@ -30,6 +36,11 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              path="third_party/binutils-gdb"/>
+    <project name="third_party/gcc_none_toolchains"
+             remote="https://fuchsia.googlesource.com/third_party/gcc_none_toolchains"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"
+             path="third_party/gcc_none_toolchains"/>
     <project name="third_party/llvm"
              remote="https://fuchsia.googlesource.com/third_party/llvm"
              remotebranch="fuchsia"
