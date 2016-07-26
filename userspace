@@ -114,12 +114,6 @@
              remotebranch="fuchsia"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="third_party/hostap"
-             path="third_party/hostap"
-             remote="https://fuchsia.googlesource.com/third_party/hostap"
-             remotebranch="fuchsia"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="third_party/skia"
              path="third_party/skia"
              remote="https://fuchsia.googlesource.com/third_party/skia"
