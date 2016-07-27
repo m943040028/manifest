@@ -14,4 +14,39 @@ This document describes policies about we structure our manifests.
    references to the same external repository have consistent manifest values.
 
  * Projects that contain non-standard licenses should use a `path` attribute
-   that begins with `third_party/`.
+   that begins with `third_party/`. The current standard licenses used
+   by the Fuchsia project are 3-clause BSD, Apache 2.0, and MIT.
+
+## Modes of operation
+
+Each repository operates in one of two modes:
+
+ * _Tracking upstream_. When a repository is tracking upstream, the Fuchsia
+   project is not the source of truth for the code in that repository. Instead,
+   we incorporate updated versions of the code periodically from an upstream
+   repository, typically controlled by another group of people (e.g., another
+   open source project).
+
+   When tracking upstream, we typically create a mirror of the repository in the
+   `third_party` directory with the same name as the upstream project in order
+   to ensure the availability of the code for the Fuchsia build. Any local
+   modifications to the code (e.g., to integrate with the build or the platform)
+   should be landed in a `fuchsia` branch. When we update the `master` branch
+   from upstream, we merge the `master` branch into the `fuchsia` branch to
+   cause the `fuchsia` branch to contain both the updated upstream code and our
+   local modifications.
+
+ * _Source of truth_. When a repository is the source of truth, the Fuchsia
+   project controls the code in the repository. Projects that originate with the
+   Fuchsia project operate in this mode (i.e., because there is no upstream that
+   could be tracked), but sometimes we will use another project as the starting
+   point for a repository and create a fork of the original project. When we
+   create a fork of an existing project, we pick a new name for our project to
+   avoid confusion.
+
+   A repository that is the source of truth might be in the `third_party`
+   directory or it might not be in the `third_party` directory, depending on its
+   license (e.g., because we used a project with a non-standard license as a
+   starting point). However, for repositories that are the source of truth,
+   regardless of their starting point, we develop on the `master` branch
+   directly.
