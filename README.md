@@ -36,21 +36,30 @@ Currently you can build Fuchsia using these commands:
 
 ```
 ./packages/gn/gen.py
-./buildtools/ninja -C out/Debug
+./buildtools/ninja -C out/debug-x86-64
+
+```
+You can set target cpu by using --target\_cpu
+
+```
+./packages/gn/gen.py --target_cpu=aarch64
+./buildtools/ninja -C out/debug-aarch64
+
 ```
 
 You can configure the set of modules that `gen.py` uses with the `--modules`
 argument. After running `gen.py` once, you can do incremental builds using
 `ninja`.
 
-These commands will create an `out/Debug/user.bootfs` file.  After you've got
+These commands will create an `out/debug-{arch}/user.bootfs` file.  After you've got
 Magenta building (see [Magenta's getting started
 guide](https://fuchsia.googlesource.com/magenta/+/HEAD/docs/getting_started.md)),
 you can boot using `user.bootfs` with the following command:
 
 ```
 cd magenta
-./scripts/run-magenta-x86-64 -x ../out/Debug/user.bootfs
+./scripts/run-magenta-x86-64 -x ../out/debug-x86-64/user.bootfs
+./scripts/run-magenta-arm64 -x ../out/debug-aarch64/user.bootfs
 
 ```
 
