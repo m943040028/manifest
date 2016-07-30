@@ -53,6 +53,11 @@
              remote="https://fuchsia.googlesource.com/mtl"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="lib/tonic"
+             path="lib/tonic"
+             remote="https://fuchsia.googlesource.com/tonic"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
 
     <!-- Command Line Binaries -->
 
