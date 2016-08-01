@@ -10,6 +10,11 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              runhook="mojo/update.sh"/>
+    <project name="libc-tests"
+             path="libc-tests"
+             remote="https://fuchsia.googlesource.com/libc-tests"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
 
     <!-- Build System -->
 
