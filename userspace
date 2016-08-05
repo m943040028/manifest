@@ -142,6 +142,12 @@
              remotebranch="fuchsia"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="third_party/libpng"
+             path="third_party/libpng"
+             remote="https://fuchsia.googlesource.com/third_party/libpng"
+             remotebranch="fuchsia"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="third_party/re2"
              path="third_party/re2"
              remote="https://fuchsia.googlesource.com/third_party/re2"
