@@ -64,25 +64,25 @@
              remotebranch="fuchsia"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
-             path="third_party/compiler-rt"/>
+             path="third_party/llvm/projects/compiler-rt"/>
     <project name="third_party/libcxx"
              remote="https://fuchsia.googlesource.com/third_party/libcxx"
              remotebranch="fuchsia"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
-             path="third_party/libcxx"/>
+             path="third_party/llvm/projects/libcxx"/>
     <project name="third_party/libcxxabi"
              remote="https://fuchsia.googlesource.com/third_party/libcxxabi"
              remotebranch="fuchsia"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
-             path="third_party/libcxxabi"/>
+             path="third_party/llvm/projects/libcxxabi"/>
     <project name="third_party/libunwind"
              remote="https://fuchsia.googlesource.com/third_party/libunwind"
              remotebranch="fuchsia"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
-             path="third_party/libunwind"/>
+             path="third_party/llvm/projects/libunwind"/>
   </projects>
   <tools>
     <tool name="toyen"
