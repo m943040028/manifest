@@ -39,14 +39,6 @@
              githooks="manifest/git-hooks"
              runhook="packages/update-prebuilts.sh"/>
 
-    <!-- Services -->
-
-    <project name="services/network"
-             path="services/network"
-             remote="https://fuchsia.googlesource.com/network"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-
     <!-- Libraries -->
 
     <project name="lib/escher"
@@ -103,6 +95,11 @@
     <project name="apps/native_viewport"
              path="apps/native_viewport"
              remote="https://fuchsia.googlesource.com/native_viewport"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="apps/network"
+             path="apps/network"
+             remote="https://fuchsia.googlesource.com/network"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="apps/tracing"
