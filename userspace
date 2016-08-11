@@ -156,6 +156,12 @@
              remotebranch="fuchsia"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="third_party/libjpeg-turbo"
+             path="third_party/libjpeg-turbo"
+             remote="https://fuchsia.googlesource.com/third_party/libjpeg-turbo"
+             remotebranch="fuchsia"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="third_party/libpng"
              path="third_party/libpng"
              remote="https://fuchsia.googlesource.com/third_party/libpng"
@@ -183,6 +189,12 @@
     <project name="third_party/snappy"
              path="third_party/snappy"
              remote="https://fuchsia.googlesource.com/third_party/snappy"
+             remotebranch="fuchsia"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="third_party/yasm"
+             path="third_party/yasm"
+             remote="https://fuchsia.googlesource.com/third_party/yasm"
              remotebranch="fuchsia"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
