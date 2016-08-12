@@ -69,6 +69,11 @@
 
     <!-- Command Line Binaries -->
 
+    <project name="bin/cmdutils"
+             path="bin/cmdutils"
+             remote="https://fuchsia.googlesource.com/cmdutils"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="bin/fortune"
              path="bin/fortune"
              remote="https://fuchsia.googlesource.com/fortune"
