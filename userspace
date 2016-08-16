@@ -11,8 +11,13 @@
              path="mojo"
              remote="https://fuchsia.googlesource.com/mojo"
              gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="mojo/public"
+             path="mojo/public"
+             remote="https://fuchsia.googlesource.com/mojo/public"
+             gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
-             runhook="mojo/update.sh"/>
+             runhook="mojo/public/update.sh"/>
     <project name="libc-tests"
              path="libc-tests"
              remote="https://fuchsia.googlesource.com/libc-tests"
