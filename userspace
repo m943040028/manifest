@@ -148,6 +148,11 @@
              remote="https://fuchsia.googlesource.com/third_party/boringssl"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="third_party/dropbear"
+             path="third_party/dropbear"
+             remote="https://fuchsia.googlesource.com/third_party/dropbear"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="third_party/expat"
              path="third_party/expat"
              remote="https://fuchsia.googlesource.com/third_party/expat"
