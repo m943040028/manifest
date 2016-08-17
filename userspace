@@ -181,6 +181,12 @@
              remotebranch="fuchsia"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="third_party/linenoise"
+             path="third_party/linenoise"
+             remote="https://fuchsia.googlesource.com/third_party/linenoise"
+             remotebranch="fuchsia"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="third_party/lwip"
              path="third_party/lwip"
              remotebranch="fuchsia"
