@@ -6,13 +6,11 @@
   <projects>
     <project name="third_party/cmake"
              remote="https://fuchsia.googlesource.com/third_party/cmake"
-             remotebranch="fuchsia"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              path="third_party/cmake"/>
     <project name="third_party/ninja"
              remote="https://fuchsia.googlesource.com/third_party/ninja"
-             remotebranch="fuchsia"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              path="third_party/ninja"/>
