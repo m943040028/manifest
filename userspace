@@ -90,6 +90,11 @@
 
     <!-- Applications -->
 
+    <project name="apps/compositor"
+             path="apps/compositor"
+             remote="https://fuchsia.googlesource.com/compositor"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="apps/dart_content_handler"
              path="apps/dart_content_handler"
              remote="https://fuchsia.googlesource.com/dart_content_handler"
