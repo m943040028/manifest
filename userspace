@@ -157,6 +157,11 @@
              remote="https://fuchsia.googlesource.com/third_party/hostap"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="third_party/icu"
+             path="third_party/icu"
+             remote="https://fuchsia.googlesource.com/third_party/icu"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="third_party/leveldb"
              path="third_party/leveldb"
              remote="https://fuchsia.googlesource.com/third_party/leveldb"
