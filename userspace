@@ -59,11 +59,6 @@
              remote="https://fuchsia.googlesource.com/ftl"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="lib/json"
-             path="lib/json"
-             remote="https://fuchsia.googlesource.com/json"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="lib/mtl"
              path="lib/mtl"
              remote="https://fuchsia.googlesource.com/mtl"
@@ -190,6 +185,11 @@
     <project name="third_party/lwip"
              path="third_party/lwip"
              remote="https://fuchsia.googlesource.com/third_party/lwip"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="third_party/json"
+             path="third_party/json"
+             remote="https://fuchsia.googlesource.com/third_party/json"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="third_party/re2"
