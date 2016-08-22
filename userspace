@@ -7,6 +7,11 @@
     <project name="external/github.com/flutter/engine"
              path="flutter"
              remote="https://chromium.googlesource.com/external/github.com/flutter/engine/" />
+    <project name="apps/media"
+             path="apps/media"
+             remote="https://fuchsia.googlesource.com/media"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="mojo"
              path="mojo"
              remote="https://fuchsia.googlesource.com/mojo"
@@ -136,6 +141,11 @@
     <project name="third_party/expat"
              path="third_party/expat"
              remote="https://fuchsia.googlesource.com/third_party/expat"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="third_party/ffmpeg"
+             path="third_party/ffmpeg"
+             remote="https://fuchsia.googlesource.com/third_party/ffmpeg"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="third_party/freetype2"
