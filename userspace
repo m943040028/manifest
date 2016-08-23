@@ -7,11 +7,6 @@
     <project name="external/github.com/flutter/engine"
              path="flutter"
              remote="https://chromium.googlesource.com/external/github.com/flutter/engine/" />
-    <project name="apps/media"
-             path="apps/media"
-             remote="https://fuchsia.googlesource.com/media"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="mojo"
              path="mojo"
              remote="https://fuchsia.googlesource.com/mojo"
@@ -108,6 +103,11 @@
     <project name="apps/logging"
              path="apps/logging"
              remote="https://fuchsia.googlesource.com/logging"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="apps/media"
+             path="apps/media"
+             remote="https://fuchsia.googlesource.com/media"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="apps/moterm"
