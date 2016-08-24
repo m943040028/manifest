@@ -15,16 +15,30 @@
              remote="https://fuchsia.googlesource.com/mojom"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="sysui"
+             path="sysui"
+             remote="https://fuchsia.googlesource.com/sysui"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+
+    <!-- Build System -->
+
+    <project name="build"
+             path="build"
+             remote="https://fuchsia.googlesource.com/build"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="buildtools"
+             path="buildtools"
+             remote="https://fuchsia.googlesource.com/buildtools"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"
+             runhook="buildtools/update.sh"/>
     <project name="packages"
              path="packages"
              remote="https://fuchsia.googlesource.com/packages"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              runhook="packages/update-prebuilts.sh"/>
-    <project name="sysui"
-             path="sysui"
-             remote="https://fuchsia.googlesource.com/sysui"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
   </projects>
 </manifest>
