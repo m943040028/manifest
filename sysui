@@ -5,6 +5,11 @@
     <localimport file="minimal"/>
   </imports>
   <projects>
+    <project name="mojo"
+             path="mojo"
+             remote="https://fuchsia.googlesource.com/mojo"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="mojo/public"
              path="mojo/public"
              remote="https://fuchsia.googlesource.com/mojo/public"
