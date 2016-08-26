@@ -46,5 +46,13 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              runhook="packages/update-prebuilts.sh"/>
+
+    <-- Third-party -->
+
+    <project name="third_party/gtest"
+             path="third_party/gtest"
+             remote="https://fuchsia.googlesource.com/third_party/gtest"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
   </projects>
 </manifest>
