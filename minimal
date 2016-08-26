@@ -6,19 +6,15 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              path="manifest"/>
-    <project name="release.go.jiri"
-             remote="https://vanadium.googlesource.com/release.go.jiri"
-             path="release/go/src/v.io/jiri"/>
-    <project name="release.go.x.devtools"
-             remote="https://vanadium.googlesource.com/release.go.x.devtools"
-             path="release/go/src/v.io/x/devtools"/>
-    <project name="release.go.x.lib"
-             remote="https://vanadium.googlesource.com/release.go.x.lib"
-             path="release/go/src/v.io/x/lib"/>
+    <project name="jiri"
+             path="go/src/fuchsia.googlesource.com/jiri"
+             remote="https://fuchsia.googlesource.com/jiri"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
   </projects>
   <tools>
     <tool name="jiri"
-          package="v.io/jiri/cmd/jiri"
-          project="release.go.jiri"/>
+          package="fuchsia.googlesource.com/jiri/cmd/jiri"
+          project="jiri"/>
   </tools>
 </manifest>
