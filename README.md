@@ -15,7 +15,7 @@ On Mac:
 ## Creating a new checkout
 
 Fuchsia uses the `jiri` tool to manage repositories
-[https://github.com/vanadium/go.jiri](https://github.com/vanadium/go.jiri).
+[https://fuchsia.googlesource.com/jiri](https://fuchsia.googlesource.com/jiri).
 This tool manages a set of repositories specified by a manifest.  The bootstrap
 procedure requires that you have Go 1.6 or newer and Git installed and on your
 PATH.  To create a new Fuchsia checkout in a directory called `fuchsia` run the
@@ -23,7 +23,7 @@ following commands. The `fuchsia` directory should not exist before running
 these steps.
 
 ```
-curl -s https://raw.githubusercontent.com/vanadium/go.jiri/master/scripts/bootstrap_jiri | bash -s fuchsia
+curl -s https://raw.githubusercontent.com/fuchsia-mirror/jiri/master/scripts/bootstrap_jiri | bash -s fuchsia
 cd fuchsia
 export PATH=`pwd`/.jiri_root/scripts:$PATH
 jiri import fuchsia https://fuchsia.googlesource.com/manifest
@@ -144,7 +144,7 @@ Create a new checkout, while this is similar to the Fuchsia checkout, there are
 some notable differences in particular around environment setup.
 
 ```sh
-curl -s https://raw.githubusercontent.com/vanadium/go.jiri/master/scripts/bootstrap_jiri | bash -s sdk
+curl -s https://raw.githubusercontent.com/fuchsia-mirror/jiri/master/scripts/bootstrap_jiri | bash -s sdk
 cd sdk
 export PATH=`pwd`/.jiri_root/scripts:$PATH
 jiri import sdk https://fuchsia.googlesource.com/manifest
@@ -195,7 +195,7 @@ To build Fuchsia sysroot for either x86-64 or AArch64, you can use the same
 checkout as for building the toolchain.
 
 ```sh
-curl -s https://raw.githubusercontent.com/vanadium/go.jiri/master/scripts/bootstrap_jiri | bash -s sdk
+curl -s https://raw.githubusercontent.com/fuchsia-mirror/jiri/master/scripts/bootstrap_jiri | bash -s sdk
 cd sdk
 export PATH=`pwd`/.jiri_root/scripts:$PATH
 jiri import sdk https://fuchsia.googlesource.com/manifest
