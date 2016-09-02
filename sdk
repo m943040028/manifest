@@ -14,7 +14,6 @@
              path="buildtools"/>
     <project name="packages"
              remote="https://fuchsia.googlesource.com/packages"
-             remotebranch="blueprint"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              path="packages"/>

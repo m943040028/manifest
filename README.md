@@ -164,7 +164,7 @@ Now, you can build the toolchain using the following commands:
 mkdir -p out
 
 # generate the ninja build file
-toyen -src . -out out packages/root.bp
+toyen -src . -out out packages/blueprint/root.bp
 
 # build the toolchain
 ninja -C out toolchain
@@ -215,7 +215,7 @@ To build the sysroot for both architectures, you can use the following commands:
 mkdir -p out
 
 # generate the ninja build file
-toyen -src . -out out packages/root.bp
+toyen -src . -out out packages/blueprint/root.bp
 
 # build the sysroot using ninja
 ninja -C out sysroot
