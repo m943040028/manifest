@@ -59,7 +59,7 @@
              remote="https://fuchsia.googlesource.com/third_party/compiler-rt"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
-             path="third_party/llvm/projects/compiler-rt"/>
+             path="third_party/llvm/runtimes/compiler-rt"/>
     <project name="third_party/libcxx"
              remote="https://fuchsia.googlesource.com/third_party/libcxx"
              gerrithost="https://fuchsia-review.googlesource.com"
