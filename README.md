@@ -10,7 +10,8 @@ On Ubuntu:
 
 On Mac:
 
- * `TODO(abarth): Figure out what needs to be installed.`
+ * Install Xcode Command Line Tools
+ * `brew install golang`
 
 ## Creating a new checkout
 
@@ -37,21 +38,29 @@ Currently you can build Fuchsia using these commands:
 ```
 ./packages/gn/gen.py
 ./buildtools/ninja -C out/debug-x86-64
+```
+
+[Googlers only] If you have goma installed, use these alternative commands for faster builds:
 
 ```
+./packages/gn/gen.py --goma
+./buildtools/ninja -j1000 -C out/debug-x86-64
+```
+
 You can set target cpu by using --target\_cpu
 
 ```
 ./packages/gn/gen.py --target_cpu=aarch64
 ./buildtools/ninja -C out/debug-aarch64
-
 ```
 
 You can configure the set of modules that `gen.py` uses with the `--modules`
 argument. After running `gen.py` once, you can do incremental builds using
 `ninja`.
 
-These commands will create an `out/debug-{arch}/user.bootfs` file.  After you've got
+### Running Fuchsia
+
+These commands will create an `out/debug-{arch}/user.bootfs` file. After you've got
 Magenta building (see [Magenta's getting started
 guide](https://fuchsia.googlesource.com/magenta/+/HEAD/docs/getting_started.md)),
 you can boot using `user.bootfs` with the following command:
@@ -60,8 +69,9 @@ you can boot using `user.bootfs` with the following command:
 cd magenta
 ./scripts/run-magenta-x86-64 -x ../out/debug-x86-64/user.bootfs
 ./scripts/run-magenta-arm64 -x ../out/debug-aarch64/user.bootfs
-
 ```
+
+If you want a graphical console, add the `-g` flag.
 
 Then, when Fuchsia has booted and started an MXCONSOLE, you can run programs!
 
