@@ -51,6 +51,11 @@
 
     <!-- Libraries -->
 
+    <project name="lib/dynamic_bindings"
+             path="lib/dynamic_bindings"
+             remote="https://fuchsia.googlesource.com/dynamic_bindings"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="lib/escher"
              path="lib/escher"
              remote="https://fuchsia.googlesource.com/escher"
