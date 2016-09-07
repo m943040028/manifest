@@ -5,6 +5,9 @@
     <localimport file="minimal"/>
   </imports>
   <projects>
+    <project name="external/github.com/flutter/engine"
+             path="flutter"
+             remote="https://chromium.googlesource.com/external/github.com/flutter/engine/" />
     <project name="mojo"
              path="mojo"
              remote="https://fuchsia.googlesource.com/mojo"
