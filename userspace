@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <projects>
+    <project name="docs"
+             path="docs"
+             remote="https://fuchsia.googlesource.com/docs"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="external/github.com/dart-lang/sdk"
              path="dart"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/sdk/"/>
@@ -26,6 +31,11 @@
     <project name="libc-tests"
              path="libc-tests"
              remote="https://fuchsia.googlesource.com/libc-tests"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="scripts"
+             path="scripts"
+             remote="https://fuchsia.googlesource.com/scripts"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
 
