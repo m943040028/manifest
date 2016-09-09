@@ -124,7 +124,8 @@
              path="apps/fonts"
              remote="https://fuchsia.googlesource.com/fonts"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
+             githooks="manifest/git-hooks"
+             runhook="apps/fonts/update.sh"/>
     <project name="apps/ledger"
              path="apps/ledger"
              remote="https://fuchsia.googlesource.com/ledger"
