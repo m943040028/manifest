@@ -63,6 +63,11 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              runhook="packages/update-prebuilts.sh"/>
+    <project name="scripts"
+             path="scripts"
+             remote="https://fuchsia.googlesource.com/scripts"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
 
     <!-- Drivers -->
 
