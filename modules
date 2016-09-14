@@ -8,6 +8,7 @@
              path="modules"
              remote="https://fuchsia.googlesource.com/modules"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
+             githooks="manifest/git-hooks"
+             runhook="modules/tools/update.sh"/>
   </projects>
 </manifest>
