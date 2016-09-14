@@ -2,7 +2,6 @@
 <manifest>
   <imports>
     <localimport file="magenta"/>
-    <localimport file="magma"/>
     <localimport file="minimal"/>
     <localimport file="userspace"/>
   </imports>

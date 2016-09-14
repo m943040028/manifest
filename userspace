@@ -12,6 +12,11 @@
     <project name="external/github.com/flutter/engine"
              path="flutter"
              remote="https://chromium.googlesource.com/external/github.com/flutter/engine/" />
+    <project name="magma"
+             path="magma"
+             remote="https://fuchsia.googlesource.com/magma"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="mojo"
              path="mojo"
              remote="https://fuchsia.googlesource.com/mojo"
@@ -58,6 +63,14 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              runhook="packages/update-prebuilts.sh"/>
+
+    <!-- Drivers -->
+
+    <project name="driver/msd-intel-gen"
+             path="driver/msd-intel-gen"
+             remote="https://fuchsia.googlesource.com/msd-intel-gen"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
 
     <!-- Libraries -->
 
@@ -271,6 +284,11 @@
     <project name="third_party/lwip"
              path="third_party/lwip"
              remote="https://fuchsia.googlesource.com/third_party/lwip"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="third_party/mesa"
+             path="third_party/mesa"
+             remote="https://fuchsia.googlesource.com/third_party/mesa"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="third_party/qcms"
