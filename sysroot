@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <imports>
+    <localimport file="magenta"/>
+    <localimport file="minimal"/>
+  </imports>
+  <projects>
+    <project name="third_party/libcxx"
+             remote="https://fuchsia.googlesource.com/third_party/libcxx"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"
+             path="third_party/llvm/projects/libcxx"/>
+    <project name="third_party/libcxxabi"
+             remote="https://fuchsia.googlesource.com/third_party/libcxxabi"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"
+             path="third_party/llvm/projects/libcxxabi"/>
+    <project name="third_party/libunwind"
+             remote="https://fuchsia.googlesource.com/third_party/libunwind"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"
+             path="third_party/llvm/projects/libunwind"/>
+  </projects>
+</manifest>

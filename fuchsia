@@ -3,6 +3,7 @@
   <imports>
     <localimport file="magenta"/>
     <localimport file="minimal"/>
+    <localimport file="sysroot"/>
     <localimport file="userspace"/>
   </imports>
 </manifest>
