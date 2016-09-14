@@ -97,56 +97,60 @@ structure until it finds a `.jiri_root` directory, then executes the `jiri` it f
 ## Submitting changes
 
 To submit a patch to Fuchsia, you may first need to generate a cookie to
-authenticate you to GoogleSource (you know this is necessary if ```jiri cl mail```
-prompts you for a username/password).  To generate a cookie, log into
-GoogleSource and click the "Generate Password" link at the top of
-https://fuchsia.googlesource.com. Then, copy the generated text and execute it
-in a terminal.
+authenticate you to Gerrit.  To generate a cookie, log into Gerrit and click the
+"Generate Password" link at the top of https://fuchsia.googlesource.com. Then,
+copy the generated text and execute it in a terminal.
 
 Once authenticated, follow these steps to submit a patch to Fuchsia:
 
 ```
-# create a new change (makes a new local branch, checks it out)
-jiri cl new branch_name
+# create a new branch
+git checkout -b branch_name
 
 # write some awesome stuff, commit to branch_name
 vim some_file ...
 git commit ...
 
 # upload the patch to gerrit
-jiri cl mail
+git push origin HEAD:refs/for/master
 
 # once the change is landed, clean up the branch
-jiri cl cleanup branch_name
+git branch -d branch_name
 ```
+
+See the Gerrit documentation for more detail:
+[https://gerrit-documentation.storage.googleapis.com/Documentation/2.12.3/intro-user.html#upload-change](https://gerrit-documentation.storage.googleapis.com/Documentation/2.12.3/intro-user.html#upload-change)
 
 ## Cross-repo changes
 
-Changes in two separate repos will be automatically tracked for you by `jiri`
-if you use the same branch name.
+Changes in two separate repos will be automatically tracked for you by Gerrit
+if you use the same topic.
 
 ```
-# make and commit the first change
+# make and commit the first change, upload it with topic 'add_feature_foo'
 cd fuchsia/bin/fortune
-jiri cl new add_feature_foo
+git checkout -b new add_feature_foo
 vim foo_related_files ...
 git commit ...
+git push origin HEAD:refs/for/master%topic=add_feature_foo
 
-# make and commit the second change, with the same branch name ('add_feature_foo')
+# make and commit the second change in another repository
 cd fuchsia/build
-jiri cl new add_feature_foo
+git checkout -b new add_feature_foo
 vim more_foo_related_files ...
 git commit ...
-
-# upload both changes to gerrit
-jiri cl mail
+git push origin HEAD:refs/for/master%topic=add_feature_foo
 
 # after the changes are reviewed, approved and submitted, cleanup the local branch
-jiri cl cleanup add_feature_foo
+cd fuchsia/bin/fortune
+git branch -d add_feature_foo
+
+cd fuchsia/build
+git branch -d add_feature_foo
 ```
 
-Multipart changes are tracked in gerrit via topics, are tested together, and
-can be landed in Gerrit at the same time with `submit whole topic`.
+Multipart changes are tracked in gerrit via topics, will be tested together, and
+can be landed in Gerrit at the same time with `Submit Whole Topic`.
 
 ## Building toolchain
 
