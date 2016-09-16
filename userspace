@@ -138,11 +138,6 @@
              remote="https://fuchsia.googlesource.com/dart_content_handler"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="apps/flog"
-             path="apps/flog"
-             remote="https://fuchsia.googlesource.com/flog"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="apps/fonts"
              path="apps/fonts"
              remote="https://fuchsia.googlesource.com/fonts"
