@@ -8,6 +8,11 @@
     <project name="external/github.com/flutter/engine"
              path="flutter"
              remote="https://chromium.googlesource.com/external/github.com/flutter/engine/" />
+    <project name="modules"
+             path="modules"
+             remote="https://fuchsia.googlesource.com/modules"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="mojo"
              path="mojo"
              remote="https://fuchsia.googlesource.com/mojo"
@@ -28,7 +33,8 @@
              path="sysui"
              remote="https://fuchsia.googlesource.com/sysui"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
+             githooks="manifest/git-hooks"
+             runhook="sysui/tools/install_flutter.sh"/>
 
     <!-- Build System -->
 
