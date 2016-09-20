@@ -144,6 +144,16 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              runhook="apps/fonts/update.sh"/>
+    <project name="apps/input"
+             path="apps/input"
+             remote="https://fuchsia.googlesource.com/input"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="apps/launcher"
+             path="apps/launcher"
+             remote="https://fuchsia.googlesource.com/launcher"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="apps/ledger"
              path="apps/ledger"
              remote="https://fuchsia.googlesource.com/ledger"
@@ -187,6 +197,11 @@
     <project name="apps/tracing"
              path="apps/tracing"
              remote="https://fuchsia.googlesource.com/tracing"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="apps/views"
+             path="apps/views"
+             remote="https://fuchsia.googlesource.com/views"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
 
