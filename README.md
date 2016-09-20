@@ -33,7 +33,19 @@ jiri update
 
 ## Building Fuchsia
 
-Currently you can build Fuchsia using these commands:
+First, you need to build Magenta:
+
+```
+(cd magenta; ./scripts/build-magenta-x86-64)
+```
+
+Next, you need to build a sysroot:
+
+```
+./scripts/build-sysroot.sh -c -t x86_64
+```
+
+Finally, you can build Fuchsia using these commands:
 
 ```
 ./packages/gn/gen.py
