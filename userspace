@@ -128,11 +128,6 @@
 
     <!-- Applications -->
 
-    <project name="apps/compositor"
-             path="apps/compositor"
-             remote="https://fuchsia.googlesource.com/compositor"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="apps/dart_content_handler"
              path="apps/dart_content_handler"
              remote="https://fuchsia.googlesource.com/dart_content_handler"
@@ -144,16 +139,6 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              runhook="apps/fonts/update.sh"/>
-    <project name="apps/input"
-             path="apps/input"
-             remote="https://fuchsia.googlesource.com/input"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="apps/launcher"
-             path="apps/launcher"
-             remote="https://fuchsia.googlesource.com/launcher"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="apps/ledger"
              path="apps/ledger"
              remote="https://fuchsia.googlesource.com/ledger"
@@ -184,6 +169,11 @@
              remote="https://fuchsia.googlesource.com/moterm"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="apps/mozart"
+             path="apps/mozart"
+             remote="https://fuchsia.googlesource.com/mozart"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="apps/native_viewport"
              path="apps/native_viewport"
              remote="https://fuchsia.googlesource.com/native_viewport"
@@ -197,11 +187,6 @@
     <project name="apps/tracing"
              path="apps/tracing"
              remote="https://fuchsia.googlesource.com/tracing"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="apps/views"
-             path="apps/views"
-             remote="https://fuchsia.googlesource.com/views"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
 
