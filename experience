@@ -4,6 +4,7 @@
     <localimport file="magenta"/>
     <localimport file="minimal"/>
     <localimport file="sysroot"/>
+    <localimport file="toolchain"/>
   </imports>
   <projects>
     <project name="external/github.com/flutter/engine"
