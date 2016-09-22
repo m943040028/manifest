@@ -7,9 +7,12 @@
     <localimport file="toolchain"/>
   </imports>
   <projects>
+    <project name="external/github.com/dart-lang/sdk"
+             path="dart"
+             remote="https://chromium.googlesource.com/external/github.com/dart-lang/sdk/"/>
     <project name="external/github.com/flutter/engine"
              path="flutter"
-             remote="https://chromium.googlesource.com/external/github.com/flutter/engine/" />
+             remote="https://chromium.googlesource.com/external/github.com/flutter/engine/"/>
     <project name="modules"
              path="modules"
              remote="https://fuchsia.googlesource.com/modules"
@@ -62,6 +65,12 @@
              remote="https://fuchsia.googlesource.com/scripts"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+
+    <!-- Libraries -->
+
+    <project name="external/github.com/flutter/flutter"
+             path="lib/flutter"
+             remote="https://chromium.googlesource.com/external/github.com/flutter/flutter/"/>
 
     <!-- Third-party -->
 
