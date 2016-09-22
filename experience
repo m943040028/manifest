@@ -1,37 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <imports>
-    <localimport file="magenta"/>
-    <localimport file="minimal"/>
-    <localimport file="sysroot"/>
-    <localimport file="toolchain"/>
+    <localimport file="fuchsia"/>
   </imports>
   <projects>
-    <project name="external/github.com/dart-lang/sdk"
-             path="dart"
-             remote="https://chromium.googlesource.com/external/github.com/dart-lang/sdk/"/>
-    <project name="external/github.com/flutter/engine"
-             path="flutter"
-             remote="https://chromium.googlesource.com/external/github.com/flutter/engine/"/>
     <project name="modules"
              path="modules"
              remote="https://fuchsia.googlesource.com/modules"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="mojo"
-             path="mojo"
-             remote="https://fuchsia.googlesource.com/mojo"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="mojo/public"
-             path="mojo/public"
-             remote="https://fuchsia.googlesource.com/mojo/public"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             runhook="mojo/public/update.sh"/>
-    <project name="mojom"
-             path="mojom"
-             remote="https://fuchsia.googlesource.com/mojom"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="sysui"
@@ -40,44 +15,5 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              runhook="sysui/tools/install_flutter.sh"/>
-
-    <!-- Build System -->
-
-    <project name="build"
-             path="build"
-             remote="https://fuchsia.googlesource.com/build"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="buildtools"
-             path="buildtools"
-             remote="https://fuchsia.googlesource.com/buildtools"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             runhook="buildtools/update.sh"/>
-    <project name="packages"
-             path="packages"
-             remote="https://fuchsia.googlesource.com/packages"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             runhook="packages/update-prebuilts.sh"/>
-    <project name="scripts"
-             path="scripts"
-             remote="https://fuchsia.googlesource.com/scripts"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-
-    <!-- Libraries -->
-
-    <project name="external/github.com/flutter/flutter"
-             path="lib/flutter"
-             remote="https://chromium.googlesource.com/external/github.com/flutter/flutter/"/>
-
-    <!-- Third-party -->
-
-    <project name="third_party/gtest"
-             path="third_party/gtest"
-             remote="https://fuchsia.googlesource.com/third_party/gtest"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
   </projects>
 </manifest>
