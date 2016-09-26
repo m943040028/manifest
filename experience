@@ -13,7 +13,11 @@
              path="sysui"
              remote="https://fuchsia.googlesource.com/sysui"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             runhook="sysui/tools/install_flutter.sh"/>
+             githooks="manifest/git-hooks"/>
   </projects>
+  <hooks>
+    <hook name="install_flutter"
+          project="sysui"
+          action="tools/install_flutter.sh"/>
+  </hooks>
 </manifest>

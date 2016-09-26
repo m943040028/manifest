@@ -8,10 +8,14 @@
              path="magenta"
              remote="https://fuchsia.googlesource.com/magenta"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             runhook="magenta/scripts/download-toolchain"/>
+             githooks="manifest/git-hooks"/>
     <project name="third_party/qemu"
              path="third_party/qemu"
              remote="https://fuchsia.googlesource.com/third_party/qemu"/>
   </projects>
+  <hooks>
+    <hook name="download-toolchain"
+          project="magenta"
+          action="scripts/download-toolchain"/>
+  </hooks>
 </manifest>
