@@ -71,7 +71,7 @@
 
     <!-- Drivers -->
 
-    <project name="driver/msd-intel-gen"
+    <project name="msd-intel-gen"
              path="driver/msd-intel-gen"
              remote="https://fuchsia.googlesource.com/msd-intel-gen"
              gerrithost="https://fuchsia-review.googlesource.com"
@@ -79,12 +79,12 @@
 
     <!-- Libraries -->
 
-    <project name="lib/dynamic_bindings"
+    <project name="dynamic_bindings"
              path="lib/dynamic_bindings"
              remote="https://fuchsia.googlesource.com/dynamic_bindings"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="lib/escher"
+    <project name="escher"
              path="lib/escher"
              remote="https://fuchsia.googlesource.com/escher"
              gerrithost="https://fuchsia-review.googlesource.com"
@@ -93,17 +93,17 @@
     <project name="external/github.com/flutter/flutter"
              path="lib/flutter"
              remote="https://chromium.googlesource.com/external/github.com/flutter/flutter/" />
-    <project name="lib/ftl"
+    <project name="ftl"
              path="lib/ftl"
              remote="https://fuchsia.googlesource.com/ftl"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="lib/mtl"
+    <project name="mtl"
              path="lib/mtl"
              remote="https://fuchsia.googlesource.com/mtl"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="lib/tonic"
+    <project name="tonic"
              path="lib/tonic"
              remote="https://fuchsia.googlesource.com/tonic"
              gerrithost="https://fuchsia-review.googlesource.com"
@@ -118,7 +118,7 @@
              remote="https://fuchsia.googlesource.com/url"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="lib/zip"
+    <project name="zip"
              path="lib/zip"
              remote="https://fuchsia.googlesource.com/zip"
              gerrithost="https://fuchsia-review.googlesource.com"
@@ -126,12 +126,12 @@
 
     <!-- Command Line Binaries -->
 
-    <project name="bin/cmdutils"
+    <project name="cmdutils"
              path="bin/cmdutils"
              remote="https://fuchsia.googlesource.com/cmdutils"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="bin/fortune"
+    <project name="fortune"
              path="bin/fortune"
              remote="https://fuchsia.googlesource.com/fortune"
              gerrithost="https://fuchsia-review.googlesource.com"
@@ -144,78 +144,78 @@
 
     <!-- Applications -->
 
-    <project name="apps/component_manager"
+    <project name="component_manager"
              path="apps/component_manager"
              remote="https://fuchsia.googlesource.com/component_manager"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="apps/dart_content_handler"
+    <project name="dart_content_handler"
              path="apps/dart_content_handler"
              remote="https://fuchsia.googlesource.com/dart_content_handler"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="apps/fonts"
+    <project name="fonts"
              path="apps/fonts"
              remote="https://fuchsia.googlesource.com/fonts"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              runhook="apps/fonts/update.sh"/>
-    <project name="apps/icu_data"
+    <project name="icu_data"
              path="apps/icu_data"
              remote="https://fuchsia.googlesource.com/icu_data"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="apps/ledger"
+    <project name="ledger"
              path="apps/ledger"
              remote="https://fuchsia.googlesource.com/ledger"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="apps/logging"
+    <project name="logging"
              path="apps/logging"
              remote="https://fuchsia.googlesource.com/logging"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="apps/maxwell"
+    <project name="maxwell"
              path="apps/maxwell"
              remote="https://fuchsia.googlesource.com/maxwell"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="apps/media"
+    <project name="media"
              path="apps/media"
              remote="https://fuchsia.googlesource.com/media"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="apps/modular"
+    <project name="modular"
              path="apps/modular"
              remote="https://fuchsia.googlesource.com/modular"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="apps/moterm"
+    <project name="moterm"
              path="apps/moterm"
              remote="https://fuchsia.googlesource.com/moterm"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="apps/mozart"
+    <project name="mozart"
              path="apps/mozart"
              remote="https://fuchsia.googlesource.com/mozart"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="apps/native_viewport"
+    <project name="native_viewport"
              path="apps/native_viewport"
              remote="https://fuchsia.googlesource.com/native_viewport"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="apps/netstack"
+    <project name="netstack"
              path="apps/netstack"
              remote="https://fuchsia.googlesource.com/netstack"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="apps/network"
+    <project name="network"
              path="apps/network"
              remote="https://fuchsia.googlesource.com/network"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="apps/tracing"
+    <project name="tracing"
              path="apps/tracing"
              remote="https://fuchsia.googlesource.com/tracing"
              gerrithost="https://fuchsia-review.googlesource.com"
