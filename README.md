@@ -36,7 +36,7 @@ jiri update
 First, you need to build Magenta:
 
 ```
-(cd magenta; ./scripts/build-magenta-x86-64)
+./magenta/scripts/build-magenta-x86-64
 ```
 
 Next, you need to build a sysroot:
