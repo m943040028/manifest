@@ -128,6 +128,11 @@
 
     <!-- Applications -->
 
+    <project name="apps/component_manager"
+             path="apps/component_manager"
+             remote="https://fuchsia.googlesource.com/component_manager"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="apps/dart_content_handler"
              path="apps/dart_content_handler"
              remote="https://fuchsia.googlesource.com/dart_content_handler"
