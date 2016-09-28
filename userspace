@@ -88,7 +88,8 @@
              path="lib/escher"
              remote="https://fuchsia.googlesource.com/escher"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
+             githooks="manifest/git-hooks"
+             runhook="lib/escher/scripts/download-vulkan-sdk"/>
     <project name="external/github.com/flutter/flutter"
              path="lib/flutter"
              remote="https://chromium.googlesource.com/external/github.com/flutter/flutter/" />
