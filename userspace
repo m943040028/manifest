@@ -11,10 +11,10 @@
              githooks="manifest/git-hooks"/>
     <project name="external/github.com/dart-lang/sdk"
              path="dart"
-             remote="https://chromium.googlesource.com/external/github.com/dart-lang/sdk/"/>
+             remote="https://chromium.googlesource.com/external/github.com/dart-lang/sdk"/>
     <project name="external/github.com/flutter/engine"
              path="flutter"
-             remote="https://chromium.googlesource.com/external/github.com/flutter/engine/" />
+             remote="https://chromium.googlesource.com/external/github.com/flutter/engine"/>
     <project name="magma"
              path="magma"
              remote="https://fuchsia.googlesource.com/magma"
@@ -91,7 +91,7 @@
              githooks="manifest/git-hooks"/>
     <project name="external/github.com/flutter/flutter"
              path="lib/flutter"
-             remote="https://chromium.googlesource.com/external/github.com/flutter/flutter/" />
+             remote="https://chromium.googlesource.com/external/github.com/flutter/flutter"/>
     <project name="ftl"
              path="lib/ftl"
              remote="https://fuchsia.googlesource.com/ftl"
