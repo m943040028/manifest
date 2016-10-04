@@ -166,34 +166,11 @@ can be landed in Gerrit at the same time with `Submit Whole Topic`.
 
 ## Building toolchain
 
-Create a new checkout, while this is similar to the Fuchsia checkout, there are
-some notable differences in particular around environment setup.
+To build Fuchsia toolchain, you can use the `scripts/build-toolchain.sh`
+script as follows:
 
-```sh
-curl -s https://raw.githubusercontent.com/fuchsia-mirror/jiri/master/scripts/bootstrap_jiri | bash -s sdk
-cd sdk
-export PATH=`pwd`/.jiri_root/scripts:$PATH
-jiri import sdk https://fuchsia.googlesource.com/manifest
-jiri update
 ```
-
-Setup your environment:
-
-```sh
-export PATH=`pwd`/buildtools:`pwd`/buildtools/cmake/bin:`pwd`/.jiri_root/bin:$PATH
-```
-
-Now, you can build the toolchain using the following commands:
-
-```sh
-# create an output directory
-mkdir -p out
-
-# generate the ninja build file
-toyen -src . -out out packages/blueprint/root.bp
-
-# build the toolchain
-ninja -C out toolchain
+./scripts/build-toolchain.sh
 ```
 
 After the build finishes, you can find the built toolchain in `out/toolchain`.
@@ -208,76 +185,7 @@ commands:
 # update
 jiri update
 
-# cleanup the artifacts from the previous build
-ninja -C out toolchain-distclean
-
-# build the toolchain
-ninja -C out toolchain
+# cleanup the artifacts from the previous build and rebuild the
+toolchain
+./scripts/build-toolchain.sh -c
 ```
-
-## Building sysroot
-
-To build Fuchsia sysroot for either x86-64 or AArch64, you can use the same
-checkout as for building the toolchain.
-
-```sh
-curl -s https://raw.githubusercontent.com/fuchsia-mirror/jiri/master/scripts/bootstrap_jiri | bash -s sdk
-cd sdk
-export PATH=`pwd`/.jiri_root/scripts:$PATH
-jiri import sdk https://fuchsia.googlesource.com/manifest
-jiri update
-```
-
-Setup your environment:
-
-```sh
-export PATH=`pwd`/buildtools:`pwd`/buildtools/cmake/bin:`pwd`/.jiri_root/bin:$PATH
-```
-
-To build the sysroot for both architectures, you can use the following commands:
-
-```sh
-# create an output directory
-mkdir -p out
-
-# generate the ninja build file
-toyen -src . -out out packages/blueprint/root.bp
-
-# build the sysroot using ninja
-ninja -C out sysroot
-```
-
-The sysroots for both architectures end up in `out/sysroot`.
-
-When the sources get updated, you can rebuild the toolchain using the following
-commands:
-
-```sh
-# update
-jiri update
-
-# cleanup the artifacts from the previous build
-ninja -C out sysroot-distclean
-
-# build the toolchain
-ninja -C out sysroot
-```
-
-## Clang based toolchain for building Magenta
-
-The Clang toolchain which is used for building Fuchsia cannot build Magenta at
-the moment as the kernel build uses a linker script which relies on a behavior
-not (yet) supported by LLD linker, which is the default linker used by the Clang
-toolchain.
-
-To work around this limitation, in case you want to build Magenta using Clang,
-e.g. for development or testing purposes, you can build Binutils and use the GNU
-linker together with Clang. To build binutils, you can use the following targets
-in your toolchain checkout:
-
-```sh
-ninja -C out binutils
-```
-
-Now, you can use the Binutils from `out/binutils-<platform>` for building the
-Magenta.
