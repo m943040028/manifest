@@ -155,6 +155,11 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              runhook="apps/fonts/update.sh"/>
+    <project name="apps/icu_data"
+             path="apps/icu_data"
+             remote="https://fuchsia.googlesource.com/icu_data"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="apps/ledger"
              path="apps/ledger"
              remote="https://fuchsia.googlesource.com/ledger"
