@@ -33,11 +33,12 @@ jiri update
 
 ## Building Fuchsia
 
-First, you need to build Magenta:
-
-```
-(cd magenta; ./scripts/build-magenta-x86-64)
-```
+First, follow Magenta's
+[instructions](https://fuchsia.googlesource.com/magenta/+/master/docs/getting_started.md#Preparing-the-build-environment)
+from "Preparing the build environment" up through "Build Magenta". It isn't
+necessary to check out the Magenta and QEMU sources, they are included in the
+Fuchsia manifest. Note, building QEMU isn't strictly required if you're only
+developing on actual hardware, but it is a good tool to have at the ready.
 
 Next, you need to build a sysroot:
 
@@ -59,7 +60,8 @@ Finally, you can build Fuchsia using these commands:
 ./buildtools/ninja -j1000 -C out/debug-x86-64
 ```
 
-You can set target cpu by using --target\_cpu
+The gen.py script takes an optional parameter '--target\_cpu' to set the target
+architecture. If not supplied, it defaults to x86-64.
 
 ```
 ./packages/gn/gen.py --target_cpu=aarch64
@@ -72,10 +74,9 @@ argument. After running `gen.py` once, you can do incremental builds using
 
 ### Running Fuchsia
 
-These commands will create an `out/debug-{arch}/user.bootfs` file. After you've got
-Magenta building (see [Magenta's getting started
-guide](https://fuchsia.googlesource.com/magenta/+/HEAD/docs/getting_started.md)),
-you can boot using `user.bootfs` with the following command:
+These commands will create an `out/debug-{arch}/user.bootfs` file. To run the
+system with this filesystem attached in QEMU, pass the user.bootfs path as the
+value of the '-x' parameter in Magenta's start command script, for example:
 
 ```
 cd magenta
