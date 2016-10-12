@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <imports>
+    <localimport file="go"/>
+  </imports>
+  <projects>
+    <project name="thinfs"
+             path="apps/thinfs"
+             remote="https://fuchsia.googlesource.com/thinfs"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+  </projects>
+</manifest>
