@@ -5,9 +5,15 @@
   </imports>
   <projects>
     <project name="thinfs"
-             path="apps/thinfs"
+             path="go/src/fuchsia.googlesource.com/thinfs"
              remote="https://fuchsia.googlesource.com/thinfs"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="glog"
+             path="go/src/fuchsia.googlesource.com/thinfs/vendor/github.com/golang/glog"
+             remote="https://github.com/golang/glog"/>
+    <project name="errors"
+             path="go/src/fuchsia.googlesource.com/thinfs/vendor/github.com/pkg/errors"
+             remote="https://github.com/pkg/errors"/>
   </projects>
 </manifest>
