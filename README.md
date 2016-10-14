@@ -28,7 +28,7 @@ these steps.
 ```
 curl -s https://raw.githubusercontent.com/fuchsia-mirror/jiri/master/scripts/bootstrap_jiri | bash -s fuchsia
 cd fuchsia
-export PATH=`pwd`/.jiri_root/scripts:$PATH
+export PATH=`pwd`/.jiri_root/bin:$PATH
 jiri import fuchsia https://fuchsia.googlesource.com/manifest
 jiri update
 ```
@@ -39,7 +39,7 @@ If you don't like having to mangle your environment variables, and you want `jir
 to "just work" depending on your current working directory, there's a shim for that.
 
 ```
-sudo cp .jiri_root/scripts/jiri /usr/local/bin
+sudo cp .jiri_root/bin/jiri /usr/local/bin
 sudo chmod 755 /usr/local/bin/jiri
 ```
 
