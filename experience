@@ -15,9 +15,4 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
   </projects>
-  <hooks>
-    <hook name="install_flutter"
-          project="sysui"
-          action="tools/install_flutter.sh"/>
-  </hooks>
 </manifest>
