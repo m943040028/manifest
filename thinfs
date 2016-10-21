@@ -11,9 +11,9 @@
              githooks="manifest/git-hooks"/>
     <project name="glog"
              path="go/src/fuchsia.googlesource.com/thinfs/vendor/github.com/golang/glog"
-             remote="https://github.com/golang/glog"/>
+             remote="https://fuchsia.googlesource.com/third_party/golang/glog"/>
     <project name="errors"
              path="go/src/fuchsia.googlesource.com/thinfs/vendor/github.com/pkg/errors"
-             remote="https://github.com/pkg/errors"/>
+             remote="https://fuchsia.googlesource.com/third_party/pkg/errors"/>
   </projects>
 </manifest>
