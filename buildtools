@@ -4,15 +4,10 @@
     <localimport file="minimal"/>
   </imports>
   <projects>
-    <project name="third_party/cmake"
-             remote="https://fuchsia.googlesource.com/third_party/cmake"
+    <project name="buildtools"
+             path="buildtools"
+             remote="https://fuchsia.googlesource.com/buildtools"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             path="third_party/cmake"/>
-    <project name="third_party/ninja"
-             remote="https://fuchsia.googlesource.com/third_party/ninja"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             path="third_party/ninja"/>
+             githooks="manifest/git-hooks"/>
   </projects>
 </manifest>
