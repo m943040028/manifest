@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <imports>
-    <localimport file="buildtools"/>
+    <localimport file="build"/>
+    <localimport file="drivers"/>
     <localimport file="thinfs"/>
   </imports>
   <projects>
@@ -45,32 +46,6 @@
     <project name="scripts"
              path="scripts"
              remote="https://fuchsia.googlesource.com/scripts"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-
-    <!-- Build System -->
-
-    <project name="build"
-             path="build"
-             remote="https://fuchsia.googlesource.com/build"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="packages"
-             path="packages"
-             remote="https://fuchsia.googlesource.com/packages"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="scripts"
-             path="scripts"
-             remote="https://fuchsia.googlesource.com/scripts"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-
-    <!-- Drivers -->
-
-    <project name="msd-intel-gen"
-             path="driver/msd-intel-gen"
-             remote="https://fuchsia.googlesource.com/msd-intel-gen"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
 
@@ -403,9 +378,6 @@
     <hook name="update"
           project="third_party/depthcharge"
           action="update.sh"/>
-    <hook name="update-prebuilts"
-          project="packages"
-          action="update-prebuilts.sh"/>
     <hook name="download-vulkan-sdk"
           project="escher"
           action="scripts/download-vulkan-sdk"/>

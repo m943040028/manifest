@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <imports>
+    <localimport file="minimal"/>
+    <localimport file="buildtools"/>
+  </imports>
+  <projects>
+    <project name="build"
+             path="build"
+             remote="https://fuchsia.googlesource.com/build"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="packages"
+             path="packages"
+             remote="https://fuchsia.googlesource.com/packages"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="scripts"
+             path="scripts"
+             remote="https://fuchsia.googlesource.com/scripts"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+  </projects>
+  <hooks>
+    <hook name="update-prebuilts"
+          project="packages"
+          action="update-prebuilts.sh"/>
+  </hooks>
+</manifest>
