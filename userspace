@@ -403,9 +403,6 @@
     <hook name="update"
           project="third_party/depthcharge"
           action="update.sh"/>
-    <hook name="update"
-          project="buildtools"
-          action="update.sh"/>
     <hook name="update-prebuilts"
           project="packages"
           action="update-prebuilts.sh"/>
