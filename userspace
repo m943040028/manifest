@@ -223,11 +223,6 @@
              remote="https://fuchsia.googlesource.com/third_party/depthcharge"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="third_party/dosfstools"
-             path="third_party/dosfstools"
-             remote="https://fuchsia.googlesource.com/third_party/dosfstools"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="third_party/dropbear"
              path="third_party/dropbear"
              remote="https://fuchsia.googlesource.com/third_party/dropbear"
