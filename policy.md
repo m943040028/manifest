@@ -1,6 +1,6 @@
 # Policies for manifests
 
-This document describes policies about we structure our manifests.
+This document describes policies for structuring our manifests.
 
  * If members of the Fuchsia project do not have the authority to revert changes
    in a repository, that repository must be pinned to a specific git hash. This
