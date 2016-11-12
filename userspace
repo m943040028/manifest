@@ -373,9 +373,6 @@
           project="modules"
           action="tools/update.sh"/>
     <hook name="update"
-          project="mojo/public"
-          action="update.sh"/>
-    <hook name="update"
           project="third_party/depthcharge"
           action="update.sh"/>
   </hooks>
