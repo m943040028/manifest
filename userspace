@@ -13,6 +13,7 @@
              githooks="manifest/git-hooks"/>
     <project name="external/github.com/dart-lang/sdk"
              path="dart"
+             revision="12e2244310e387315e437b49e09865a43da17dec"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/sdk"/>
     <project name="external/github.com/flutter/engine"
              path="flutter"
