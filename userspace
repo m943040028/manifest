@@ -138,7 +138,8 @@
              path="apps/modular"
              remote="https://fuchsia.googlesource.com/modular"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
+             githooks="manifest/git-hooks"
+             revision="a06aaca6c3180f3b334311d2d0916b9d0df265ac"/>
     <project name="modules"
              path="apps/modules"
              remote="https://fuchsia.googlesource.com/modules"
