@@ -155,20 +155,13 @@
     ]
   },
   {
-    "cmd": [],
-    "name": "build sysroot"
-  },
-  {
     "cmd": [
       "scripts/build-sysroot.sh",
       "-c",
       "-t",
       "x86_64"
     ],
-    "name": "build sysroot.build",
-    "~followup_annotations": [
-      "@@@STEP_NEST_LEVEL@1@@@"
-    ]
+    "name": "build sysroot"
   },
   {
     "cmd": [],

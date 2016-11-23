@@ -156,22 +156,11 @@
   },
   {
     "cmd": [
-      "[CACHE]/cipd/jiri",
-      "patch",
-      "-host",
-      "fuchsia-review.googlesource.com",
-      "-delete=true",
-      "-force=true",
-      "refs/changes/89/456789/12"
-    ],
-    "name": "jiri patch"
-  },
-  {
-    "cmd": [
       "scripts/build-sysroot.sh",
       "-c",
       "-t",
-      "x86_64"
+      "x86_64",
+      "-r"
     ],
     "name": "build sysroot"
   },
@@ -199,7 +188,8 @@
     "cmd": [
       "packages/gn/gen.py",
       "--target_cpu=x86-64",
-      "--goma=[CACHE]/cipd/goma"
+      "--goma=[CACHE]/cipd/goma",
+      "--release"
     ],
     "name": "build Fuchsia.gen",
     "~followup_annotations": [
@@ -238,7 +228,7 @@
     "cmd": [
       "buildtools/ninja",
       "-C",
-      "out/debug-x86-64",
+      "out/release-x86-64",
       "-j",
       "50"
     ],

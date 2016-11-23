@@ -29,11 +29,19 @@ PROPERTIES = {
     'manifest': Property(kind=str, help='Jiri manifest to use'),
     'remote': Property(kind=str, help='Remote manifest repository'),
     'target': Property(kind=str, help='Target to build'),
+    'build_type': Property(
+        kind=str,
+        help='The build type. Possible values are "debug" and "release"',
+        default='debug')
 }
 
 
 def RunSteps(api, category, patch_gerrit_url, patch_project, patch_ref,
-             patch_storage, patch_repository_url, manifest, remote, target):
+             patch_storage, patch_repository_url, manifest, remote, target,
+             build_type):
+    assert build_type in ['debug', 'release'], \
+        'Invalid value for \'build_type\': "%s"' % build_type
+
     api.goma.ensure_goma()
     api.jiri.ensure_jiri()
 
@@ -52,26 +60,47 @@ def RunSteps(api, category, patch_gerrit_url, patch_project, patch_ref,
 
     sysroot_target = {'arm64': 'aarch64', 'x86-64': 'x86_64'}[target]
 
-    with api.step.nest('build sysroot'):
-        api.step('build',
-                 ['scripts/build-sysroot.sh', '-c', '-t', sysroot_target])
+    # Just default to "debug" for invalid values of |build_type|.
+    release_build = (build_type == 'release')
+    out_dir_prefix = 'out/release-%s' if release_build else 'out/debug-%s'
+
+    # Step: build sysroot
+    build_sysroot_cmd_params = \
+        ['scripts/build-sysroot.sh', '-c', '-t', sysroot_target]
+    if release_build:
+      build_sysroot_cmd_params.append('-r')
+
+    api.step('build sysroot', build_sysroot_cmd_params)
 
     fuchsia_target = {'arm64': 'aarch64', 'x86-64': 'x86-64'}[target]
 
+    # Step: build Fuchsia
     with api.step.nest('build Fuchsia'), api.goma.build_with_goma():
-        api.step('gen',
-                 ['packages/gn/gen.py', '--target_cpu=%s' % fuchsia_target,
-                  '--goma=%s' % api.goma.goma_dir])
+        gen_cmd_params = [
+            'packages/gn/gen.py',
+            '--target_cpu=%s' % fuchsia_target,
+            '--goma=%s' % api.goma.goma_dir
+        ]
+        if release_build:
+          gen_cmd_params.append('--release')
+
+        api.step('gen', gen_cmd_params)
         api.step('ninja',
-                 ['buildtools/ninja', '-C', 'out/debug-%s' % fuchsia_target,
+                 ['buildtools/ninja', '-C', out_dir_prefix % fuchsia_target,
                   '-j', api.goma.recommended_goma_jobs])
 
 
 def GenTests(api):
-    yield api.test('scheduler') + api.properties(
+    yield api.test('scheduler-debug') + api.properties(
         manifest='fuchsia',
         remote='https://fuchsia.googlesource.com/manifest',
         target='x86-64',
+    )
+    yield api.test('scheduler-release') + api.properties(
+        manifest='fuchsia',
+        remote='https://fuchsia.googlesource.com/manifest',
+        target='x86-64',
+        build_type='release',
     )
     yield api.test('cq') + api.properties.tryserver(
         gerrit_project='manifest',
