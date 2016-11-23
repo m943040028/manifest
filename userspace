@@ -321,6 +321,9 @@
              remote="https://fuchsia.googlesource.com/third_party/re2"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="external/github.com/dart-lang/root_certificates"
+             path="third_party/root_certificates"
+             remote="https://chromium.googlesource.com/external/github.com/dart-lang/root_certificates"/>
     <project name="third_party/skia"
              path="third_party/skia"
              remote="https://fuchsia.googlesource.com/third_party/skia"
