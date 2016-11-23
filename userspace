@@ -324,11 +324,10 @@
     <project name="external/github.com/dart-lang/root_certificates"
              path="third_party/root_certificates"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/root_certificates"/>
-    <project name="third_party/skia"
+    <project name="external/skia.googlesource.com/skia"
              path="third_party/skia"
-             remote="https://fuchsia.googlesource.com/third_party/skia"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
+             remote="https://skia.googlesource.com/skia"
+             revision="130a118cc68f8f9973e9572356011de378463fea"/>
     <project name="third_party/snappy"
              path="third_party/snappy"
              remote="https://fuchsia.googlesource.com/third_party/snappy"
