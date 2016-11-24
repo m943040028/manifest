@@ -192,6 +192,10 @@
              remote="https://fuchsia.googlesource.com/third_party/boringssl"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="external/github.com/catapult-project/catapult"
+             path="third_party/catapult"
+             remote="https://chromium.googlesource.com/external/github.com/catapult-project/catapult"
+             revision="9640c01626ae5332ffd034aa1ac2cfdaf3ffdfdf"/>
     <project name="third_party/dart-pkg"
              path="third_party/dart-pkg"
              remote="https://fuchsia.googlesource.com/third_party/dart-pkg"
