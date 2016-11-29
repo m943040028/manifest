@@ -21,9 +21,4 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
   </projects>
-  <hooks>
-    <hook name="update-prebuilts"
-          project="packages"
-          action="update-prebuilts.sh"/>
-  </hooks>
 </manifest>
