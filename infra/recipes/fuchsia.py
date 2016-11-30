@@ -4,6 +4,7 @@
 
 """Recipe for building Fuchsia."""
 
+from recipe_engine.config import List
 from recipe_engine.recipe_api import Property
 
 
@@ -32,13 +33,14 @@ PROPERTIES = {
     'build_type': Property(
         kind=str,
         help='The build type. Possible values are "debug" and "release"',
-        default='debug')
+        default='debug'),
+    'modules': Property(kind=List(str), help='Packages to build', default=[])
 }
 
 
 def RunSteps(api, category, patch_gerrit_url, patch_project, patch_ref,
              patch_storage, patch_repository_url, manifest, remote, target,
-             build_type):
+             build_type, modules):
     assert build_type in ['debug', 'release'], \
         'Invalid value for \'build_type\': "%s"' % build_type
 
@@ -68,7 +70,7 @@ def RunSteps(api, category, patch_gerrit_url, patch_project, patch_ref,
     build_sysroot_cmd_params = \
         ['scripts/build-sysroot.sh', '-c', '-t', sysroot_target]
     if release_build:
-      build_sysroot_cmd_params.append('-r')
+        build_sysroot_cmd_params.append('-r')
 
     api.step('build sysroot', build_sysroot_cmd_params)
 
@@ -82,7 +84,9 @@ def RunSteps(api, category, patch_gerrit_url, patch_project, patch_ref,
             '--goma=%s' % api.goma.goma_dir
         ]
         if release_build:
-          gen_cmd_params.append('--release')
+            gen_cmd_params.append('--release')
+        if modules:
+            gen_cmd_params.append('--modules %s' % ','.join(modules))
 
         api.step('gen', gen_cmd_params)
         api.step('ninja',
@@ -95,6 +99,7 @@ def GenTests(api):
         manifest='fuchsia',
         remote='https://fuchsia.googlesource.com/manifest',
         target='x86-64',
+        modules=['foo', 'bar'],
     )
     yield api.test('scheduler-release') + api.properties(
         manifest='fuchsia',

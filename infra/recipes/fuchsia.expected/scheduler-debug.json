@@ -187,7 +187,8 @@
     "cmd": [
       "packages/gn/gen.py",
       "--target_cpu=x86-64",
-      "--goma=[CACHE]/cipd/goma"
+      "--goma=[CACHE]/cipd/goma",
+      "--modules foo,bar"
     ],
     "name": "build Fuchsia.gen",
     "~followup_annotations": [
