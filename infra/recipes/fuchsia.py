@@ -86,7 +86,7 @@ def RunSteps(api, category, patch_gerrit_url, patch_project, patch_ref,
         if release_build:
             gen_cmd_params.append('--release')
         if modules:
-            gen_cmd_params.append('--modules %s' % ','.join(modules))
+            gen_cmd_params.append('--modules=%s' % ','.join(modules))
 
         api.step('gen', gen_cmd_params)
         api.step('ninja',
