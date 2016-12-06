@@ -13,9 +13,9 @@
              remote="https://fuchsia.googlesource.com/magma"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="msd-intel-gen"
-             path="driver/msd-intel-gen"
-             remote="https://fuchsia.googlesource.com/msd-intel-gen"
+    <project name="drivers/gpu/msd-intel-gen"
+             path="drivers/gpu/msd-intel-gen"
+             remote="https://fuchsia.googlesource.com/drivers/gpu/msd-intel-gen"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="drivers/wifi"
