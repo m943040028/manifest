@@ -56,7 +56,7 @@
     <project name="dart/third_party/pkg/linter"
              path="dart/third_party/pkg/linter"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/linter.git"
-             revision="17870d56361a95831e1ab32c82a0851ffe34c82b"/>
+             revision="592e0f66957df2e548f9f9c788ee384f596fea4e"/>
 
     <project name="dart/third_party/pkg/shelf_web_socket"
              path="dart/third_party/pkg/shelf_web_socket"
