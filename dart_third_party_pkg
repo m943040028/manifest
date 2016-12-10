@@ -56,7 +56,7 @@
     <project name="dart/third_party/pkg/linter"
              path="dart/third_party/pkg/linter"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/linter.git"
-             revision="592e0f66957df2e548f9f9c788ee384f596fea4e"/>
+             revision="ef345064ac261b41c46ea7ae4f3b81f12307d32e"/>
 
     <project name="dart/third_party/pkg/shelf_web_socket"
              path="dart/third_party/pkg/shelf_web_socket"
@@ -316,7 +316,7 @@
     <project name="dart/third_party/pkg/pub"
              path="dart/third_party/pkg/pub"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/pub.git"
-             revision="3dd04bd17ba269ccdd34502a253041dd96ded3be"/>
+             revision="9309be93140638fb19903648d07de59681a08989"/>
 
     <project name="dart/third_party/pkg/plugin"
              path="dart/third_party/pkg/plugin"
