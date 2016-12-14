@@ -357,6 +357,11 @@
              remote="https://fuchsia.googlesource.com/third_party/benchmark"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="third_party/glog"
+             path="third_party/glog"
+             remote="https://fuchsia.googlesource.com/third_party/glog"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="third_party/vboot_reference"
              path="third_party/vboot_reference"
              remote="https://fuchsia.googlesource.com/third_party/vboot_reference"
