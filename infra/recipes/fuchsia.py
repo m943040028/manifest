@@ -34,7 +34,8 @@ PROPERTIES = {
         kind=str,
         help='The build type. Possible values are "debug" and "release"',
         default='debug'),
-    'modules': Property(kind=List(str), help='Packages to build', default=[])
+    'modules': Property(kind=List(basestring), help='Packages to build',
+                        default=[])
 }
 
 
