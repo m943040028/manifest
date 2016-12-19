@@ -125,7 +125,6 @@ commands:
 # update
 jiri update
 
-# cleanup the artifacts from the previous build and rebuild the
-toolchain
+# cleanup the artifacts from the previous build and rebuild the toolchain
 ./scripts/build-toolchain.sh -c
 ```
