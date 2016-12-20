@@ -11,18 +11,6 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              path="packages"/>
-    <project name="toyen"
-             remote="https://fuchsia.googlesource.com/toyen"
-             remotebranch="blueprint"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             path="go/src/fuchsia.googlesource.com/toyen"/>
-    <project name="blueprint"
-             remote="https://fuchsia.googlesource.com/third_party/blueprint"
-             remotebranch="master"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             path="go/src/github.com/google/blueprint"/>
     <project name="third_party/binutils-gdb"
              remote="https://fuchsia.googlesource.com/third_party/binutils-gdb"
              gerrithost="https://fuchsia-review.googlesource.com"
@@ -69,9 +57,4 @@
              githooks="manifest/git-hooks"
              path="third_party/llvm/runtimes/libunwind"/>
   </projects>
-  <tools>
-    <tool name="toyen"
-          package="fuchsia.googlesource.com/toyen"
-          project="toyen"/>
-  </tools>
 </manifest>
