@@ -74,9 +74,4 @@
           package="fuchsia.googlesource.com/toyen"
           project="toyen"/>
   </tools>
-  <hooks>
-    <hook name="update"
-          project="buildtools"
-          action="update.sh"/>
-  </hooks>
 </manifest>
