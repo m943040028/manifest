@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <imports>
+    <localimport file="minimal"/>
+  </imports>
+  <projects>
+    <project name="mxruntime"
+             path="rust/mxruntime"
+             remote="https://fuchsia.googlesource.com/mxruntime"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="magenta-rs"
+             path="rust/magenta-rs"
+             remote="https://fuchsia.googlesource.com/magenta-rs"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="xi-editor"
+             path="apps/xi"
+             remote="https://github.com/jxson/xi-editor"
+             revision="8b2bea9051733d594bdd96c70278ed852ad2d156"/>
+  </projects>
+</manifest>
