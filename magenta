@@ -10,6 +10,11 @@
              remote="https://fuchsia.googlesource.com/magenta"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="magenta/benchmarks"
+             path="magenta/benchmarks"
+             remote="https://fuchsia.googlesource.com/magenta/benchmarks"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="third_party/qemu"
              path="third_party/qemu"
              remote="https://fuchsia.googlesource.com/third_party/qemu"/>
