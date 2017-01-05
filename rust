@@ -14,9 +14,10 @@
              remote="https://fuchsia.googlesource.com/magenta-rs"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="xi-editor"
-             path="apps/xi"
-             remote="https://github.com/jxson/xi-editor"
-             revision="8b2bea9051733d594bdd96c70278ed852ad2d156"/>
+    <project name="xi"
+            path="apps/xi"
+            remote="https://fuchsia.googlesource.com/xi"
+            gerrithost="https://fuchsia-review.googlesource.com"
+            githooks="manifest/git-hooks"/>
   </projects>
 </manifest>
