@@ -56,7 +56,7 @@
     <project name="dart/third_party/pkg/linter"
              path="dart/third_party/pkg/linter"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/linter.git"
-             revision="ef345064ac261b41c46ea7ae4f3b81f12307d32e"/>
+             revision="bde08fddf7a24e73d788e62b1725e4db95533269"/>
 
     <project name="dart/third_party/pkg/shelf_web_socket"
              path="dart/third_party/pkg/shelf_web_socket"
@@ -71,7 +71,7 @@
     <project name="dart/third_party/pkg/path"
              path="dart/third_party/pkg/path"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/path.git"
-             revision="1.3.9"/>
+             revision="1.4.1"/>
 
     <project name="dart/third_party/pkg_tested/package_config"
              path="dart/third_party/pkg_tested/package_config"
@@ -231,7 +231,7 @@
     <project name="dart/third_party/pkg/dartdoc"
              path="dart/third_party/pkg/dartdoc"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/dartdoc.git"
-             revision="v0.9.8"/>
+             revision="v0.9.8+1"/>
 
     <project name="dart/third_party/pkg/source_span"
              path="dart/third_party/pkg/source_span"
@@ -316,7 +316,7 @@
     <project name="dart/third_party/pkg/pub"
              path="dart/third_party/pkg/pub"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/pub.git"
-             revision="9309be93140638fb19903648d07de59681a08989"/>
+             revision="d7649be15213c43669a40c33af516d8eb210e876"/>
 
     <project name="dart/third_party/pkg/plugin"
              path="dart/third_party/pkg/plugin"
@@ -331,7 +331,7 @@
     <project name="dart/third_party/pkg_tested/package_resolver"
              path="dart/third_party/pkg_tested/package_resolver"
              remote="https://github.com/dart-lang/package_resolver.git"
-             revision="1.0.2"/>
+             revision="1.0.2+1"/>
 
     <project name="dart/third_party/pkg/typed_data"
              path="dart/third_party/pkg/typed_data"
