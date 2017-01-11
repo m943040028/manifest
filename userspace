@@ -100,6 +100,11 @@
 
     <!-- Applications -->
 
+    <project name="bluetooth"
+             path="apps/bluetooth"
+             remote="https://fuchsia.googlesource.com/bluetooth"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="component_manager"
              path="apps/component_manager"
              remote="https://fuchsia.googlesource.com/component_manager"
