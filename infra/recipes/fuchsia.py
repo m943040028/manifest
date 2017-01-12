@@ -6,7 +6,7 @@
 
 import re
 
-from recipe_engine.config import List
+from recipe_engine.config import Enum, List
 from recipe_engine.recipe_api import Property
 
 
@@ -19,7 +19,7 @@ DEPS = [
     'recipe_engine/step',
 ]
 
-TARGETS = [ 'arm64', 'x86-64' ]
+TARGETS = ['arm64', 'x86-64']
 
 PROPERTIES = {
     'category': Property(kind=str, help='Build category', default=None),
@@ -28,14 +28,12 @@ PROPERTIES = {
     'patch_ref': Property(kind=str, help='Gerrit patch ref', default=None),
     'patch_storage': Property(kind=str, help='Patch location', default=None),
     'patch_repository_url': Property(kind=str, help='URL to a Git repository',
-                              default=None),
+                                     default=None),
     'manifest': Property(kind=str, help='Jiri manifest to use'),
     'remote': Property(kind=str, help='Remote manifest repository'),
-    'target': Property(kind=str, help='Target to build'),
-    'build_type': Property(
-        kind=str,
-        help='The build type. Possible values are "debug" and "release"',
-        default='debug'),
+    'target': Property(kind=Enum(*TARGETS), help='Target to build'),
+    'build_type': Property(kind=Enum('debug', 'release'), help='The build type',
+                           default='debug'),
     'modules': Property(kind=List(basestring), help='Packages to build',
                         default=[])
 }
@@ -44,24 +42,19 @@ PROPERTIES = {
 def RunSteps(api, category, patch_gerrit_url, patch_project, patch_ref,
              patch_storage, patch_repository_url, manifest, remote, target,
              build_type, modules):
-    assert build_type in ['debug', 'release'], \
-        'Invalid value for \'build_type\': "%s"' % build_type
-
     api.goma.ensure_goma()
     api.jiri.ensure_jiri()
 
-    api.jiri.set_config('fuchsia')
-
     api.jiri.init()
     api.jiri.clean_project()
-    api.jiri.import_manifest(manifest, remote, overwrite=True)
-    api.jiri.update(gc=True)
+    api.jiri.import_manifest(manifest, remote)
+    api.jiri.update()
     step_result = api.jiri.snapshot(api.raw_io.output())
     snapshot = step_result.raw_io.output
     step_result.presentation.logs['jiri.snapshot'] = snapshot.splitlines()
 
     if patch_ref is not None:
-        api.jiri.patch(patch_ref, host=patch_gerrit_url, delete=True, force=True)
+        api.jiri.patch(patch_ref, host=patch_gerrit_url)
 
     sysroot_target = {'arm64': 'aarch64', 'x86-64': 'x86_64'}[target]
 
@@ -95,12 +88,15 @@ def RunSteps(api, category, patch_gerrit_url, patch_project, patch_ref,
         step_result = api.step(
             'ninja',
             ['buildtools/ninja', '-C', out_dir_prefix % fuchsia_target,
-             '-j', api.goma.recommended_goma_jobs])
+             '-j', api.goma.recommended_goma_jobs],
+            stdout=api.raw_io.output(),
+            step_test_data=lambda: api.raw_io.test_api.stream_output(''))
 
-        m = re.findall("([\w./]+:\d+:\d+): warning: '(\w+)' is deprecated",
-                       step_result.raw_io.output)
-        report = '\n'.join('%s: %s' % (n[0], n[1]) for n in m)
-        step_result.presentation.logs['deprecated'] = report
+        match = re.findall("([\w./]+:\d+:\d+): warning: '(\w+)' is deprecated",
+                           step_result.stdout)
+        if match:
+            report = '\n'.join('%s: %s' % (m[0], m[1]) for m in match)
+            step_result.presentation.logs['deprecated'] = report
 
 
 def GenTests(api):
