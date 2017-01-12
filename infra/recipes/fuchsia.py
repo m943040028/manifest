@@ -4,6 +4,8 @@
 
 """Recipe for building Fuchsia."""
 
+import re
+
 from recipe_engine.config import List
 from recipe_engine.recipe_api import Property
 
@@ -90,9 +92,15 @@ def RunSteps(api, category, patch_gerrit_url, patch_project, patch_ref,
             gen_cmd_params.append('--modules=%s' % ','.join(modules))
 
         api.step('gen', gen_cmd_params)
-        api.step('ninja',
-                 ['buildtools/ninja', '-C', out_dir_prefix % fuchsia_target,
-                  '-j', api.goma.recommended_goma_jobs])
+        step_result = api.step(
+            'ninja',
+            ['buildtools/ninja', '-C', out_dir_prefix % fuchsia_target,
+             '-j', api.goma.recommended_goma_jobs])
+
+        m = re.findall("([\w./]+:\d+:\d+): warning: '(\w+)' is deprecated",
+                       step_result.raw_io.output)
+        report = '\n'.join('%s: %s' % (n[0], n[1]) for n in m)
+        step_result.presentation.logs['deprecated'] = report
 
 
 def GenTests(api):
