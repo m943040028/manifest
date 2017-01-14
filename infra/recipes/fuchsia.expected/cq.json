@@ -245,7 +245,6 @@
       "50"
     ],
     "name": "build Fuchsia.ninja",
-    "stdout": "/path/to/tmp/",
     "~followup_annotations": [
       "@@@STEP_NEST_LEVEL@1@@@"
     ]

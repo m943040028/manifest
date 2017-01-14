@@ -85,18 +85,10 @@ def RunSteps(api, category, patch_gerrit_url, patch_project, patch_ref,
             gen_cmd_params.append('--modules=%s' % ','.join(modules))
 
         api.step('gen', gen_cmd_params)
-        step_result = api.step(
+        api.step(
             'ninja',
             ['buildtools/ninja', '-C', out_dir_prefix % fuchsia_target,
-             '-j', api.goma.recommended_goma_jobs],
-            stdout=api.raw_io.output(),
-            step_test_data=lambda: api.raw_io.test_api.stream_output(''))
-
-        match = re.findall("([\w./]+:\d+:\d+): warning: '(\w+)' is deprecated",
-                           step_result.stdout)
-        if match:
-            report = '\n'.join('%s: %s' % (m[0], m[1]) for m in match)
-            step_result.presentation.logs['deprecated'] = report
+             '-j', api.goma.recommended_goma_jobs])
 
 
 def GenTests(api):
