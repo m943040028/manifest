@@ -8,6 +8,11 @@
     <localimport file="thinfs"/>
   </imports>
   <projects>
+    <project name="application"
+             path="application"
+             remote="https://fuchsia.googlesource.com/application"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="docs"
              path="docs"
              remote="https://fuchsia.googlesource.com/docs"
