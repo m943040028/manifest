@@ -2,9 +2,10 @@
 <manifest>
   <imports>
     <localimport file="build"/>
-    <localimport file="dart_third_party_pkg"/>
     <localimport file="drivers"/>
     <localimport file="ledger"/>
+    <localimport file="runtimes/cpp"/>
+    <localimport file="runtimes/dart"/>
     <localimport file="thinfs"/>
   </imports>
   <projects>
@@ -18,9 +19,6 @@
              remote="https://fuchsia.googlesource.com/docs"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="external/github.com/dart-lang/sdk"
-             path="dart"
-             remote="https://chromium.googlesource.com/external/github.com/dart-lang/sdk"/>
     <project name="external/github.com/flutter/engine"
              path="flutter"
              remote="https://chromium.googlesource.com/external/github.com/flutter/engine"/>
@@ -63,11 +61,6 @@
     <project name="mtl"
              path="lib/mtl"
              remote="https://fuchsia.googlesource.com/mtl"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="tonic"
-             path="lib/tonic"
-             remote="https://fuchsia.googlesource.com/tonic"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="url"
@@ -126,11 +119,6 @@
              remote="https://fuchsia.googlesource.com/contacts"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="dart_content_handler"
-             path="apps/dart_content_handler"
-             remote="https://fuchsia.googlesource.com/dart_content_handler"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="email"
              path="apps/email"
              remote="https://fuchsia.googlesource.com/email"
@@ -186,11 +174,6 @@
              remote="https://fuchsia.googlesource.com/netconnector"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="netstack"
-             path="apps/netstack"
-             remote="https://fuchsia.googlesource.com/netstack"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="network"
              path="apps/network"
              remote="https://fuchsia.googlesource.com/network"
@@ -228,11 +211,6 @@
              path="third_party/catapult"
              remote="https://chromium.googlesource.com/external/github.com/catapult-project/catapult"
              revision="9640c01626ae5332ffd034aa1ac2cfdaf3ffdfdf"/>
-    <project name="third_party/dart-pkg"
-             path="third_party/dart-pkg"
-             remote="https://fuchsia.googlesource.com/third_party/dart-pkg"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="third_party/dropbear"
              path="third_party/dropbear"
              remote="https://fuchsia.googlesource.com/third_party/dropbear"
@@ -257,11 +235,6 @@
              path="third_party/glm"
              remote="https://chromium.googlesource.com/external/github.com/g-truc/glm"
              revision="3b1af3fe0b6c9b071dcb5a557b493980bd23c6e4"/>
-    <project name="third_party/go"
-             path="third_party/go"
-             remote="https://fuchsia.googlesource.com/third_party/go"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="third_party/gtest"
              path="third_party/gtest"
              remote="https://fuchsia.googlesource.com/third_party/gtest"
@@ -332,15 +305,6 @@
              remote="https://fuchsia.googlesource.com/third_party/mesa"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="third_party/netstack"
-             path="third_party/netstack"
-             remote="https://fuchsia.googlesource.com/third_party/netstack"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="external/github.com/dart-lang/observatory_pub_packages"
-             path="dart/third_party/observatory_pub_packages"
-             remote="https://chromium.googlesource.com/external/github.com/dart-lang/observatory_pub_packages"
-             revision="26aad88f1c1915d39bbcbff3cad589e2402fdcf1"/>
     <project name="third_party/qcms"
              path="third_party/qcms"
              remote="https://fuchsia.googlesource.com/third_party/qcms"
@@ -356,9 +320,6 @@
              remote="https://fuchsia.googlesource.com/third_party/re2"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="external/github.com/dart-lang/root_certificates"
-             path="third_party/root_certificates"
-             remote="https://chromium.googlesource.com/external/github.com/dart-lang/root_certificates"/>
     <project name="external/skia.googlesource.com/skia"
              path="third_party/skia"
              remote="https://skia.googlesource.com/skia"

@@ -2,18 +2,9 @@
 <manifest>
   <imports>
     <localimport file="minimal"/>
+    <localimport file="runtimes/cpp"/>
   </imports>
   <projects>
-    <project name="third_party/binutils-gdb"
-             path="third_party/binutils-gdb"
-             remote="https://fuchsia.googlesource.com/third_party/binutils-gdb"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="third_party/llvm"
-             path="third_party/llvm"
-             remote="https://fuchsia.googlesource.com/third_party/llvm"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="third_party/clang"
              path="third_party/llvm/tools/clang"
              remote="https://fuchsia.googlesource.com/third_party/clang"
@@ -35,30 +26,5 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
 
-    <project name="third_party/shaderc"
-             path="third_party/shaderc"
-             remote="https://fuchsia.googlesource.com/third_party/shaderc"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="third_party/glslang"
-             path="third_party/shaderc/third_party/glslang"
-             remote="https://fuchsia.googlesource.com/third_party/glslang"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="third_party/googletest"
-             path="third_party/shaderc/third_party/googletest"
-             remote="https://fuchsia.googlesource.com/third_party/googletest"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="third_party/spirv-tools"
-             path="third_party/shaderc/third_party/spirv-tools"
-             remote="https://fuchsia.googlesource.com/third_party/spirv-tools"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="third_party/spirv-headers"
-             path="third_party/shaderc/third_party/spirv-tools/external/spirv-headers"
-             remote="https://fuchsia.googlesource.com/third_party/spirv-headers"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
   </projects>
 </manifest>

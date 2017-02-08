@@ -4,8 +4,6 @@
     <localimport file="build"/>
     <localimport file="magenta"/>
     <localimport file="minimal"/>
-    <localimport file="sysroot"/>
-    <localimport file="toolchain"/>
     <localimport file="userspace"/>
   </imports>
   <projects>

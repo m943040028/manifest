@@ -3,7 +3,7 @@
   <imports>
     <localimport file="build"/>
     <localimport file="minimal"/>
-    <localimport file="sysroot"/>
+    <localimport file="runtimes/cpp"/>
     <localimport file="toolchain"/>
   </imports>
   <projects>
