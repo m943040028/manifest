@@ -8,7 +8,7 @@ things moved to the [fuchsia repository](https://fuchsia.googlesource.com/fuchsi
 
 On Ubuntu:
 
- * `sudo apt-get install golang git-all build-essential curl`
+ * `sudo apt-get install golang git-all build-essential curl unzip`
 
 On Mac:
 
