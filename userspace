@@ -23,7 +23,7 @@
              path="flutter"
              remote="https://chromium.googlesource.com/external/github.com/flutter/engine"
              remotebranch="skia_rev_130a118cc68f8f9973e9572356011de378463fea"
-             revision="3f08d502e1c638962399add6a2666c679b0b923f"/>
+             revision="011bffe3a552f1433788b8f72163b1a1db01e46d"/>
     <project name="magma"
              path="magma"
              remote="https://fuchsia.googlesource.com/magma"
