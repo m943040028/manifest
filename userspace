@@ -21,9 +21,7 @@
              githooks="manifest/git-hooks"/>
     <project name="external/github.com/flutter/engine"
              path="flutter"
-             remote="https://chromium.googlesource.com/external/github.com/flutter/engine"
-             remotebranch="skia_rev_130a118cc68f8f9973e9572356011de378463fea"
-             revision="011bffe3a552f1433788b8f72163b1a1db01e46d"/>
+             remote="https://chromium.googlesource.com/external/github.com/flutter/engine"/>
     <project name="magma"
              path="magma"
              remote="https://fuchsia.googlesource.com/magma"
@@ -330,7 +328,7 @@
     <project name="external/skia.googlesource.com/skia"
              path="third_party/skia"
              remote="https://skia.googlesource.com/skia"
-             revision="130a118cc68f8f9973e9572356011de378463fea"/>
+             revision="246a3c269d8dc91a47ff27f7b71508bf9e74edf5"/>
     <project name="third_party/snappy"
              path="third_party/snappy"
              remote="https://fuchsia.googlesource.com/third_party/snappy"
