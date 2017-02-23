@@ -66,7 +66,7 @@
     <project name="dart/third_party/pkg/dart2js_info"
              path="dart/third_party/pkg/dart2js_info"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/dart2js_info.git"
-             revision="0.5.0"/>
+             revision="0.5.3+1"/>
 
     <project name="dart/third_party/pkg/dartdoc"
              path="dart/third_party/pkg/dartdoc"
@@ -126,7 +126,7 @@
     <project name="dart/third_party/pkg/isolate"
              path="dart/third_party/pkg/isolate"
              remote="https://github.com/dart-lang/isolate.git"
-             revision="0.2.3"/>
+             revision="1.0.0"/>
 
     <project name="dart/third_party/pkg/json_rpc_2"
              path="dart/third_party/pkg/json_rpc_2"
@@ -201,7 +201,7 @@
     <project name="dart/third_party/pkg/pub"
              path="dart/third_party/pkg/pub"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/pub.git"
-             revision="9000daf329445d06e2404d4bb9020cf742b7308a"/>
+             revision="53327f4a7ca2ddd20a40f6a94db61ac136371b03"/>
 
     <project name="dart/third_party/pkg/pub_semver"
              path="dart/third_party/pkg/pub_semver"
@@ -336,7 +336,7 @@
     <project name="dart/third_party/pkg_tested/dart_style"
              path="dart/third_party/pkg_tested/dart_style"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/dart_style.git"
-             revision="0.2.15"/>
+             revision="0.2.16"/>
 
     <project name="dart/third_party/pkg_tested/package_config"
              path="dart/third_party/pkg_tested/package_config"
