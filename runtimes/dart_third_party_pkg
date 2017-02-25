@@ -6,12 +6,12 @@
     <project name="dart/third_party/pkg/args"
              path="dart/third_party/pkg/args"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/args.git"
-             revision="0.13.5"/>
+             revision="0.13.7"/>
 
     <project name="dart/third_party/pkg/async"
              path="dart/third_party/pkg/async"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/async.git"
-             revision="1.11.3"/>
+             revision="1.13.0"/>
 
     <project name="dart/third_party/pkg/barback"
              path="dart/third_party/pkg/barback"
@@ -31,7 +31,7 @@
     <project name="dart/third_party/pkg/charcode"
              path="dart/third_party/pkg/charcode"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/charcode.git"
-             revision="1.1.0"/>
+             revision="v1.1.1"/>
 
     <project name="dart/third_party/pkg/cli_util"
              path="dart/third_party/pkg/cli_util"
@@ -41,12 +41,12 @@
     <project name="dart/third_party/pkg/code_transformers"
              path="dart/third_party/pkg/code_transformers"
              remote="https://github.com/dart-lang/code_transformers.git"
-             revision="v0.4.2+3"/>
+             revision="v0.5.1"/>
 
     <project name="dart/third_party/pkg/collection"
              path="dart/third_party/pkg/collection"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/collection.git"
-             revision="1.10.1"/>
+             revision="1.13.0"/>
 
     <project name="dart/third_party/pkg/convert"
              path="dart/third_party/pkg/convert"
@@ -61,7 +61,7 @@
     <project name="dart/third_party/pkg/csslib"
              path="dart/third_party/pkg/csslib"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/csslib.git"
-             revision="0.13.2"/>
+             revision="0.13.3+1"/>
 
     <project name="dart/third_party/pkg/dart2js_info"
              path="dart/third_party/pkg/dart2js_info"
@@ -71,7 +71,7 @@
     <project name="dart/third_party/pkg/dartdoc"
              path="dart/third_party/pkg/dartdoc"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/dartdoc.git"
-             revision="v0.9.8+1"/>
+             revision="v0.9.12"/>
 
     <project name="dart/third_party/pkg/fixnum"
              path="dart/third_party/pkg/fixnum"
@@ -81,7 +81,7 @@
     <project name="dart/third_party/pkg/func"
              path="dart/third_party/pkg/func"
              remote="https://github.com/dart-lang/func.git"
-             revision="0.1.0"/>
+             revision="0.1.1"/>
 
     <project name="dart/third_party/pkg/glob"
              path="dart/third_party/pkg/glob"
@@ -101,12 +101,12 @@
     <project name="dart/third_party/pkg/http_multi_server"
              path="dart/third_party/pkg/http_multi_server"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/http_multi_server.git"
-             revision="2.0.2"/>
+             revision="2.0.3"/>
 
     <project name="dart/third_party/pkg/http_parser"
              path="dart/third_party/pkg/http_parser"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/http_parser.git"
-             revision="3.0.3"/>
+             revision="3.1.1"/>
 
     <project name="dart/third_party/pkg/http_throttle"
              path="dart/third_party/pkg/http_throttle"
@@ -116,7 +116,7 @@
     <project name="dart/third_party/pkg/initialize"
              path="dart/third_party/pkg/initialize"
              remote="https://github.com/dart-lang/initialize.git"
-             revision="v0.6.2+2"/>
+             revision="v0.6.2+5"/>
 
     <project name="dart/third_party/pkg/intl"
              path="dart/third_party/pkg/intl"
@@ -131,7 +131,7 @@
     <project name="dart/third_party/pkg/json_rpc_2"
              path="dart/third_party/pkg/json_rpc_2"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/json_rpc_2.git"
-             revision="2.0.2"/>
+             revision="2.0.4"/>
 
     <project name="dart/third_party/pkg/linter"
              path="dart/third_party/pkg/linter"
@@ -146,7 +146,7 @@
     <project name="dart/third_party/pkg/markdown"
              path="dart/third_party/pkg/markdown"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/markdown.git"
-             revision="0.11.0"/>
+             revision="0.11.2"/>
 
     <project name="dart/third_party/pkg/matcher"
              path="dart/third_party/pkg/matcher"
@@ -156,7 +156,7 @@
     <project name="dart/third_party/pkg/metatest"
              path="dart/third_party/pkg/metatest"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/metatest.git"
-             revision="0.2.2+2"/>
+             revision="0.2.2+3"/>
 
     <project name="dart/third_party/pkg/mime"
              path="dart/third_party/pkg/mime"
@@ -173,10 +173,15 @@
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/oauth2.git"
              revision="1.0.2"/>
 
+    <project name="dart/third_party/pkg/observable"
+             path="dart/third_party/pkg/observable"
+             remote="https://github.com/dart-lang/observable.git"
+             revision="0.17.0"/>
+
     <project name="dart/third_party/pkg/observe"
              path="dart/third_party/pkg/observe"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/observe.git"
-             revision="0.13.5"/>
+             revision="0.15.0"/>
 
     <project name="dart/third_party/pkg/path"
              path="dart/third_party/pkg/path"
@@ -191,7 +196,7 @@
     <project name="dart/third_party/pkg/pool"
              path="dart/third_party/pkg/pool"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/pool.git"
-             revision="1.2.4"/>
+             revision="1.3.0"/>
 
     <project name="dart/third_party/pkg/protobuf"
              path="dart/third_party/pkg/protobuf"
@@ -206,7 +211,7 @@
     <project name="dart/third_party/pkg/pub_semver"
              path="dart/third_party/pkg/pub_semver"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/pub_semver.git"
-             revision="1.3.0"/>
+             revision="1.3.2"/>
 
     <project name="dart/third_party/pkg/quiver"
              path="dart/third_party/pkg/quiver"
@@ -221,12 +226,12 @@
     <project name="dart/third_party/pkg/scheduled_test"
              path="dart/third_party/pkg/scheduled_test"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/scheduled_test.git"
-             revision="0.12.6"/>
+             revision="0.12.9"/>
 
     <project name="dart/third_party/pkg/shelf"
              path="dart/third_party/pkg/shelf"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/shelf.git"
-             revision="0.6.5+3"/>
+             revision="0.6.7+2"/>
 
     <project name="dart/third_party/pkg/shelf_packages_handler"
              path="dart/third_party/pkg/shelf_packages_handler"
@@ -251,37 +256,37 @@
     <project name="dart/third_party/pkg/source_map_stack_trace"
              path="dart/third_party/pkg/source_map_stack_trace"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/source_map_stack_trace.git"
-             revision="1.1.3"/>
+             revision="1.1.4"/>
 
     <project name="dart/third_party/pkg/source_maps"
              path="dart/third_party/pkg/source_maps"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/source_maps.git"
-             revision="0.10.1+2"/>
+             revision="0.10.2"/>
 
     <project name="dart/third_party/pkg/source_span"
              path="dart/third_party/pkg/source_span"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/source_span.git"
-             revision="1.2.4"/>
+             revision="1.3.1"/>
 
     <project name="dart/third_party/pkg/stack_trace"
              path="dart/third_party/pkg/stack_trace"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/stack_trace.git"
-             revision="1.6.6"/>
+             revision="1.7.1"/>
 
     <project name="dart/third_party/pkg/stream_channel"
              path="dart/third_party/pkg/stream_channel"
              remote="https://github.com/dart-lang/stream_channel.git"
-             revision="1.5.0"/>
+             revision="1.6.1"/>
 
     <project name="dart/third_party/pkg/string_scanner"
              path="dart/third_party/pkg/string_scanner"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/string_scanner.git"
-             revision="1.0.0"/>
+             revision="1.0.1"/>
 
     <project name="dart/third_party/pkg/test"
              path="dart/third_party/pkg/test"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/test.git"
-             revision="0.12.15+6"/>
+             revision="0.12.18+1"/>
 
     <project name="dart/third_party/pkg/test_reflective_loader"
              path="dart/third_party/pkg/test_reflective_loader"
@@ -296,7 +301,7 @@
     <project name="dart/third_party/pkg/usage"
              path="dart/third_party/pkg/usage"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/usage.git"
-             revision="v2.2.2"/>
+             revision="v3.0.0+1"/>
 
     <project name="dart/third_party/pkg/utf"
              path="dart/third_party/pkg/utf"
@@ -331,7 +336,7 @@
     <project name="dart/third_party/pkg/yaml"
              path="dart/third_party/pkg/yaml"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/yaml.git"
-             revision="2.1.11"/>
+             revision="2.1.12"/>
 
     <project name="dart/third_party/pkg_tested/dart_style"
              path="dart/third_party/pkg_tested/dart_style"
