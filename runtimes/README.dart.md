@@ -16,3 +16,7 @@ observatory\_pub\_packages.
 `//dart/tools/create_pkg_manifest.py`
 * Build and verify that everything works, land
 
+The manifests [dart\_head](dart_head) and [dart\_third\_party\_pkg\_head](dart_third_party_pkg_head)
+Pull the Dart SDK sources from top-of-tree. [dart\_third\_party\_pkg\_head](dart_third_party_pkg_head)
+will need to be periodically updated with `//dart/tools/create_pkg_manifest.py`
+as well
