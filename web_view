@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <imports>
+    <localimport file="minimal"/>
+  </imports>
+  <projects>
+    <project name="web_view"
+             path="apps/web_view"
+             remote="https://fuchsia.googlesource.com/web_view"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+  </projects>
+  <hooks>
+    <hook name="download-web-view-prebuilts"
+          project="web_view"
+          action="scripts/download-web-view-prebuilts.sh"/>
+
+  </hooks>
+</manifest>
+
