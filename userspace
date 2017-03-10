@@ -169,6 +169,11 @@
              remote="https://fuchsia.googlesource.com/mozart"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="music"
+             path="apps/music"
+             remote="https://fuchsia.googlesource.com/modules/music"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="netconnector"
              path="apps/netconnector"
              remote="https://fuchsia.googlesource.com/netconnector"
