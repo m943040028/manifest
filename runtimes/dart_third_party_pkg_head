@@ -261,7 +261,7 @@
     <project name="dart/third_party/pkg/source_maps"
              path="dart/third_party/pkg/source_maps"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/source_maps.git"
-             revision="0.10.2"/>
+             revision="0.10.3"/>
 
     <project name="dart/third_party/pkg/source_span"
              path="dart/third_party/pkg/source_span"
@@ -271,7 +271,7 @@
     <project name="dart/third_party/pkg/stack_trace"
              path="dart/third_party/pkg/stack_trace"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/stack_trace.git"
-             revision="1.7.1"/>
+             revision="1.7.2"/>
 
     <project name="dart/third_party/pkg/stream_channel"
              path="dart/third_party/pkg/stream_channel"
