@@ -46,6 +46,13 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
 
+    <!-- Audio -->
+    <project name="drivers/audio"
+             path="drivers/audio"
+             remote="https://fuchsia.googlesource.com/drivers/audio"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+
     <!-- Common -->
     <project name="init"
              path="bin/init"
