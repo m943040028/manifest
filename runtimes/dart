@@ -15,7 +15,8 @@
              revision="26aad88f1c1915d39bbcbff3cad589e2402fdcf1"/>
     <project name="external/github.com/dart-lang/root_certificates"
              path="third_party/root_certificates"
-             remote="https://chromium.googlesource.com/external/github.com/dart-lang/root_certificates"/>
+             remote="https://chromium.googlesource.com/external/github.com/dart-lang/root_certificates"
+             revision="0068d8911140e591ebb750af296e81940a9906f5"/>
     <project name="tonic"
              path="lib/tonic"
              remote="https://fuchsia.googlesource.com/tonic"
