@@ -139,6 +139,11 @@
              remote="https://fuchsia.googlesource.com/icu_data"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="install-fuchsia"
+             path="apps/install-fuchsia"
+             remote="https://fuchsia.googlesource.com/install-fuchsia"
+             gerrithost="https://fuchsia-reivew.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="maxwell"
              path="apps/maxwell"
              remote="https://fuchsia.googlesource.com/maxwell"
@@ -220,6 +225,12 @@
              path="third_party/dropbear"
              remote="https://fuchsia.googlesource.com/third_party/dropbear"
              gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="cmocka"
+             path="third_party/cmocka"
+             remote="https://fuchsia.googlesource.com/third_party/cmocka"
+             revision="30590636487cb976a7ad850024abb16a5f44a320"
+             gerrithost="https://fuchsia-reivew.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="third_party/expat"
              path="third_party/expat"
