@@ -8,7 +8,7 @@
     <project name="external/github.com/dart-lang/sdk"
              path="dart"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/sdk"
-             revision="9be35abd3747b3b505117c1c2c90b64fa6f0c795"/>
+             revision="442d177d3d78d362ddc03264869ee1c261eeff05"/>
     <project name="external/github.com/dart-lang/observatory_pub_packages"
              path="dart/third_party/observatory_pub_packages"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/observatory_pub_packages"
@@ -16,7 +16,7 @@
     <project name="external/github.com/dart-lang/root_certificates"
              path="third_party/root_certificates"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/root_certificates"
-             revision="0068d8911140e591ebb750af296e81940a9906f5"/>
+             revision="a4c7c6f23a664a37bc1b6f15a819e3f2a292791a"/>
     <project name="tonic"
              path="lib/tonic"
              remote="https://fuchsia.googlesource.com/tonic"

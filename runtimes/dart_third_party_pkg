@@ -175,7 +175,7 @@
 
     <project name="dart/third_party/pkg/observable"
              path="dart/third_party/pkg/observable"
-             remote="https://github.com/dart-lang/observable.git"
+             remote="https://chromium.googlesource.com/external/github.com/dart-lang/observable.git"
              revision="0.17.0"/>
 
     <project name="dart/third_party/pkg/observe"
@@ -206,7 +206,7 @@
     <project name="dart/third_party/pkg/pub"
              path="dart/third_party/pkg/pub"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/pub.git"
-             revision="53327f4a7ca2ddd20a40f6a94db61ac136371b03"/>
+             revision="1218853e57594c2117b8acaf6a65a43f8698d8c7"/>
 
     <project name="dart/third_party/pkg/pub_semver"
              path="dart/third_party/pkg/pub_semver"
