@@ -4,7 +4,6 @@
     <localimport file="build"/>
     <localimport file="minimal"/>
     <localimport file="runtimes/cpp"/>
-    <localimport file="toolchain"/>
   </imports>
   <projects>
     <project name="ledger"

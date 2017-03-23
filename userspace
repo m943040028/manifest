@@ -7,6 +7,7 @@
     <localimport file="runtimes/cpp"/>
     <localimport file="runtimes/dart"/>
     <localimport file="thinfs"/>
+    <localimport file="toolchain"/>
   </imports>
   <projects>
     <project name="application"
