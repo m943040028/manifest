@@ -237,6 +237,11 @@
              path="third_party/catapult"
              remote="https://chromium.googlesource.com/external/github.com/catapult-project/catapult"
              revision="9640c01626ae5332ffd034aa1ac2cfdaf3ffdfdf"/>
+    <project name="third_party/curl"
+             path="third_party/curl"
+             remote="https://fuchsia.googlesource.com/third_party/curl"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="third_party/dropbear"
              path="third_party/dropbear"
              remote="https://fuchsia.googlesource.com/third_party/dropbear"
