@@ -3,6 +3,11 @@
 <manifest>
   <projects>
 
+    <project name="dart/third_party/pkg/angular_analyzer_plugin"
+             path="dart/third_party/pkg/angular_analyzer_plugin"
+             remote="https://chromium.googlesource.com/external/github.com/dart-lang/angular_analyzer_plugin.git"
+             revision="v0.0.6"/>
+
     <project name="dart/third_party/pkg/args"
              path="dart/third_party/pkg/args"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/args.git"
@@ -206,7 +211,7 @@
     <project name="dart/third_party/pkg/pub"
              path="dart/third_party/pkg/pub"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/pub.git"
-             revision="1218853e57594c2117b8acaf6a65a43f8698d8c7"/>
+             revision="f81cb51c3a4b4056ac92bf4857f0b3b52bceb3bf"/>
 
     <project name="dart/third_party/pkg/pub_semver"
              path="dart/third_party/pkg/pub_semver"
@@ -341,7 +346,7 @@
     <project name="dart/third_party/pkg_tested/dart_style"
              path="dart/third_party/pkg_tested/dart_style"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/dart_style.git"
-             revision="0.2.16"/>
+             revision="1.0.2+1"/>
 
     <project name="dart/third_party/pkg_tested/package_config"
              path="dart/third_party/pkg_tested/package_config"
