@@ -6,7 +6,7 @@
     <project name="dart/third_party/pkg/angular_analyzer_plugin"
              path="dart/third_party/pkg/angular_analyzer_plugin"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/angular_analyzer_plugin.git"
-             revision="v0.0.6"/>
+             revision="v0.0.7"/>
 
     <project name="dart/third_party/pkg/args"
              path="dart/third_party/pkg/args"
@@ -76,7 +76,7 @@
     <project name="dart/third_party/pkg/dartdoc"
              path="dart/third_party/pkg/dartdoc"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/dartdoc.git"
-             revision="v0.9.12"/>
+             revision="v0.9.14-dev"/>
 
     <project name="dart/third_party/pkg/fixnum"
              path="dart/third_party/pkg/fixnum"
