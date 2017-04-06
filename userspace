@@ -102,6 +102,11 @@
              remote="https://fuchsia.googlesource.com/init"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="bin/listen"
+             path="bin/listen"
+             remote="https://fuchsia.googlesource.com/bin/listen"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
 
     <!-- Applications -->
 
@@ -350,6 +355,11 @@
     <project name="third_party/mesa"
              path="third_party/mesa"
              remote="https://fuchsia.googlesource.com/third_party/mesa"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="third_party/openssh-portable"
+             path="third_party/openssh-portable"
+             remote="https://fuchsia.googlesource.com/third_party/openssh-portable"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="third_party/processor-trace"
