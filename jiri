@@ -39,5 +39,11 @@
              revision= "df4dfaadcf709646ebab2e57e3589952cf1ac809"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="jiri/third_party/zlib"
+             path="go/src/fuchsia.googlesource.com/jiri/vendor/github.com/libgit2/git2go/vendor/zlib"
+             remote="https://fuchsia.googlesource.com/third_party/zlib"
+             revision= "871bb1c83c0a4cc180c66ac89b14cb08675bef0d"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
   </projects>
 </manifest>
