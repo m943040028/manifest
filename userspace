@@ -6,6 +6,7 @@
     <localimport file="ledger"/>
     <localimport file="runtimes/cpp"/>
     <localimport file="runtimes/dart"/>
+    <localimport file="runtimes/rust"/>
     <localimport file="thinfs"/>
     <localimport file="toolchain"/>
   </imports>
