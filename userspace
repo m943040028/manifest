@@ -134,7 +134,7 @@
     <project name="install-fuchsia"
              path="apps/install-fuchsia"
              remote="https://fuchsia.googlesource.com/install-fuchsia"
-             gerrithost="https://fuchsia-reivew.googlesource.com"
+             gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="latin-ime"
              path="apps/latin-ime"
