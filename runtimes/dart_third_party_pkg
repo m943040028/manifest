@@ -6,7 +6,7 @@
     <project name="dart/third_party/pkg/angular_analyzer_plugin"
              path="dart/third_party/pkg/angular_analyzer_plugin"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/angular_analyzer_plugin.git"
-             revision="v0.0.7"/>
+             revision="v0.0.8"/>
 
     <project name="dart/third_party/pkg/args"
              path="dart/third_party/pkg/args"
@@ -86,7 +86,7 @@
     <project name="dart/third_party/pkg/func"
              path="dart/third_party/pkg/func"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/func.git"
-             revision="0.1.1"/>
+             revision="1.0.0"/>
 
     <project name="dart/third_party/pkg/glob"
              path="dart/third_party/pkg/glob"
