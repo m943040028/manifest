@@ -2,6 +2,7 @@
 <manifest>
   <imports>
     <localimport file="build"/>
+    <localimport file="magenta"/>
     <localimport file="minimal"/>
     <localimport file="runtimes/cpp"/>
   </imports>
