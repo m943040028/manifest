@@ -71,7 +71,7 @@
     <project name="dart/third_party/pkg/dart2js_info"
              path="dart/third_party/pkg/dart2js_info"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/dart2js_info.git"
-             revision="0.5.3+1"/>
+             revision="0.5.4+2"/>
 
     <project name="dart/third_party/pkg/dartdoc"
              path="dart/third_party/pkg/dartdoc"
