@@ -407,6 +407,11 @@
              remote="https://fuchsia.googlesource.com/third_party/speccpu2000"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="third_party/sqlite"
+             path="third_party/sqlite"
+             remote="https://fuchsia.googlesource.com/third_party/sqlite"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="third_party/benchmark"
              path="third_party/benchmark"
              remote="https://fuchsia.googlesource.com/third_party/benchmark"
