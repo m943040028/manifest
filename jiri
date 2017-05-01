@@ -2,7 +2,6 @@
 <manifest>
   <imports>
     <localimport file="minimal"/>
-    <localimport file="runtimes/go"/>
   </imports>
   <projects>
     <project name="jiri"
