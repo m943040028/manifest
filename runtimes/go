@@ -3,7 +3,6 @@
   <imports>
     <localimport file="../build"/>
     <localimport file="../magenta"/>
-    <localimport file="../runtimes/cpp"/>
   </imports>
   <projects>
     <project name="third_party/go"

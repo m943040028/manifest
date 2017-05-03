@@ -2,7 +2,6 @@
 <manifest>
   <imports>
     <localimport file="minimal"/>
-    <localimport file="runtimes/cpp"/>
   </imports>
   <projects>
     <project name="third_party/clang"
