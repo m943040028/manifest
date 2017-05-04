@@ -8,7 +8,6 @@
     <localimport file="runtimes/rust"/>
     <localimport file="thinfs"/>
     <localimport file="toolchain"/>
-    <localimport file="web_view"/>
   </imports>
   <projects>
     <project name="application"
