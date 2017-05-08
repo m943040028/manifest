@@ -341,7 +341,7 @@
     <project name="dart/third_party/pkg_tested/dart_style"
              path="dart/third_party/pkg_tested/dart_style"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/dart_style.git"
-             revision="1.0.4"/>
+             revision="1.0.5"/>
 
     <project name="dart/third_party/pkg_tested/package_config"
              path="dart/third_party/pkg_tested/package_config"
