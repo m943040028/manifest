@@ -128,4 +128,7 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
   </projects>
+  <hooks>
+    <hook name="download-rt2870-bin" action="mediatek/rt5370/download-firmware.sh" project="drivers/wifi"/>
+  </hooks>
 </manifest>
