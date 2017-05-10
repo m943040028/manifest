@@ -4,6 +4,11 @@
     <localimport file="minimal"/>
   </imports>
   <projects>
+    <project name="third_party/llvm"
+             path="third_party/llvm"
+             remote="https://fuchsia.googlesource.com/third_party/llvm"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="third_party/clang"
              path="third_party/llvm/tools/clang"
              remote="https://fuchsia.googlesource.com/third_party/clang"
@@ -29,5 +34,20 @@
              remote="https://fuchsia.googlesource.com/third_party/compiler-rt"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="third_party/libcxx"
+             remote="https://fuchsia.googlesource.com/third_party/libcxx"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"
+             path="third_party/llvm/runtimes/libcxx"/>
+    <project name="third_party/libcxxabi"
+             remote="https://fuchsia.googlesource.com/third_party/libcxxabi"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"
+             path="third_party/llvm/runtimes/libcxxabi"/>
+    <project name="third_party/libunwind"
+             remote="https://fuchsia.googlesource.com/third_party/libunwind"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"
+             path="third_party/llvm/runtimes/libunwind"/>
   </projects>
 </manifest>
