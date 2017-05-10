@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <projects>
+    <project name="infra/config"
+             path="infra/config"
+             remote="https://fuchsia.googlesource.com/infra/config"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="infra/recipes"
+             path="infra/recipes"
+             remote="https://fuchsia.googlesource.com/infra/recipes"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+  </projects>
+</manifest>
