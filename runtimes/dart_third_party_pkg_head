@@ -136,7 +136,7 @@
     <project name="dart/third_party/pkg/linter"
              path="dart/third_party/pkg/linter"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/linter.git"
-             revision="0.1.30"/>
+             revision="0.1.31"/>
 
     <project name="dart/third_party/pkg/logging"
              path="dart/third_party/pkg/logging"
@@ -341,7 +341,7 @@
     <project name="dart/third_party/pkg_tested/dart_style"
              path="dart/third_party/pkg_tested/dart_style"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/dart_style.git"
-             revision="1.0.5"/>
+             revision="1.0.6"/>
 
     <project name="dart/third_party/pkg_tested/package_config"
              path="dart/third_party/pkg_tested/package_config"
