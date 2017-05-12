@@ -6,6 +6,7 @@
     <localimport file="minimal"/>
     <localimport file="userspace"/>
     <localimport file="amber"/>
+    <localimport file="pm"/>
   </imports>
   <projects>
     <project name="fuchsia"
