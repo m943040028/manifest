@@ -4,6 +4,11 @@
     <localimport file="minimal"/>
   </imports>
   <projects>
+    <project name="third_party/binutils-gdb"
+             path="third_party/binutils-gdb"
+             remote="https://fuchsia.googlesource.com/third_party/binutils-gdb"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="third_party/llvm"
              path="third_party/llvm"
              remote="https://fuchsia.googlesource.com/third_party/llvm"
