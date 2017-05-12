@@ -2,6 +2,7 @@
 <manifest>
   <imports>
     <localimport file="minimal"/>
+    <localimport file="magenta"/>
   </imports>
   <projects>
     <project name="third_party/binutils-gdb"
