@@ -101,6 +101,11 @@
              remote="https://fuchsia.googlesource.com/third_party/netstack"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="third_party/sbase"
+             path="third_party/sbase"
+             remote="https://fuchsia.googlesource.com/third_party/sbase"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="third_party/shaderc"
              path="third_party/shaderc"
              remote="https://fuchsia.googlesource.com/third_party/shaderc"
