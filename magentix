@@ -3,6 +3,8 @@
   <imports>
     <localimport file="build"/>
     <localimport file="magenta"/>
+    <localimport file="thinfs"/>
+    <localimport file="drivers"/>
     <localimport file="runtimes/go"/>
   </imports>
   <projects>
