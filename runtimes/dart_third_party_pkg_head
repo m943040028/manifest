@@ -16,7 +16,7 @@
     <project name="dart/third_party/pkg/barback"
              path="dart/third_party/pkg/barback"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/barback.git"
-             revision="0.15.2+9"/>
+             revision="0.15.2+11"/>
 
     <project name="dart/third_party/pkg/bazel_worker"
              path="dart/third_party/pkg/bazel_worker"
@@ -36,7 +36,7 @@
     <project name="dart/third_party/pkg/cli_util"
              path="dart/third_party/pkg/cli_util"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/cli_util.git"
-             revision="0.0.1+3"/>
+             revision="0.1.0"/>
 
     <project name="dart/third_party/pkg/code_transformers"
              path="dart/third_party/pkg/code_transformers"
@@ -206,7 +206,7 @@
     <project name="dart/third_party/pkg/pub"
              path="dart/third_party/pkg/pub"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/pub.git"
-             revision="69be47ed84c3ced304047aaa885c8f8f48dad4e6"/>
+             revision="c5f904ae6414e45573b3a358f8b6d13525132e02"/>
 
     <project name="dart/third_party/pkg/pub_semver"
              path="dart/third_party/pkg/pub_semver"
