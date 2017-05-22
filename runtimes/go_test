@@ -76,11 +76,6 @@
              remote="https://fuchsia.googlesource.com/third_party/jinja2"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="third_party/lwip"
-             path="third_party/lwip"
-             remote="https://fuchsia.googlesource.com/third_party/lwip"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="third_party/markupsafe"
              path="third_party/markupsafe"
              remote="https://fuchsia.googlesource.com/third_party/markupsafe"
