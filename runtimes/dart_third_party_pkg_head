@@ -11,7 +11,7 @@
     <project name="dart/third_party/pkg/async"
              path="dart/third_party/pkg/async"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/async.git"
-             revision="1.13.0"/>
+             revision="daf66909019d2aaec1721fc39d94ea648a9fdc1d"/>
 
     <project name="dart/third_party/pkg/barback"
              path="dart/third_party/pkg/barback"
@@ -206,7 +206,7 @@
     <project name="dart/third_party/pkg/pub"
              path="dart/third_party/pkg/pub"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/pub.git"
-             revision="c5f904ae6414e45573b3a358f8b6d13525132e02"/>
+             revision="3cabbaaa836d9c1751de921ea1f71707611bb533"/>
 
     <project name="dart/third_party/pkg/pub_semver"
              path="dart/third_party/pkg/pub_semver"
