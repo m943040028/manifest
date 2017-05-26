@@ -272,7 +272,7 @@
              path="third_party/cmocka"
              remote="https://fuchsia.googlesource.com/third_party/cmocka"
              revision="30590636487cb976a7ad850024abb16a5f44a320"
-             gerrithost="https://fuchsia-reivew.googlesource.com"
+             gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="third_party/expat"
              path="third_party/expat"
