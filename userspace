@@ -201,6 +201,11 @@
              remote="https://fuchsia.googlesource.com/modules/todo"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="modules/video"
+             path="apps/modules/video"
+             remote="https://fuchsia.googlesource.com/modules/video"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="mondrian"
              path="apps/mondrian"
              remote="https://fuchsia.googlesource.com/mondrian"
