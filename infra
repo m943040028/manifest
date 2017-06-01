@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <imports>
+    <localimport file="minimal"/>
+  </imports>
   <projects>
     <project name="infra/config"
              path="infra/config"
