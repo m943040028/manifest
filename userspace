@@ -470,8 +470,5 @@
     <hook name="update"
           project="fonts"
           action="update.sh"/>
-    <hook name="provisioning-template"
-          project="modules/common"
-          action="tools/update.sh"/>
   </hooks>
 </manifest>
