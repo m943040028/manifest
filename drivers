@@ -62,11 +62,6 @@
              githooks="manifest/git-hooks"/>
 
     <!-- Common -->
-    <project name="init"
-             path="bin/init"
-             remote="https://fuchsia.googlesource.com/init"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="fidl"
              path="lib/fidl"
              remote="https://fuchsia.googlesource.com/fidl"
