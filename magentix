@@ -8,6 +8,11 @@
     <localimport file="runtimes/go"/>
   </imports>
   <projects>
+    <project name="bin/listen"
+             path="bin/listen"
+             remote="https://fuchsia.googlesource.com/bin/listen"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="netstack"
              path="apps/netstack"
              remote="https://fuchsia.googlesource.com/netstack"
