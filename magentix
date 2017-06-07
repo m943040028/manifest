@@ -8,9 +8,19 @@
     <localimport file="runtimes/go"/>
   </imports>
   <projects>
+    <project name="application"
+             path="application"
+             remote="https://fuchsia.googlesource.com/application"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="bin/listen"
              path="bin/listen"
              remote="https://fuchsia.googlesource.com/bin/listen"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="mtl"
+             path="lib/mtl"
+             remote="https://fuchsia.googlesource.com/mtl"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="netstack"
@@ -26,6 +36,11 @@
     <project name="third_party/sbase"
              path="third_party/sbase"
              remote="https://fuchsia.googlesource.com/third_party/sbase"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="third_party/openssh-portable"
+             path="third_party/openssh-portable"
+             remote="https://fuchsia.googlesource.com/third_party/openssh-portable"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="third_party/vim"
