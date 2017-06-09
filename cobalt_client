@@ -11,6 +11,11 @@
              githooks="manifest/git-hooks"/>
 
     <!-- Third Party -->
+    <project name="third_party/grpc"
+             path="third_party/grpc"
+             remote="https://fuchsia.googlesource.com/third_party/grpc"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="third_party/protobuf"
              path="third_party/protobuf"
              remote="https://fuchsia.googlesource.com/third_party/protobuf"
