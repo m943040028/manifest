@@ -111,7 +111,7 @@
     <project name="dart/third_party/pkg/http_throttle"
              path="dart/third_party/pkg/http_throttle"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/http_throttle.git"
-             revision="284344cd357e435c6c8ff9a4a21f02b9e384a541"/>
+             revision="1.0.1"/>
 
     <project name="dart/third_party/pkg/initialize"
              path="dart/third_party/pkg/initialize"
@@ -322,16 +322,6 @@
              path="dart/third_party/pkg/web_socket_channel"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/web_socket_channel.git"
              revision="1.0.4"/>
-
-    <project name="dart/third_party/pkg/when"
-             path="dart/third_party/pkg/when"
-             remote="https://chromium.googlesource.com/external/github.com/dart-lang/when.git"
-             revision="0.2.0+2"/>
-
-    <project name="dart/third_party/pkg/which"
-             path="dart/third_party/pkg/which"
-             remote="https://chromium.googlesource.com/external/github.com/dart-lang/which.git"
-             revision="0.1.3+1"/>
 
     <project name="dart/third_party/pkg/yaml"
              path="dart/third_party/pkg/yaml"
