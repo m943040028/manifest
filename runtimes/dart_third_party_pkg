@@ -206,7 +206,7 @@
     <project name="dart/third_party/pkg/pub"
              path="dart/third_party/pkg/pub"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/pub.git"
-             revision="a8781274e3a38c34a49d4c5bffb98557c6022a75"/>
+             revision="0713718a83054fcc1c0a4b163e036f7c39ea4790"/>
 
     <project name="dart/third_party/pkg/pub_semver"
              path="dart/third_party/pkg/pub_semver"
