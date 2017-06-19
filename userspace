@@ -83,7 +83,7 @@
     <project name="txt"
              path="lib/txt"
              remote="https://fuchsia.googlesource.com/txt"
-             revision="95dc633d881d1b23b88e657bcb2f654459706412"
+             revision="b44e28c2fd75d7d4b9dcc862bb2c01a090bb53e1"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
 
