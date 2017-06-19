@@ -71,7 +71,7 @@
     <project name="dart/third_party/pkg/dartdoc"
              path="dart/third_party/pkg/dartdoc"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/dartdoc.git"
-             revision="v0.9.14-dev"/>
+             revision="v0.12.0"/>
 
     <project name="dart/third_party/pkg/fixnum"
              path="dart/third_party/pkg/fixnum"
@@ -166,7 +166,7 @@
     <project name="dart/third_party/pkg/mustache4dart"
              path="dart/third_party/pkg/mustache4dart"
              remote="https://chromium.googlesource.com/external/github.com/valotas/mustache4dart.git"
-             revision="v1.0.10"/>
+             revision="v1.1.0"/>
 
     <project name="dart/third_party/pkg/oauth2"
              path="dart/third_party/pkg/oauth2"
@@ -292,6 +292,11 @@
              path="dart/third_party/pkg/test_reflective_loader"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/test_reflective_loader.git"
              revision="0.1.0"/>
+
+    <project name="dart/third_party/pkg/tuple"
+             path="dart/third_party/pkg/tuple"
+             remote="https://github.com/dart-lang/tuple.git"
+             revision="v1.0.1"/>
 
     <project name="dart/third_party/pkg/typed_data"
              path="dart/third_party/pkg/typed_data"
