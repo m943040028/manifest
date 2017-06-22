@@ -71,7 +71,7 @@
     <project name="dart/third_party/pkg/dartdoc"
              path="dart/third_party/pkg/dartdoc"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/dartdoc.git"
-             revision="v0.12.0"/>
+             revision="v0.13.0+1"/>
 
     <project name="dart/third_party/pkg/fixnum"
              path="dart/third_party/pkg/fixnum"
@@ -146,7 +146,7 @@
     <project name="dart/third_party/pkg/markdown"
              path="dart/third_party/pkg/markdown"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/markdown.git"
-             revision="0.11.2"/>
+             revision="0.11.3"/>
 
     <project name="dart/third_party/pkg/matcher"
              path="dart/third_party/pkg/matcher"
@@ -200,7 +200,7 @@
 
     <project name="dart/third_party/pkg/protobuf"
              path="dart/third_party/pkg/protobuf"
-             remote="https://github.com/dart-lang/protobuf.git"
+             remote="https://chromium.googlesource.com/external/github.com/dart-lang/protobuf.git"
              revision="0.5.4"/>
 
     <project name="dart/third_party/pkg/pub"
@@ -295,7 +295,7 @@
 
     <project name="dart/third_party/pkg/tuple"
              path="dart/third_party/pkg/tuple"
-             remote="https://github.com/dart-lang/tuple.git"
+             remote="https://chromium.googlesource.com/external/github.com/dart-lang/tuple.git"
              revision="v1.0.1"/>
 
     <project name="dart/third_party/pkg/typed_data"
