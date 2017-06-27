@@ -4,9 +4,7 @@
     <localimport file="build"/>
     <localimport file="magenta"/>
     <localimport file="minimal"/>
-    <localimport file="runtimes/dart"/>
     <localimport file="runtimes/go"/>
-    <localimport file="runtimes/rust"/>
   </imports>
   <projects>
     <!-- Graphics -->
