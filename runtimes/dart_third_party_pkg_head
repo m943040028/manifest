@@ -206,7 +206,7 @@
     <project name="dart/third_party/pkg/pub"
              path="dart/third_party/pkg/pub"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/pub.git"
-             revision="a1dc64f7bf8625a2d012f790feb8fec4fa7b7caf"/>
+             revision="0f122625f8e607842afe156b9b23a9709e4ce39a"/>
 
     <project name="dart/third_party/pkg/pub_semver"
              path="dart/third_party/pkg/pub_semver"
@@ -306,7 +306,7 @@
     <project name="dart/third_party/pkg/usage"
              path="dart/third_party/pkg/usage"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/usage.git"
-             revision="3.2.0+1"/>
+             revision="3.3.0"/>
 
     <project name="dart/third_party/pkg/utf"
              path="dart/third_party/pkg/utf"
@@ -336,7 +336,7 @@
     <project name="dart/third_party/pkg_tested/dart_style"
              path="dart/third_party/pkg_tested/dart_style"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/dart_style.git"
-             revision="1.0.6"/>
+             revision="1.0.7"/>
 
     <project name="dart/third_party/pkg_tested/package_config"
              path="dart/third_party/pkg_tested/package_config"
