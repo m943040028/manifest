@@ -41,7 +41,7 @@
     <project name="dart/third_party/pkg/collection"
              path="dart/third_party/pkg/collection"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/collection.git"
-             revision="1.13.0"/>
+             revision="1.14.3"/>
 
     <project name="dart/third_party/pkg/convert"
              path="dart/third_party/pkg/convert"
@@ -51,7 +51,7 @@
     <project name="dart/third_party/pkg/crypto"
              path="dart/third_party/pkg/crypto"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/crypto.git"
-             revision="2.0.1"/>
+             revision="2.0.2"/>
 
     <project name="dart/third_party/pkg/csslib"
              path="dart/third_party/pkg/csslib"
