@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <imports>
+    <localimport file="build"/>
+    <localimport file="magenta"/>
+    <localimport file="toolchain"/>
+  </imports>
+  <projects>
+    <project name="ftl"
+             path="lib/ftl"
+             remote="https://fuchsia.googlesource.com/ftl"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="fidl"
+             path="lib/fidl"
+             remote="https://fuchsia.googlesource.com/fidl"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+  </projects>
+</manifest>

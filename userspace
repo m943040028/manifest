@@ -4,6 +4,7 @@
     <localimport file="build"/>
     <localimport file="cobalt_client"/>
     <localimport file="drivers"/>
+    <localimport file="fidl"/>
     <localimport file="ledger"/>
     <localimport file="runtimes/dart"/>
     <localimport file="runtimes/rust"/>
@@ -51,16 +52,6 @@
     <project name="external/github.com/flutter/flutter"
              path="lib/flutter"
              remote="https://chromium.googlesource.com/external/github.com/flutter/flutter"/>
-    <project name="fidl"
-             path="lib/fidl"
-             remote="https://fuchsia.googlesource.com/fidl"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="ftl"
-             path="lib/ftl"
-             remote="https://fuchsia.googlesource.com/ftl"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="widgets"
              path="lib/widgets"
              remote="https://fuchsia.googlesource.com/widgets"
