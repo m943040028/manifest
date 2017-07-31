@@ -8,7 +8,7 @@
     <project name="external/github.com/dart-lang/sdk"
              path="dart"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/sdk"
-             revision="53cf85abc80fc804caddc2c680e696d6e6049113"/>
+             revision="e64115f93fd12bb42ad1487ec1c55426f51b985f"/>
     <project name="external/github.com/dart-lang/observatory_pub_packages"
              path="dart/third_party/observatory_pub_packages"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/observatory_pub_packages"
