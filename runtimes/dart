@@ -8,11 +8,11 @@
     <project name="external/github.com/dart-lang/sdk"
              path="dart"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/sdk"
-             revision="e64115f93fd12bb42ad1487ec1c55426f51b985f"/>
+             revision="72ba4f6c1cb904ea325ea8b293ad6317a41c7f72"/>
     <project name="external/github.com/dart-lang/observatory_pub_packages"
              path="dart/third_party/observatory_pub_packages"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/observatory_pub_packages"
-             revision="26aad88f1c1915d39bbcbff3cad589e2402fdcf1"/>
+             revision="a4e392521c720d244cd63e067387195d78584b35"/>
     <project name="external/github.com/dart-lang/root_certificates"
              path="third_party/root_certificates"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/root_certificates"

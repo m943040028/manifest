@@ -126,7 +126,7 @@
     <project name="dart/third_party/pkg/linter"
              path="dart/third_party/pkg/linter"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/linter.git"
-             revision="0.1.33"/>
+             revision="0.1.35"/>
 
     <project name="dart/third_party/pkg/logging"
              path="dart/third_party/pkg/logging"
