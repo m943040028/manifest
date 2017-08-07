@@ -4,8 +4,14 @@
     <localimport file="build"/>
     <localimport file="magenta"/>
     <localimport file="toolchain"/>
+    <localimport file="runtimes/go"/>
   </imports>
   <projects>
+    <project name="third_party/gtest"
+             path="third_party/gtest"
+             remote="https://fuchsia.googlesource.com/third_party/gtest"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="ftl"
              path="lib/ftl"
              remote="https://fuchsia.googlesource.com/ftl"
