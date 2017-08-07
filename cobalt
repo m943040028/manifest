@@ -8,7 +8,7 @@
     <project name="cobalt"
              path="cobalt"
              remote="https://fuchsia.googlesource.com/cobalt"
-             revision="0785ae15600336e80bf503e5456cefe59eb6d258"
+             revision="3cdc592eab110a923e1172b96a4afb0f06125169"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
   </projects>
