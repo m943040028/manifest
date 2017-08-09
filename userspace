@@ -111,7 +111,7 @@
 
     <project name="auth"
              path="apps/auth"
-             remote="https://fuchsia.googlesource.com/apps/auth"
+             remote="https://fuchsia.googlesource.com/auth"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="bluetooth"
