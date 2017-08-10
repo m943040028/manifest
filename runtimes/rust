@@ -36,7 +36,7 @@
              githooks="manifest/git-hooks"
              historydepth="1"/>
     <project name="third_party/mio"
-             path="third_party/rust-crates/manual/mio"
+             path="third_party/rust-mirrors/mio"
              remote="https://fuchsia.googlesource.com/third_party/mio"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
