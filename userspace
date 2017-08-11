@@ -184,6 +184,11 @@
              remote="https://fuchsia.googlesource.com/modules/dashboard"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <project name="modules/drive"
+             path="apps/modules/drive"
+             remote="https://fuchsia.googlesource.com/modules/drive"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="modules/email"
              path="apps/modules/email"
              remote="https://fuchsia.googlesource.com/modules/email"
