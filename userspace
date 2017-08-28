@@ -4,7 +4,7 @@
     <localimport file="build"/>
     <localimport file="cobalt_client"/>
     <localimport file="drivers"/>
-    <localimport file="fidl"/>
+    <localimport file="garnet"/>
     <localimport file="ledger"/>
     <localimport file="runtimes/dart"/>
     <localimport file="runtimes/rust"/>
