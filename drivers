@@ -61,14 +61,9 @@
              githooks="manifest/git-hooks"/>
 
     <!-- Common -->
-    <project name="fidl"
-             path="lib/fidl"
-             remote="https://fuchsia.googlesource.com/fidl"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="ftl"
-             path="lib/ftl"
-             remote="https://fuchsia.googlesource.com/ftl"
+    <project name="garnet"
+             path="garnet"
+             remote="https://fuchsia.googlesource.com/garnet"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
 
