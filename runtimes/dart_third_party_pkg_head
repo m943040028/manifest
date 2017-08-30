@@ -150,7 +150,7 @@
 
     <project name="dart/third_party/pkg/mockito"
              path="dart/third_party/pkg/mockito"
-             remote="https://github.com/dart-lang/mockito.git"
+             remote="https://chromium.googlesource.com/external/github.com/dart-lang/mockito.git"
              revision="2.0.2"/>
 
     <project name="dart/third_party/pkg/mustache4dart"
@@ -257,6 +257,11 @@
              path="dart/third_party/pkg/string_scanner"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/string_scanner.git"
              revision="1.0.1"/>
+
+    <project name="dart/third_party/pkg/term_glyph"
+             path="dart/third_party/pkg/term_glyph"
+             remote="https://chromium.googlesource.com/external/github.com/dart-lang/term_glyph.git"
+             revision="1.0.0"/>
 
     <project name="dart/third_party/pkg/test"
              path="dart/third_party/pkg/test"
