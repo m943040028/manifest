@@ -2,6 +2,7 @@
 <manifest>
   <imports>
     <localimport file="build"/>
+    <localimport file="garnet"/>
     <localimport file="magenta"/>
     <localimport file="thinfs"/>
     <localimport file="drivers"/>
@@ -11,11 +12,6 @@
     <project name="application"
              path="application"
              remote="https://fuchsia.googlesource.com/application"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="bin/listen"
-             path="bin/listen"
-             remote="https://fuchsia.googlesource.com/bin/listen"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="mtl"

@@ -86,11 +86,6 @@
              remote="https://fuchsia.googlesource.com/gdbserver"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="bin/listen"
-             path="bin/listen"
-             remote="https://fuchsia.googlesource.com/bin/listen"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="rust_ledger_example"
              path="rust/ledger_example"
              remote="https://fuchsia.googlesource.com/rust_ledger_example"
