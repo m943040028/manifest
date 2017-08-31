@@ -148,6 +148,6 @@
              githooks="manifest/git-hooks"/>
   </projects>
   <hooks>
-    <hook name="download-rt2870-bin" action="mediatek/rt5370/download-firmware.sh" project="drivers/wifi"/>
+    <hook name="download-rt2870-bin" action="mediatek/ralink/download-firmware.sh" project="drivers/wifi"/>
   </hooks>
 </manifest>
