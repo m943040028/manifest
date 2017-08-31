@@ -92,11 +92,6 @@
              remote="https://fuchsia.googlesource.com/component_manager"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="fonts"
-             path="apps/fonts"
-             remote="https://fuchsia.googlesource.com/fonts"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="icu_data"
              path="apps/icu_data"
              remote="https://fuchsia.googlesource.com/icu_data"
@@ -460,8 +455,5 @@
     <hook name="download-vulkan-sdk"
           project="escher"
           action="scripts/download-vulkan-sdk"/>
-    <hook name="update"
-          project="fonts"
-          action="update.sh"/>
   </hooks>
 </manifest>

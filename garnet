@@ -28,4 +28,9 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
   </projects>
+  <hooks>
+    <hook name="fonts-update"
+          project="garnet"
+          action="bin/fonts/update.sh"/>
+  </hooks>
 </manifest>
