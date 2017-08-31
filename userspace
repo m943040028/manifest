@@ -71,11 +71,6 @@
 
     <!-- Command Line Binaries -->
 
-    <project name="cmdutils"
-             path="bin/cmdutils"
-             remote="https://fuchsia.googlesource.com/cmdutils"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="gdbserver"
              path="bin/gdbserver"
              remote="https://fuchsia.googlesource.com/gdbserver"
