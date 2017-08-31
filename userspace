@@ -57,11 +57,6 @@
              remote="https://fuchsia.googlesource.com/widgets"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="mtl"
-             path="lib/mtl"
-             remote="https://fuchsia.googlesource.com/mtl"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="txt"
              path="lib/txt"
              remote="https://fuchsia.googlesource.com/txt"
