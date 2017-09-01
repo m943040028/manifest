@@ -64,11 +64,6 @@
 
     <!-- Command Line Binaries -->
 
-    <project name="gdbserver"
-             path="bin/gdbserver"
-             remote="https://fuchsia.googlesource.com/gdbserver"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="rust_ledger_example"
              path="rust/ledger_example"
              remote="https://fuchsia.googlesource.com/rust_ledger_example"
