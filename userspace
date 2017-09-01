@@ -55,12 +55,6 @@
              remote="https://chromium.googlesource.com/external/github.com/flutter/flutter"/>
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="txt"
-             path="lib/txt"
-             remote="https://fuchsia.googlesource.com/txt"
-             revision="95dc633d881d1b23b88e657bcb2f654459706412"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
 
     <!-- Command Line Binaries -->
 
