@@ -14,30 +14,5 @@
              remote="https://fuchsia.googlesource.com/application"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="netstack"
-             path="apps/netstack"
-             remote="https://fuchsia.googlesource.com/netstack"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="third_party/netstack"
-             path="third_party/netstack"
-             remote="https://fuchsia.googlesource.com/third_party/netstack"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="third_party/sbase"
-             path="third_party/sbase"
-             remote="https://fuchsia.googlesource.com/third_party/sbase"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="third_party/openssh-portable"
-             path="third_party/openssh-portable"
-             remote="https://fuchsia.googlesource.com/third_party/openssh-portable"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="third_party/vim"
-             path="third_party/vim"
-             remote="https://fuchsia.googlesource.com/third_party/vim"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
   </projects>
 </manifest>

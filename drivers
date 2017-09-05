@@ -20,11 +20,6 @@
              githooks="manifest/git-hooks"/>
 
     <!-- Network -->
-    <project name="netstack"
-             path="apps/netstack"
-             remote="https://fuchsia.googlesource.com/netstack"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="wlan"
              path="apps/wlan"
              remote="https://fuchsia.googlesource.com/wlan"
