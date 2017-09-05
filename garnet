@@ -47,8 +47,70 @@
              remote="https://fuchsia.googlesource.com/third_party/vim"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+
+    <!-- TODO(abarth): Merge the following repos into //garnet -->
+
+    <project name="application"
+             path="application"
+             remote="https://fuchsia.googlesource.com/application"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="escher"
+             path="lib/escher"
+             remote="https://fuchsia.googlesource.com/escher"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="auth"
+             path="apps/auth"
+             remote="https://fuchsia.googlesource.com/auth"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="bluetooth"
+             path="apps/bluetooth"
+             remote="https://fuchsia.googlesource.com/bluetooth"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="icu_data"
+             path="apps/icu_data"
+             remote="https://fuchsia.googlesource.com/icu_data"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="media"
+             path="apps/media"
+             remote="https://fuchsia.googlesource.com/media"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="mozart"
+             path="apps/mozart"
+             remote="https://fuchsia.googlesource.com/mozart"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="network"
+             path="apps/network"
+             remote="https://fuchsia.googlesource.com/network"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="test_runner"
+             path="apps/test_runner"
+             remote="https://fuchsia.googlesource.com/test_runner"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="time-service"
+             path="apps/time-service"
+             remote="https://fuchsia.googlesource.com/time-service"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="tracing"
+             path="apps/tracing"
+             remote="https://fuchsia.googlesource.com/tracing"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+
   </projects>
   <hooks>
+    <hook name="download-vulkan-sdk"
+          project="escher"
+          action="scripts/download-vulkan-sdk"/>
     <hook name="fonts-update"
           project="garnet"
           action="bin/fonts/update.sh"/>
