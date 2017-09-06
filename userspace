@@ -4,14 +4,8 @@
     <localimport file="build"/>
     <localimport file="cobalt_client"/>
     <localimport file="drivers"/>
-    <localimport file="garnet"/>
-    <localimport file="ledger"/>
-    <localimport file="runtimes/dart"/>
-    <localimport file="runtimes/rust"/>
-    <localimport file="thinfs"/>
     <localimport file="toolchain"/>
     <localimport file="topaz"/>
-    <localimport file="web_view"/>
   </imports>
   <projects>
     <project name="docs"
@@ -35,34 +29,11 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
 
-    <!-- Command Line Binaries -->
-
-    <project name="rust_ledger_example"
-             path="rust/ledger_example"
-             remote="https://fuchsia.googlesource.com/rust_ledger_example"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-
     <!-- Applications -->
 
-    <project name="component_manager"
-             path="apps/component_manager"
-             remote="https://fuchsia.googlesource.com/component_manager"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="install-fuchsia"
              path="apps/install-fuchsia"
              remote="https://fuchsia.googlesource.com/install-fuchsia"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="maxwell"
-             path="apps/maxwell"
-             remote="https://fuchsia.googlesource.com/maxwell"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="modular"
-             path="apps/modular"
-             remote="https://fuchsia.googlesource.com/modular"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
 

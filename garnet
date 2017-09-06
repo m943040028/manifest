@@ -6,6 +6,7 @@
     <localimport file="toolchain"/>
     <localimport file="runtimes/go"/>
     <localimport file="runtimes/rust"/>
+    <localimport file="thinfs"/>
   </imports>
   <projects>
     <project name="garnet"
