@@ -5,6 +5,7 @@
     <localimport file="magenta"/>
     <localimport file="toolchain"/>
     <localimport file="runtimes/go"/>
+    <localimport file="runtimes/rust"/>
   </imports>
   <projects>
     <project name="garnet"
