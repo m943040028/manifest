@@ -35,7 +35,7 @@
     <project name="jiri/third_party/libgit2"
              path="go/src/fuchsia.googlesource.com/jiri/vendor/github.com/libgit2/git2go/vendor/libgit2"
              remote="https://fuchsia.googlesource.com/third_party/libgit2"
-             revision= "df4dfaadcf709646ebab2e57e3589952cf1ac809"
+             revision= "ef20c6d390f2f9e9bf57af64c82d5c1c38253c15"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="jiri/third_party/zlib"
