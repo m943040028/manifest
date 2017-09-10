@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This manifest is necessary only for building Escher examples for Linux. -->
+<manifest>
+  <projects>
+    <project name="third_party/glfw"
+             path="third_party/glfw"
+             remote="https://fuchsia.googlesource.com/third_party/glfw"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+  </projects>
+</manifest>
