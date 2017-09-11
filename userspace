@@ -172,7 +172,7 @@
     <project name="external/skia.googlesource.com/skia"
              path="third_party/skia"
              remote="https://skia.googlesource.com/skia"
-             revision="3b67faa561db3283def904d2458a5b5b12ee4ba6"/>
+             revision="5d034744ab749d37a0b4c889271160236ec8be4e"/>
     <project name="third_party/snappy"
              path="third_party/snappy"
              remote="https://fuchsia.googlesource.com/third_party/snappy"
