@@ -8,11 +8,4 @@
     <localimport file="drivers"/>
     <localimport file="runtimes/go"/>
   </imports>
-  <projects>
-    <project name="application"
-             path="application"
-             remote="https://fuchsia.googlesource.com/application"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-  </projects>
 </manifest>
