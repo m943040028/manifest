@@ -266,7 +266,7 @@
     <project name="dart/third_party/pkg/test"
              path="dart/third_party/pkg/test"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/test.git"
-             revision="0.12.18+1"/>
+             revision="0.12.24+2"/>
 
     <project name="dart/third_party/pkg/test_reflective_loader"
              path="dart/third_party/pkg/test_reflective_loader"
