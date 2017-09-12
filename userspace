@@ -53,7 +53,7 @@
     <project name="external/github.com/catapult-project/catapult"
              path="third_party/catapult"
              remote="https://chromium.googlesource.com/external/github.com/catapult-project/catapult"
-             revision="9640c01626ae5332ffd034aa1ac2cfdaf3ffdfdf"/>
+             revision="99ec8187805e3ab807dac86c1ef0a1b07be9d1a6"/>
     <project name="third_party/curl"
              path="third_party/curl"
              remote="https://fuchsia.googlesource.com/third_party/curl"
