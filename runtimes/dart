@@ -5,17 +5,20 @@
     <localimport file="dart_third_party_pkg"/>
   </imports>
   <projects>
-    <project name="external/github.com/dart-lang/sdk"
+    <project name="dart/sdk"
              path="dart"
-             remote="https://chromium.googlesource.com/external/github.com/dart-lang/sdk"
+             remote="https://dart.googlesource.com/sdk"
+             gerrithost="https://dart-review.googlesource.com"
              revision="6c81e20c8324b7869b098ce41713422785556738"/>
-    <project name="external/github.com/dart-lang/observatory_pub_packages"
+    <project name="dart/observatory_pub_packages"
              path="dart/third_party/observatory_pub_packages"
-             remote="https://chromium.googlesource.com/external/github.com/dart-lang/observatory_pub_packages"
+             remote="https://dart.googlesource.com/observatory_pub_packages/"
+             gerrithost="https://dart-review.googlesource.com"
              revision="a4e392521c720d244cd63e067387195d78584b35"/>
-    <project name="external/github.com/dart-lang/root_certificates"
+    <project name="dart/root_certificates"
              path="third_party/root_certificates"
-             remote="https://chromium.googlesource.com/external/github.com/dart-lang/root_certificates"
+             remote="https://dart.googlesource.com/root_certificates"
+             gerrithost="https://dart-review.googlesource.com"
              revision="a4c7c6f23a664a37bc1b6f15a819e3f2a292791a"/>
     <project name="tonic"
              path="lib/tonic"
@@ -40,7 +43,7 @@
   </projects>
   <hooks>
     <hook name="prebuilt-dart-sdk"
-          project="external/github.com/dart-lang/sdk"
+          project="dart/sdk"
           action="tools/download_latest_dev_sdk.py"/>
   </hooks>
 </manifest>
