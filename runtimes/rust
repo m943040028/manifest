@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <imports>
+    <localimport file="../garnet"/>
     <localimport file="../minimal"/>
   </imports>
   <projects>
@@ -48,11 +49,6 @@
     <project name="third_party/tokio-core"
              path="third_party/rust-mirrors/tokio-core"
              remote="https://fuchsia.googlesource.com/third_party/tokio-core"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="tokio-fuchsia"
-             path="rust/tokio-fuchsia"
-             remote="https://fuchsia.googlesource.com/tokio-fuchsia"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
   </projects>
