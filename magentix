@@ -3,7 +3,7 @@
   <imports>
     <localimport file="build"/>
     <localimport file="garnet"/>
-    <localimport file="magenta"/>
+    <localimport file="zircon"/>
     <localimport file="thinfs"/>
     <localimport file="drivers"/>
     <localimport file="runtimes/go"/>

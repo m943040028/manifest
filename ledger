@@ -3,7 +3,7 @@
   <imports>
     <localimport file="build"/>
     <localimport file="cobalt_client"/>
-    <localimport file="magenta"/>
+    <localimport file="zircon"/>
     <localimport file="minimal"/>
   </imports>
   <projects>
