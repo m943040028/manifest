@@ -10,7 +10,7 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="magenta-rs"
-             path="rust/magenta-rs"
+             path="rust/zircon-rs"
              remote="https://fuchsia.googlesource.com/magenta-rs"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
