@@ -166,10 +166,10 @@
          match the path under fuchsia.googlesource.com -->
 
     <project name="glog"
-             path="apps/thinfs/vendor/github.com/golang/glog"
+             path="garnet/go/src/thinfs/vendor/github.com/golang/glog"
              remote="https://fuchsia.googlesource.com/third_party/golang/glog"/>
     <project name="errors"
-             path="apps/thinfs/vendor/github.com/pkg/errors"
+             path="garnet/go/src/thinfs/vendor/github.com/pkg/errors"
              remote="https://fuchsia.googlesource.com/third_party/pkg/errors"/>
 
     <!-- TODO(abarth): Merge the following repos into //garnet -->
@@ -207,11 +207,6 @@
     <project name="test_runner"
              path="apps/test_runner"
              remote="https://fuchsia.googlesource.com/test_runner"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="thinfs"
-             path="apps/thinfs"
-             remote="https://fuchsia.googlesource.com/thinfs"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="tracing"
