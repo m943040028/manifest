@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <imports>
-    <localimport file="runtimes/go"/>
+    <localimport file="garnet"/>
   </imports>
-  <projects>
-    <project name="thinfs"
-             path="apps/thinfs"
-             remote="https://fuchsia.googlesource.com/thinfs"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="glog"
-             path="apps/thinfs/vendor/github.com/golang/glog"
-             remote="https://fuchsia.googlesource.com/third_party/golang/glog"/>
-    <project name="errors"
-             path="apps/thinfs/vendor/github.com/pkg/errors"
-             remote="https://fuchsia.googlesource.com/third_party/pkg/errors"/>
-  </projects>
+  <!-- TODO(abarth): Remove this manifest and use garnet manifest instead. -->
 </manifest>

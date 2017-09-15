@@ -2,17 +2,34 @@
 <manifest>
   <imports>
     <localimport file="garnet"/>
-    <localimport file="ledger"/>
   </imports>
   <projects>
+
+    <!-- Third Party -->
+
+    <project name="third_party/flatbuffers"
+             path="third_party/flatbuffers"
+             remote="https://fuchsia.googlesource.com/third_party/flatbuffers"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="third_party/leveldb"
+             path="third_party/leveldb"
+             remote="https://fuchsia.googlesource.com/third_party/leveldb"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="third_party/murmurhash"
+             path="third_party/murmurhash"
+             remote="https://fuchsia.googlesource.com/third_party/murmurhash.c"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+
+    <!-- TODO(abarth): Merge the following repos into //peridot -->
+
     <project name="rust_ledger_example"
              path="rust/ledger_example"
              remote="https://fuchsia.googlesource.com/rust_ledger_example"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-
-    <!-- Applications -->
-
     <project name="maxwell"
              path="apps/maxwell"
              remote="https://fuchsia.googlesource.com/maxwell"
@@ -21,6 +38,11 @@
     <project name="modular"
              path="apps/modular"
              remote="https://fuchsia.googlesource.com/modular"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="ledger"
+             path="apps/ledger"
+             remote="https://fuchsia.googlesource.com/ledger"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
   </projects>

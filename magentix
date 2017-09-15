@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <imports>
-    <localimport file="build"/>
     <localimport file="garnet"/>
-    <localimport file="zircon"/>
-    <localimport file="thinfs"/>
-    <localimport file="drivers"/>
-    <localimport file="runtimes/go"/>
   </imports>
+  <!-- TODO(abarth): Remove this manifest and use garnet manifest instead. -->
 </manifest>

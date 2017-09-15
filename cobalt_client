@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <imports>
-    <localimport file="grpc"/>
-    <localimport file="magentix"/>
+    <localimport file="garnet"/>
   </imports>
-  <projects>
-    <project name="cobalt"
-             path="third_party/cobalt"
-             remote="https://fuchsia.googlesource.com/cobalt"
-             revision="471828ce53ff73b205908dd123f192251eccd407"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="cobalt_client"
-             path="apps/cobalt_client"
-             remote="https://fuchsia.googlesource.com/cobalt_client"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-  </projects>
+  <!-- TODO(abarth): Remove this manifest and use garnet manifest instead. -->
 </manifest>
