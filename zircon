@@ -12,7 +12,7 @@
              githooks="manifest/git-hooks"/>
     <project name="zircon/benchmarks"
              path="zircon/benchmarks"
-             remote="https://fuchsia.googlesource.com/zircon/benchmarks"
+             remote="https://fuchsia.googlesource.com/magenta/benchmarks"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="third_party/benchmark"
