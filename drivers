@@ -59,7 +59,7 @@
     <project name="third_party/boringssl"
              path="third_party/boringssl"
              remote="https://fuchsia.googlesource.com/third_party/boringssl"
-             revision="09494e410485666d5f8d5ad9b8d82ce7f369dc4c"
+             revision="03458bb801b93b91017f73a0b3ea1b3a00442b9a"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="external/github.com/g-truc/glm"
