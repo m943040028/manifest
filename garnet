@@ -194,11 +194,6 @@
              remote="https://fuchsia.googlesource.com/drivers/gpu/msd-intel-gen"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="drivers/wifi"
-             path="drivers/wifi"
-             remote="https://fuchsia.googlesource.com/drivers/wifi"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="magma"
              path="magma"
              remote="https://fuchsia.googlesource.com/magma"
@@ -222,8 +217,8 @@
   </projects>
   <hooks>
     <hook name="download-rt2870-bin"
-          action="mediatek/ralink/download-firmware.sh"
-          project="drivers/wifi"/>
+          project="garnet"
+          action="drivers/wlan/mediatek/ralink/download-firmware.sh"/>
     <hook name="download-vulkan-sdk"
           project="garnet"
           action="lib/escher/scripts/download-vulkan-sdk"/>
