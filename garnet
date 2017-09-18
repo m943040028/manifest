@@ -204,11 +204,6 @@
              remote="https://fuchsia.googlesource.com/test_runner"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="tracing"
-             path="apps/tracing"
-             remote="https://fuchsia.googlesource.com/tracing"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="wlan"
              path="apps/wlan"
              remote="https://fuchsia.googlesource.com/wlan"
