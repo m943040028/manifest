@@ -31,11 +31,6 @@
 
     <!-- TODO(abarth): Merge the following repos into //peridot -->
 
-    <project name="rust_ledger_example"
-             path="rust/ledger_example"
-             remote="https://fuchsia.googlesource.com/rust_ledger_example"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="maxwell"
              path="apps/maxwell"
              remote="https://fuchsia.googlesource.com/maxwell"
