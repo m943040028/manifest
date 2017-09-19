@@ -111,7 +111,7 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="rust_sample_module"
-             path="rust/rust_sample_module"
+             path="topaz/examples/spinning-square-rs"
              remote="https://fuchsia.googlesource.com/rust_sample_module"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
