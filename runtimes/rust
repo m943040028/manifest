@@ -4,11 +4,6 @@
     <localimport file="../minimal"/>
   </imports>
   <projects>
-    <project name="ddk-rs"
-             path="rust/ddk-rs"
-             remote="https://fuchsia.googlesource.com/ddk-rs"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="magenta-rs"
              path="rust/zircon-rs"
              remote="https://fuchsia.googlesource.com/magenta-rs"
