@@ -26,13 +26,8 @@
     <!-- Applications -->
 
     <project name="latin-ime"
-             path="apps/latin-ime"
+             path="topaz/app/latin-ime"
              remote="https://fuchsia.googlesource.com/latin-ime"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="modules/calendar"
-             path="apps/modules/calendar"
-             remote="https://fuchsia.googlesource.com/modules/calendar"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="modules/chat"
@@ -51,7 +46,7 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="modules/dashboard"
-             path="apps/modules/dashboard"
+             path="topaz/app/dashboard"
              remote="https://fuchsia.googlesource.com/modules/dashboard"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
@@ -106,7 +101,7 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="xi"
-             path="apps/xi"
+             path="topaz/app/xi"
              remote="https://fuchsia.googlesource.com/xi"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
