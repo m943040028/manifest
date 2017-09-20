@@ -85,11 +85,6 @@
              remote="https://fuchsia.googlesource.com/modules/video"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="mondrian"
-             path="apps/mondrian"
-             remote="https://fuchsia.googlesource.com/mondrian"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="sysui"
              path="apps/sysui"
              remote="https://fuchsia.googlesource.com/sysui"
