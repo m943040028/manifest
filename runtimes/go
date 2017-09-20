@@ -8,7 +8,6 @@
     <project name="third_party/go"
              remote="https://fuchsia.googlesource.com/third_party/go"
              gerrithost="https://fuchsia-review.googlesource.com"
-             path="third_party/go"
-             revision="07a4bc257b29f80d5d167b0cb2ab279ac157ae8e"/>
+             path="third_party/go"/>
   </projects>
 </manifest>
