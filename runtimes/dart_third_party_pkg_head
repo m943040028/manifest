@@ -176,7 +176,7 @@
     <project name="dart/third_party/pkg/pool"
              path="dart/third_party/pkg/pool"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/pool.git"
-             revision="1.3.0"/>
+             revision="3731963107c705e192c255725bbe5956e9e7a794"/>
 
     <project name="dart/third_party/pkg/protobuf"
              path="dart/third_party/pkg/protobuf"
@@ -186,7 +186,7 @@
     <project name="dart/third_party/pkg/pub"
              path="dart/third_party/pkg/pub"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/pub.git"
-             revision="0f122625f8e607842afe156b9b23a9709e4ce39a"/>
+             revision="cde958f157d3662bf968bcbed05580d5c0355e89"/>
 
     <project name="dart/third_party/pkg/pub_semver"
              path="dart/third_party/pkg/pub_semver"
@@ -246,7 +246,7 @@
     <project name="dart/third_party/pkg/stack_trace"
              path="dart/third_party/pkg/stack_trace"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/stack_trace.git"
-             revision="1.7.2"/>
+             revision="6332f0259b3b39398c5ce7fc924ea4e430496065"/>
 
     <project name="dart/third_party/pkg/stream_channel"
              path="dart/third_party/pkg/stream_channel"
@@ -266,7 +266,7 @@
     <project name="dart/third_party/pkg/test"
              path="dart/third_party/pkg/test"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/test.git"
-             revision="0.12.24+2"/>
+             revision="0.12.24+6"/>
 
     <project name="dart/third_party/pkg/test_reflective_loader"
              path="dart/third_party/pkg/test_reflective_loader"
