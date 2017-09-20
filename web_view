@@ -5,7 +5,7 @@
   </imports>
   <projects>
     <project name="web_view"
-             path="apps/web_view"
+             path="topaz/runtime/web_view"
              remote="https://fuchsia.googlesource.com/web_view"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
@@ -34,4 +34,3 @@
           action="scripts/download-libwebkit.sh"/>
   </hooks>
 </manifest>
-

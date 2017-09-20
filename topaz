@@ -91,7 +91,7 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="web_runner"
-             path="apps/web_runner"
+             path="topaz/runtime/web_runner"
              remote="https://fuchsia.googlesource.com/web_runner"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
