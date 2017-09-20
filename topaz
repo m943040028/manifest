@@ -86,7 +86,7 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="sysui"
-             path="apps/sysui"
+             path="topaz/shell"
              remote="https://fuchsia.googlesource.com/sysui"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
