@@ -4,6 +4,8 @@
     <localimport file="build"/>
     <localimport file="zircon"/>
     <localimport file="toolchain"/>
+    <!-- TODO(abarth): Remove Dart runtime once SEC-28 is fixed -->
+    <localimport file="runtimes/dart"/>
     <localimport file="runtimes/go"/>
     <localimport file="runtimes/rust"/>
   </imports>
