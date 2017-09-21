@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <imports>
-    <localimport file="build"/>
-    <localimport file="zircon"/>
-    <localimport file="minimal"/>
     <localimport file="userspace"/>
     <localimport file="amber"/>
     <localimport file="pm"/>

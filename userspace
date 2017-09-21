@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <imports>
-    <localimport file="build"/>
-    <localimport file="drivers"/>
-    <localimport file="toolchain"/>
     <localimport file="topaz"/>
   </imports>
   <projects>
@@ -23,7 +20,7 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
 
-    <!-- Applications -->
+    <!-- TODO(abarth): Move install-fuchsia to a layer. -->
 
     <project name="install-fuchsia"
              path="apps/install-fuchsia"
