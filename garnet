@@ -174,11 +174,6 @@
 
     <!-- TODO(abarth): Merge the following repos into //garnet -->
 
-    <project name="bluetooth"
-             path="apps/bluetooth"
-             remote="https://fuchsia.googlesource.com/bluetooth"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="drivers/audio"
              path="drivers/audio"
              remote="https://fuchsia.googlesource.com/drivers/audio"
