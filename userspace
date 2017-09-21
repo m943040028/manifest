@@ -65,11 +65,6 @@
              remote="https://fuchsia.googlesource.com/third_party/iccjpeg"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="third_party/icu"
-             path="third_party/icu"
-             remote="https://fuchsia.googlesource.com/third_party/icu"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="third_party/iperf"
              path="third_party/iperf"
              remote="https://fuchsia.googlesource.com/third_party/iperf"
@@ -113,11 +108,6 @@
     <project name="third_party/qcms"
              path="third_party/qcms"
              remote="https://fuchsia.googlesource.com/third_party/qcms"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="third_party/rapidjson"
-             path="third_party/rapidjson"
-             remote="https://fuchsia.googlesource.com/third_party/rapidjson"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="third_party/re2"
