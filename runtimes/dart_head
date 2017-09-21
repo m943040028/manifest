@@ -15,12 +15,12 @@
              path="third_party/root_certificates"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/root_certificates"/>
     <project name="tonic"
-             path="lib/tonic"
+             path="topaz/lib/tonic"
              remote="https://fuchsia.googlesource.com/tonic"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="dart_content_handler"
-             path="apps/dart_content_handler"
+             path="topaz/runtime/dart_runner"
              remote="https://fuchsia.googlesource.com/dart_content_handler"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
