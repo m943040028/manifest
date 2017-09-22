@@ -31,11 +31,6 @@
              remote="https://fuchsia.googlesource.com/maxwell"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="modular"
-             path="apps/modular"
-             remote="https://fuchsia.googlesource.com/modular"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="ledger"
              path="apps/ledger"
              remote="https://fuchsia.googlesource.com/ledger"
