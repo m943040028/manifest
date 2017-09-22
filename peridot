@@ -26,11 +26,6 @@
 
     <!-- TODO(abarth): Merge the following repos into //peridot -->
 
-    <project name="maxwell"
-             path="apps/maxwell"
-             remote="https://fuchsia.googlesource.com/maxwell"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="ledger"
              path="apps/ledger"
              remote="https://fuchsia.googlesource.com/ledger"
