@@ -8,6 +8,7 @@
     <localimport file="runtimes/dart"/>
     <localimport file="runtimes/go"/>
     <localimport file="runtimes/rust"/>
+    <localimport file="skia"/>
   </imports>
   <projects>
 
