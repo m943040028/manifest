@@ -24,12 +24,5 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
 
-    <!-- TODO(abarth): Merge the following repos into //peridot -->
-
-    <project name="ledger"
-             path="apps/ledger"
-             remote="https://fuchsia.googlesource.com/ledger"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
   </projects>
 </manifest>
