@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <imports>
+    <localimport file="flutter"/>
     <localimport file="peridot"/>
     <localimport file="runtimes/dart"/>
     <localimport file="web_view"/>
@@ -27,11 +28,6 @@
     <project name="widgets"
              path="topaz/lib/widgets"
              remote="https://fuchsia.googlesource.com/widgets"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="external/github.com/flutter/flutter"
-             path="lib/flutter"
-             remote="https://chromium.googlesource.com/external/github.com/flutter/flutter"/>
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
 
@@ -106,9 +102,6 @@
 
     <!-- Third Party -->
 
-    <project name="external/github.com/flutter/engine"
-             path="flutter"
-             remote="https://chromium.googlesource.com/external/github.com/flutter/engine"/>
     <project name="third_party/xi-editor"
              path="third_party/xi-editor"
              remote="https://fuchsia.googlesource.com/third_party/xi-editor"
