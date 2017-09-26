@@ -3,7 +3,7 @@
   <projects>
     <project name="external/github.com/flutter/flutter"
              path="lib/flutter"
-             remote="https://chromium.googlesource.com/external/github.com/flutter/flutter"/>
+             remote="https://chromium.googlesource.com/external/github.com/flutter/flutter"
              revision="6420c75f2623ea24fc63cce91e322f2f27a96638"/>
     <project name="external/github.com/flutter/engine"
              path="flutter"
