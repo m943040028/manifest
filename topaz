@@ -6,9 +6,19 @@
     <localimport file="web_view"/>
   </imports>
   <projects>
+    <project name="topaz/examples"
+             path="topaz/examples"
+             remote="https://fuchsia.googlesource.com/topaz/examples"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="topaz/packages"
              path="topaz/packages"
              remote="https://fuchsia.googlesource.com/topaz/packages"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="topaz/public"
+             path="topaz/public"
+             remote="https://fuchsia.googlesource.com/topaz/public"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
 
@@ -87,8 +97,9 @@
              remote="https://fuchsia.googlesource.com/xi"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <!-- TODO(pylaligand): move this example to the examples project. -->
     <project name="rust_sample_module"
-             path="topaz/examples/spinning-square-rs"
+             path="topaz/examples-tmp/spinning-square-rs"
              remote="https://fuchsia.googlesource.com/rust_sample_module"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
