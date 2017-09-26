@@ -6,9 +6,11 @@
     <localimport file="web_view"/>
   </imports>
   <projects>
-    <project name="external/github.com/flutter/engine"
-             path="flutter"
-             remote="https://chromium.googlesource.com/external/github.com/flutter/engine"/>
+    <project name="topaz/packages"
+             path="topaz/packages"
+             remote="https://fuchsia.googlesource.com/topaz/packages"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
 
     <!-- Libraries -->
 
@@ -93,6 +95,9 @@
 
     <!-- Third Party -->
 
+    <project name="external/github.com/flutter/engine"
+             path="flutter"
+             remote="https://chromium.googlesource.com/external/github.com/flutter/engine"/>
     <project name="third_party/xi-editor"
              path="third_party/xi-editor"
              remote="https://fuchsia.googlesource.com/third_party/xi-editor"
