@@ -4,12 +4,6 @@
     <localimport file="topaz"/>
   </imports>
   <projects>
-    <project name="libc-tests"
-             path="libc-tests"
-             remote="https://fuchsia.googlesource.com/libc-tests"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-
     <!-- TODO(abarth): Move install-fuchsia to a layer. -->
 
     <project name="install-fuchsia"
