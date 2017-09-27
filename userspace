@@ -29,11 +29,6 @@
              revision="30590636487cb976a7ad850024abb16a5f44a320"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="third_party/ffmpeg"
-             path="third_party/ffmpeg"
-             remote="https://fuchsia.googlesource.com/third_party/ffmpeg"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="third_party/git"
              path="third_party/git"
              remote="https://fuchsia.googlesource.com/third_party/git"
