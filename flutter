@@ -4,7 +4,7 @@
     <project name="external/github.com/flutter/flutter"
              path="lib/flutter"
              remote="https://chromium.googlesource.com/external/github.com/flutter/flutter"
-             revision="6420c75f2623ea24fc63cce91e322f2f27a96638"/>
+             revision="63d7b9338d7165632dc1e133cdf0d92b9af97407"/>
     <project name="external/github.com/flutter/engine"
              path="flutter"
              remote="https://chromium.googlesource.com/external/github.com/flutter/engine"/>
