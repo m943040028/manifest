@@ -20,16 +20,6 @@
              remote="https://dart.googlesource.com/root_certificates"
              gerrithost="https://dart-review.googlesource.com"
              revision="a4c7c6f23a664a37bc1b6f15a819e3f2a292791a"/>
-    <project name="tonic"
-             path="topaz/lib/tonic"
-             remote="https://fuchsia.googlesource.com/tonic"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="dart_content_handler"
-             path="topaz/runtime/dart_runner"
-             remote="https://fuchsia.googlesource.com/dart_content_handler"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="third_party/dart-pkg"
              path="third_party/dart-pkg"
              remote="https://fuchsia.googlesource.com/third_party/dart-pkg"

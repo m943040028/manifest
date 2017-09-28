@@ -25,6 +25,11 @@
 
     <!-- Libraries -->
 
+    <project name="tonic"
+             path="topaz/lib/tonic"
+             remote="https://fuchsia.googlesource.com/tonic"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="widgets"
              path="topaz/lib/widgets"
              remote="https://fuchsia.googlesource.com/widgets"
@@ -81,6 +86,11 @@
     <project name="sysui"
              path="topaz/shell"
              remote="https://fuchsia.googlesource.com/sysui"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="dart_content_handler"
+             path="topaz/runtime/dart_runner"
+             remote="https://fuchsia.googlesource.com/dart_content_handler"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="web_runner"
