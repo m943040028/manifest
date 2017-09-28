@@ -102,6 +102,16 @@
 
     <!-- Third Party -->
 
+    <project name="third_party/harfbuzz"
+             path="third_party/harfbuzz"
+             remote="https://fuchsia.googlesource.com/third_party/harfbuzz"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="third_party/libteken"
+             path="third_party/libteken"
+             remote="https://fuchsia.googlesource.com/third_party/libteken"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="third_party/xi-editor"
              path="third_party/xi-editor"
              remote="https://fuchsia.googlesource.com/third_party/xi-editor"
