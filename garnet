@@ -20,6 +20,10 @@
 
     <!-- Third Party -->
 
+    <project name="external/github.com/catapult-project/catapult"
+             path="third_party/catapult"
+             remote="https://chromium.googlesource.com/external/github.com/catapult-project/catapult"
+             revision="99ec8187805e3ab807dac86c1ef0a1b07be9d1a6"/>
     <project name="libc-tests"
              path="third_party/libc-tests"
              remote="https://fuchsia.googlesource.com/libc-tests"

@@ -14,35 +14,9 @@
 
     <!-- Third Party -->
 
-    <project name="external/github.com/catapult-project/catapult"
-             path="third_party/catapult"
-             remote="https://chromium.googlesource.com/external/github.com/catapult-project/catapult"
-             revision="99ec8187805e3ab807dac86c1ef0a1b07be9d1a6"/>
-
-    <project name="cmocka"
-             path="third_party/cmocka"
-             remote="https://fuchsia.googlesource.com/third_party/cmocka"
-             revision="30590636487cb976a7ad850024abb16a5f44a320"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="third_party/iccjpeg"
-             path="third_party/iccjpeg"
-             remote="https://fuchsia.googlesource.com/third_party/iccjpeg"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="third_party/iperf"
              path="third_party/iperf"
              remote="https://fuchsia.googlesource.com/third_party/iperf"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="third_party/libvpx"
-             path="third_party/libvpx"
-             remote="https://fuchsia.googlesource.com/third_party/libvpx"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="third_party/qcms"
-             path="third_party/qcms"
-             remote="https://fuchsia.googlesource.com/third_party/qcms"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="third_party/speccpu2000"
