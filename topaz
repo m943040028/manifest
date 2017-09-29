@@ -106,6 +106,16 @@
 
     <!-- Third Party -->
 
+    <project name="third_party/curl"
+             path="third_party/curl"
+             remote="https://fuchsia.googlesource.com/third_party/curl"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
+    <project name="third_party/git"
+             path="third_party/git"
+             remote="https://fuchsia.googlesource.com/third_party/git"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="third_party/harfbuzz"
              path="third_party/harfbuzz"
              remote="https://fuchsia.googlesource.com/third_party/harfbuzz"
@@ -116,11 +126,21 @@
              remote="https://fuchsia.googlesource.com/third_party/libteken"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+   <project name="third_party/sqlite"
+            path="third_party/sqlite"
+            remote="https://fuchsia.googlesource.com/third_party/sqlite"
+            gerrithost="https://fuchsia-review.googlesource.com"
+            githooks="manifest/git-hooks"/>
     <project name="third_party/xi-editor"
              path="third_party/xi-editor"
              remote="https://fuchsia.googlesource.com/third_party/xi-editor"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"
              revision="25fd559f81ca07e18c80a5fc5ecfbc96834c0a12"/>
+    <project name="third_party/libxml2"
+             path="third_party/libxml2"
+             remote="https://fuchsia.googlesource.com/third_party/libxml2"
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
   </projects>
 </manifest>
