@@ -24,7 +24,7 @@
     <project name="external/skia.googlesource.com/skia"
              path="third_party/skia"
              remote="https://skia.googlesource.com/skia"
-             revision="cd284c532376d16fcc4ed75baf3da65c3e4a2e95"/>
+             revision="5a2e50edc51006ce91366e177a9d21a16775d7fd"/>
     <project name="third_party/yasm"
              path="third_party/yasm"
              remote="https://fuchsia.googlesource.com/third_party/yasm"
