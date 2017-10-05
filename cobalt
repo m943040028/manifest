@@ -12,7 +12,7 @@
     This manifest is not used in the Fuchsia build. Do not import this manifest
     into any other manifest that is used in the Fuchsia build. The Cobalt
     repository is pulled into the Fuchsia build not through this manifest but
-    rather through the "cobalt_client" manifest which maps the Cobalt repo to
+    rather through the "garnet" manifest which maps the Cobalt repo to
     the path "third_party/cobalt" so that in a Fuchsia check-out Cobalt may
     be found at //third_party/cobalt. Below we map instead to the path "cobalt"
     (no third_party) because the stand-alone build for cobalt expects to

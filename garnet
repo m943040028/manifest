@@ -100,9 +100,11 @@
              remote="https://fuchsia.googlesource.com/third_party/github.com/pkg/sftp"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <!-- gRPC contact: rudominer. -->
     <project name="third_party/grpc"
              path="third_party/grpc"
              remote="https://fuchsia.googlesource.com/third_party/grpc"
+             revision="60160de187af72f65a20b1539ab305c1d8a6f591"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="third_party/gtest"
@@ -152,9 +154,11 @@
              remote="https://fuchsia.googlesource.com/third_party/processor-trace"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
+    <!-- Protobuf contact: rudominer. -->
     <project name="third_party/protobuf"
              path="third_party/protobuf"
              remote="https://fuchsia.googlesource.com/third_party/protobuf"
+             revision="60d83472b81e28379cce600bde19d7530a69681b"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
     <project name="third_party/rapidjson"
