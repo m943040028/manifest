@@ -31,4 +31,9 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
   </projects>
+  <hooks>
+    <hook name="packages-update"
+          project="packages"
+          action="update.sh"/>
+  </hooks>
 </manifest>
