@@ -3,12 +3,4 @@
   <imports>
     <localimport file="topaz"/>
   </imports>
-  <projects>
-    <!-- TODO(abarth): Move install-fuchsia to a layer. -->
-    <project name="install-fuchsia"
-             path="apps/install-fuchsia"
-             remote="https://fuchsia.googlesource.com/install-fuchsia"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-  </projects>
 </manifest>
