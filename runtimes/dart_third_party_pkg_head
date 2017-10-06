@@ -16,7 +16,7 @@
     <project name="dart/third_party/pkg/barback"
              path="dart/third_party/pkg/barback"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/barback.git"
-             revision="0.15.2+12"/>
+             revision="0.15.2+13"/>
 
     <project name="dart/third_party/pkg/bazel_worker"
              path="dart/third_party/pkg/bazel_worker"
@@ -66,7 +66,7 @@
     <project name="dart/third_party/pkg/dartdoc"
              path="dart/third_party/pkg/dartdoc"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/dartdoc.git"
-             revision="v0.13.0+3"/>
+             revision="v0.14.1"/>
 
     <project name="dart/third_party/pkg/fixnum"
              path="dart/third_party/pkg/fixnum"
