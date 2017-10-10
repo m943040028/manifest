@@ -2,6 +2,5 @@
 <manifest>
   <imports>
     <localimport file="userspace"/>
-    <localimport file="pm"/>
   </imports>
 </manifest>
