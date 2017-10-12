@@ -2,7 +2,9 @@
 <manifest>
   <imports>
     <localimport file="minimal"/>
-    <localimport file="zircon"/>
+    <import remote="https://fuchsia.googlesource.com/zircon"
+            manifest="manifest"
+            name="zircon"/>
   </imports>
   <projects>
     <project name="third_party/binutils-gdb"

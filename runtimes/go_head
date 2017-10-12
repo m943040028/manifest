@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <imports>
-    <localimport file="../build"/>
-    <localimport file="../zircon"/>
-  </imports>
   <projects>
     <project name="third_party/go"
              remote="https://fuchsia.googlesource.com/third_party/go"
