@@ -6,7 +6,7 @@
              remote="https://chromium.googlesource.com/external/github.com/flutter/flutter"
              revision="0999fca99d7c8726d86ba13e54f3f7f6c5879ab7"/>
     <project name="external/github.com/flutter/engine"
-             path="flutter"
+             path="third_party/flutter"
              remote="https://chromium.googlesource.com/external/github.com/flutter/engine"/>
   </projects>
 </manifest>
