@@ -7,25 +7,21 @@
     <project name="web_view"
              path="topaz/runtime/web_view"
              remote="https://fuchsia.googlesource.com/web_view"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
+             gerrithost="https://fuchsia-review.googlesource.com"/>
     <project name="third_party/cairo"
              path="third_party/cairo"
              remote="https://fuchsia.googlesource.com/third_party/cairo"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
              historydepth="1"/>
     <project name="third_party/pixman"
              path="third_party/pixman"
              remote="https://fuchsia.googlesource.com/third_party/pixman"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
              historydepth="1"/>
     <project name="third_party/webkit"
              path="third_party/webkit"
              remote="https://fuchsia.googlesource.com/third_party/webkit"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
              historydepth="1"/>
   </projects>
   <hooks>
