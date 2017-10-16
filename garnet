@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <imports>
-    <localimport file="build"/>
+    <localimport file="minimal"/>
     <import remote="https://fuchsia.googlesource.com/garnet"
             manifest="manifest/garnet"
             name="garnet"/>
-    <!-- TODO(abarth): Remove Dart runtime once SEC-28 is fixed -->
-    <localimport file="runtimes/dart"/>
   </imports>
 </manifest>
