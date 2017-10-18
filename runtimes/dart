@@ -6,12 +6,12 @@
   </imports>
   <projects>
     <project name="dart/sdk"
-             path="dart"
+             path="third_party/dart"
              remote="https://dart.googlesource.com/sdk"
              gerrithost="https://dart-review.googlesource.com"
-             revision="b34a1073716909f840ea7426117df282e7f662ac"/>
+             revision="80e3fed6df31aafa33a6a641479cb0e0031ae643"/>
     <project name="dart/observatory_pub_packages"
-             path="dart/third_party/observatory_pub_packages"
+             path="third_party/dart/third_party/observatory_pub_packages"
              remote="https://dart.googlesource.com/observatory_pub_packages/"
              gerrithost="https://dart-review.googlesource.com"
              revision="a4e392521c720d244cd63e067387195d78584b35"/>
