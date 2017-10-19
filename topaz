@@ -25,11 +25,13 @@
 
     <!-- Libraries -->
 
+    <!-- TODO(pylaligand): unpin once the Dart transition is over. -->
     <project name="tonic"
              path="topaz/lib/tonic"
              remote="https://fuchsia.googlesource.com/tonic"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
+             githooks="manifest/git-hooks"
+             revision="1ec9e9f8289c5329913f814643354427597075c0"/>
 
     <!-- Applications -->
 
