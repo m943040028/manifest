@@ -21,7 +21,7 @@
              gerrithost="https://dart-review.googlesource.com"
              revision="a4c7c6f23a664a37bc1b6f15a819e3f2a292791a"/>
     <project name="third_party/dart-pkg"
-             path="third_party/dart-pkg"
+             path="third_party/dart-pkg/pub"
              remote="https://fuchsia.googlesource.com/third_party/dart-pkg"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
