@@ -2,7 +2,7 @@
 <manifest>
   <projects>
     <project name="external/github.com/flutter/flutter"
-             path="lib/flutter"
+             path="third_party/dart-pkg/git/flutter"
              remote="https://chromium.googlesource.com/external/github.com/flutter/flutter"
              revision="e04472e8d5078bb0d06d152e9698045eea406d85"/>
     <project name="external/github.com/flutter/engine"
