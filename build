@@ -42,8 +42,5 @@
     <hook name="packages-update"
           project="packages"
           action="update.sh"/>
-    <hook name="install-fx"
-          project="scripts"
-          action="devshell/lib/add_symlink_to_bin.sh"/>
   </hooks>
 </manifest>
