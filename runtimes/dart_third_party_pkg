@@ -126,7 +126,7 @@
     <project name="third_party/dart/third_party/pkg/linter"
              path="third_party/dart/third_party/pkg/linter"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/linter.git"
-             revision="0.1.36"/>
+             revision="0.1.38"/>
 
     <project name="third_party/dart/third_party/pkg/logging"
              path="third_party/dart/third_party/pkg/logging"
@@ -146,7 +146,7 @@
     <project name="third_party/dart/third_party/pkg/mime"
              path="third_party/dart/third_party/pkg/mime"
              remote="https://chromium.googlesource.com/external/github.com/dart-lang/mime.git"
-             revision="367087506c0a8a746bd75c685487b01ffed7f1c5"/>
+             revision="0.9.4"/>
 
     <project name="third_party/dart/third_party/pkg/mockito"
              path="third_party/dart/third_party/pkg/mockito"
