@@ -4,7 +4,7 @@
     <import remote="https://fuchsia.googlesource.com/peridot"
             manifest="manifest/peridot"
             name="peridot"
-            revision="88a5854a7c0f0272e2c5424da3f06d1b6f7e377b"/>
+            revision="d6f45d7c5660a9a5ec9b299d2900ef28e7ce786d"/>
     <localimport file="flutter"/>
     <localimport file="runtimes/dart"/>
     <localimport file="web_view"/>
