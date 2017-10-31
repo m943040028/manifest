@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <imports>
+    <import remote="https://fuchsia.googlesource.com/peridot"
+            manifest="manifest/peridot"
+            name="peridot"/>
     <localimport file="flutter"/>
-    <localimport file="peridot"/>
     <localimport file="runtimes/dart"/>
     <localimport file="web_view"/>
   </imports>
