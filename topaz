@@ -23,11 +23,6 @@
 
     <!-- Applications -->
 
-    <project name="latin-ime"
-             path="topaz/app/latin-ime"
-             remote="https://fuchsia.googlesource.com/latin-ime"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="modules/chat"
              path="topaz/app/chat"
              remote="https://fuchsia.googlesource.com/modules/chat"
