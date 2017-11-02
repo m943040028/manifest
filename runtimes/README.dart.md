@@ -14,7 +14,7 @@ correspond to the values in the [Dart SDK deps file](https://github.com/dart-lan
 observatory\_pub\_packages.
 * Update your local tree by running `jiri update -local-manifest=true`
 * Update the [dart\_third\_party\_pkg](dart_third_party_pkg) manifest by running
-`//dart/tools/create_pkg_manifest.py`
+`//third_party/dart/tools/create_pkg_manifest.py`
 * Build and verify that everything works
 * Land the changes
 
