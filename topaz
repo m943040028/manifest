@@ -21,14 +21,6 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
 
-    <!-- Libraries -->
-
-    <project name="tonic"
-             path="topaz/lib/tonic"
-             remote="https://fuchsia.googlesource.com/tonic"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-
     <!-- Applications -->
 
     <project name="latin-ime"
