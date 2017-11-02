@@ -4,10 +4,6 @@
     <localimport file="minimal"/>
   </imports>
   <projects>
-    <project name="web_view"
-             path="topaz/runtime/web_view"
-             remote="https://fuchsia.googlesource.com/web_view"
-             gerrithost="https://fuchsia-review.googlesource.com"/>
     <project name="third_party/cairo"
              path="third_party/cairo"
              remote="https://fuchsia.googlesource.com/third_party/cairo"
