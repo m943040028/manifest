@@ -58,11 +58,6 @@
              remote="https://fuchsia.googlesource.com/modules/music"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="modules/todo"
-             path="topaz/app/todo"
-             remote="https://fuchsia.googlesource.com/modules/todo"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="sysui"
              path="topaz/shell"
              remote="https://fuchsia.googlesource.com/sysui"
