@@ -58,11 +58,6 @@
              remote="https://fuchsia.googlesource.com/sysui"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="dart_content_handler"
-             path="topaz/runtime/dart_runner"
-             remote="https://fuchsia.googlesource.com/dart_content_handler"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="web_runner"
              path="topaz/runtime/web_runner"
              remote="https://fuchsia.googlesource.com/web_runner"
