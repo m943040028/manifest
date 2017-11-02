@@ -25,11 +25,6 @@
              remote="https://fuchsia.googlesource.com/topaz/packages"
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
-    <project name="topaz/public"
-             path="topaz/public"
-             remote="https://fuchsia.googlesource.com/topaz/public"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
 
     <!-- Libraries -->
 
