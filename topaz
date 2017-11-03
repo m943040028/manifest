@@ -18,11 +18,6 @@
 
     <!-- Applications -->
 
-    <project name="modules/chat"
-             path="topaz/app/chat"
-             remote="https://fuchsia.googlesource.com/modules/chat"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
     <project name="modules/dashboard"
              path="topaz/app/dashboard"
              remote="https://fuchsia.googlesource.com/modules/dashboard"
