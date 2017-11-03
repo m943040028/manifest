@@ -15,7 +15,11 @@
              remote="https://dart.googlesource.com/observatory_pub_packages/"
              gerrithost="https://dart-review.googlesource.com"
              revision="4c282bb240b68f407c8c7779a65c68eeb0139dc6"/>
-
+    <project name="dart/root_certificates"
+             path="third_party/root_certificates"
+             remote="https://dart.googlesource.com/root_certificates"
+             gerrithost="https://dart-review.googlesource.com"
+             revision="a4c7c6f23a664a37bc1b6f15a819e3f2a292791a"/>
     <project name="third_party/dart-pkg"
              path="third_party/dart-pkg/pub"
              remote="https://fuchsia.googlesource.com/third_party/dart-pkg"
