@@ -30,7 +30,8 @@
     <project name="third_party/mako"
              path="third_party/mako"
              remote="https://fuchsia.googlesource.com/third_party/mako"
-             gerrithost="https://fuchsia-review.googlesource.com"/>
+             gerrithost="https://fuchsia-review.googlesource.com"
+             githooks="manifest/git-hooks"/>
     <project name="third_party/pyyaml"
              path="third_party/pyyaml"
              remote="https://fuchsia.googlesource.com/third_party/pyyaml"
