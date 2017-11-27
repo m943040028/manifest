@@ -39,9 +39,6 @@
              githooks="manifest/git-hooks"/>
   </projects>
   <hooks>
-    <hook name="build-update"
-          project="build"
-          action="update.sh"/>
     <hook name="install-fx"
           project="scripts"
           action="devshell/lib/add_symlink_to_bin.sh"/>
