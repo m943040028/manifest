@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <projects>
+    <project name="linux"
+             path="linux"
+             remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/linux"
+             remotebranch="gzos"
+             gerrithost="https://review.gerrithub.io"
+             githooks="manifest/git-hooks"/>
+    <project name="arm-trusted-firmware"
+             path="arm-trusted-firmware"
+             remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/arm-trusted-firmware"
+             remotebranch="gzos"
+             gerrithost="https://review.gerrithub.io"
+             githooks="manifest/git-hooks"/>
+    <project name="gen_rootfs"
+             path="gen_rootfs"
+             remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/gen_rootfs"
+             remotebranch="gzos"
+             gerrithost="https://review.gerrithub.io"
+             githooks="manifest/git-hooks"/>
+
+    <!-- Third-party -->
+    <project name="third_party/busybox"
+             path="third_party/busybox"
+             remote="http://git.busybox.net/busybox/"
+             revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"
+             githooks="manifest/git-hooks"/>
+    <project name="third_party/soc_term"
+             path="third_party/soc_term"
+             remote="https://github.com/linaro-swg/soc_term"
+             githooks="manifest/git-hooks"/>
+  </projects>
+</manifest>

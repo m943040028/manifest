@@ -2,8 +2,9 @@
 <manifest>
   <projects>
     <project name="manifest"
-             remote="https://fuchsia.googlesource.com/manifest"
-             gerrithost="https://fuchsia-review.googlesource.com"
+             remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/manifest"
+             remotebranch="gzos"
+             gerrithost="https://review.gerrithub.io"
              githooks="manifest/git-hooks"
              path="manifest"/>
   </projects>

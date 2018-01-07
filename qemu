@@ -6,9 +6,10 @@
   <projects>
     <project name="third_party/qemu"
              path="third_party/qemu"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"
-             remote="https://fuchsia.googlesource.com/third_party/qemu"/>
+             remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/third_party-qemu"
+             remotebranch="gzos"
+             gerrithost="https://review.gerrithub.io"
+             githooks="manifest/git-hooks"/>
     <project name="qemu/third_party/dtc"
              path="third_party/qemu/dtc"
              gerrithost="https://fuchsia-review.googlesource.com"
