@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <imports>
+    <localimport file="build"/>
+  </imports>
+  <projects>
+    <!-- BEGIN trusty core projects -->
+    <project path="trusty/external/lk" name="trusty/lk/common" remote="https://android.googlesource.com/trusty/lk/common" githooks="manifest/git-hooks"/>
+    <project path="trusty/external/headers" name="trusty/external/headers" remote="https://android.googlesource.com/trusty/external/headers" githooks="manifest/git-hooks"/>
+    <project path="trusty/lib" name="trusty/lib" remote="https://android.googlesource.com/trusty/lib" githooks="manifest/git-hooks"/>
+    <project path="trusty/lk/trusty" name="trusty/lk/trusty" remote="https://android.googlesource.com/trusty/lk/trusty" githooks="manifest/git-hooks"/>
+    <!-- END trusty core projects -->
+
+    <!-- BEGIN apps projects  -->
+    <project path="trusty/app/sample" name="trusty/app/sample" remote="https://android.googlesource.com/trusty/app/sample" githooks="manifest/git-hooks"/>
+    <project path="trusty/app/keymaster" name="trusty/app/keymaster" remote="https://android.googlesource.com/trusty/app/keymaster" githooks="manifest/git-hooks"/>
+    <project path="trusty/app/gatekeeper" name="trusty/app/gatekeeper" remote="https://android.googlesource.com/trusty/app/gatekeeper" githooks="manifest/git-hooks"/>
+    <project path="trusty/app/storage" name="trusty/app/storage" remote="https://android.googlesource.com/trusty/app/storage" githooks="manifest/git-hooks"/>
+    <project path="trusty/app/avb" name="trusty/app/avb" remote="https://android.googlesource.com/trusty/app/avb" githooks="manifest/git-hooks"/>
+    <!-- END apps projects -->
+
+     <!-- BEGIN platform projects -->
+    <project path="trusty/external/googletest" name="platform/external/googletest" remote="https://android.googlesource.com/platform/external/googletest" githooks="manifest/git-hooks"/>
+    <project path="trusty/hardware/libhardware" name="platform/hardware/libhardware" remote="https://android.googlesource.com/platform/hardware/libhardware" githooks="manifest/git-hooks"/>
+    <project path="trusty/system/keymaster" name="platform/system/keymaster" remote="https://android.googlesource.com/platform/system/keymaster" githooks="manifest/git-hooks"/>
+    <project path="trusty/system/gatekeeper" name="platform/system/gatekeeper" remote="https://android.googlesource.com/platform/system/gatekeeper" githooks="manifest/git-hooks"/>
+    <project path="trusty/external/openssl" name="platform/external/boringssl" remote="https://android.googlesource.com/platform/external/boringssl" githooks="manifest/git-hooks"/>
+    <project path="trusty/system/iot/attestation" name="platform/system/iot/attestation" remote="https://android.googlesource.com/platform/system/iot/attestation" githooks="manifest/git-hooks"/>
+    <!-- END platform projects -->
+
+    <!-- BEGIN trusty device projects -->
+    <project path="trusty/device/arm/generic-arm64" name="trusty/device/arm/generic-arm64" remote="https://android.googlesource.com/trusty/device/arm/generic-arm64" githooks="manifest/git-hooks"/>
+    <project path="trusty/device/arm/vexpress-a15" name="trusty/device/arm/vexpress-a15" remote="https://android.googlesource.com/trusty/device/arm/vexpress-a15" githooks="manifest/git-hooks"/>
+    <!-- END trusty device projects -->
+
+    <!-- BEGIN trusty vendor projects -->
+    <project path="trusty/vendor/google/aosp" name="trusty/vendor/google/aosp" remote="https://android.googlesource.com/trusty/vendor/google/aosp" githooks="manifest/git-hooks"/>
+    <!-- END trusty vendor projects -->
+
+    <!-- BEGIN toolchains -->
+    <project path="trusty/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8"
+             name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8"
+             remote="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" githooks="manifest/git-hooks"/>
+    <project path="trusty/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"
+             name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"
+             remote="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" githooks="manifest/git-hooks"/>
+    <project path="trusty/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8"
+             name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8"
+             remote="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" githooks="manifest/git-hooks"/>
+    <project path="trusty/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9"
+             name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9"
+             remote="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" githooks="manifest/git-hooks"/>
+    <!-- END toolchains -->
+
+    <!-- BEGIN aux external projects -->
+    <project path="trusty/external/qemu" name="trusty/external/qemu" remote="https://android.googlesource.com/trusty/external/qemu" githooks="manifest/git-hooks"/>
+    <!-- END aux external projects -->
+  </projects>
+</manifest>
