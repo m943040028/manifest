@@ -9,8 +9,9 @@
   <projects>
     <project name="build"
              path="build"
-             remote="https://fuchsia.googlesource.com/build"
-             gerrithost="https://fuchsia-review.googlesource.com"
+             remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/build"
+             remotebranch="gzos"
+             gerrithost="https://review.gerrithub.io"
              githooks="manifest/git-hooks"/>
     <project name="docs"
              path="docs"
