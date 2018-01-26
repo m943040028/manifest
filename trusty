@@ -2,6 +2,7 @@
 <manifest>
   <imports>
     <localimport file="build"/>
+    <localimport file="tipc-test"/>
   </imports>
   <projects>
     <!-- BEGIN trusty core projects -->
